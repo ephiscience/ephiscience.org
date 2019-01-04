@@ -14,6 +14,14 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component'
 import { CardComponent } from './card/card.component'
 import { CardTitleComponent } from './card-title/card-title.component'
 import { CardContentComponent } from './card-content/card-content.component'
+import { FooterComponent } from './footer/footer.component'
+import { ContactFormComponent } from './contact-form/contact-form.component'
+import { FbLikeComponent } from './fb-like/fb-like.component'
+import { LogoWhiteComponent } from './logo-white/logo-white.component'
+import { SectionComponent } from './section/section.component'
+import { SectionTitleComponent } from './section-title/section-title.component'
+import { SectionContentComponent } from './section-content/section-content.component'
+import { YtVideoComponent } from './yt-video/yt-video.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +31,15 @@ import { CardContentComponent } from './card-content/card-content.component'
     JumbotronComponent,
     CardComponent,
     CardTitleComponent,
-    CardContentComponent
+    CardContentComponent,
+    FooterComponent,
+    ContactFormComponent,
+    FbLikeComponent,
+    LogoWhiteComponent,
+    SectionComponent,
+    SectionTitleComponent,
+    SectionContentComponent,
+    YtVideoComponent
   ],
   imports: [
     BrowserModule,

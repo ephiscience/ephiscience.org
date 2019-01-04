@@ -5,9 +5,9 @@ import { Component, Input, OnInit } from '@angular/core'
   template: `
     <div class="col-sm-{{ size }}">
       <div class="card card-{{ color }}">
-        <ng-content select="card-title"></ng-content>
+        <ng-content select="eph-card-title"></ng-content>
         <br />
-        <ng-content select="card-content"></ng-content>
+        <ng-content select="eph-card-content"></ng-content>
         <ng-content></ng-content>
       </div>
     </div>
