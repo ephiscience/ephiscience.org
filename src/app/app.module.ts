@@ -22,6 +22,8 @@ import { SectionComponent } from './section/section.component'
 import { SectionTitleComponent } from './section-title/section-title.component'
 import { SectionContentComponent } from './section-content/section-content.component'
 import { YtVideoComponent } from './yt-video/yt-video.component'
+import { CcByComponent } from './cc-by/cc-by.component'
+import { MoreButtonComponent } from './more-button/more-button.component'
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { YtVideoComponent } from './yt-video/yt-video.component'
     SectionComponent,
     SectionTitleComponent,
     SectionContentComponent,
-    YtVideoComponent
+    YtVideoComponent,
+    CcByComponent,
+    MoreButtonComponent
   ],
   imports: [
     BrowserModule,

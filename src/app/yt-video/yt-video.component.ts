@@ -1,13 +1,16 @@
-import { Component, Input, OnInit } from '@angular/core'
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core'
+import { DomSanitizer, SafeUrl } from '@angular/platform-browser'
 
 @Component({
   selector: 'eph-yt-video',
   template: `
     <div class="row">
       <div class="col-md-8 col-md-offset-2 col-sm-10">
-        <div class="embed-responsive embed-responsive-16by9"><iframe [src]="src"></iframe></div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe [src]="saneSrc"></iframe>
+        </div>
       </div>
-      <div class="col-md-2 col-sm-2 homepage-edukey-social-links">
+      <div class="col-md-2 col-sm-2 social-links">
         <a *ngIf="social.fb" href="https://www.facebook.com/{{ social.fb }}">
           <img src="assets/images/social/Facebook-color.svg" class="" alt="facebook link" />
         </a>
@@ -20,14 +23,30 @@ import { Component, Input, OnInit } from '@angular/core'
       </div>
     </div>
   `,
-  styles: []
+  styles: [
+    `
+      .social-links {
+        display: flex;
+        flex-direction: column;
+      }
+      .social-links a {
+        margin-bottom: 1rem;
+      }
+    `
+  ]
 })
-export class YtVideoComponent implements OnInit {
+export class YtVideoComponent implements OnInit, OnChanges {
   @Input() src: string
 
   @Input() social: { fb?: string; tw?: string; yt?: string } = {}
 
-  constructor() {}
+  saneSrc: SafeUrl
+
+  constructor(private sanitizer: DomSanitizer) {}
 
   ngOnInit() {}
+
+  ngOnChanges(changes: SimpleChanges): void {
+    this.saneSrc = this.sanitizer.bypassSecurityTrustResourceUrl(this.src)
+  }
 }
