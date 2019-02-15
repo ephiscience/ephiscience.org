@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import '~typeface-arvo/index.css';
+@import '~typeface-cabin/index.css';
+@import '~typeface-cabin-condensed/index.css';
+@import '~typeface-roboto/index.css';
+
 @import 'variables';
 
 @import '~bootstrap/scss/bootstrap';
@@ -7,8 +12,4 @@
 html,
 body {
   height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
 }

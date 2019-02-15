@@ -79,8 +79,6 @@ import { Component, OnInit } from '@angular/core'
         ></eph-yt-video>
       </eph-section-content>
     </eph-section>
-
-    <eph-footer></eph-footer>
   `,
   styles: []
 })

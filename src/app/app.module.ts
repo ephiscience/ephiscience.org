@@ -24,6 +24,11 @@ import { SectionContentComponent } from './section-content/section-content.compo
 import { YtVideoComponent } from './yt-video/yt-video.component'
 import { CcByComponent } from './cc-by/cc-by.component'
 import { MoreButtonComponent } from './more-button/more-button.component'
+import { AssociationComponent } from './association/association.component'
+import { EdukeyComponent } from './edukey/edukey.component'
+import { MrPhiComponent } from './mr-phi/mr-phi.component'
+import { AteliersEtFormationsComponent } from './ateliers-et-formations/ateliers-et-formations.component'
+import { JeuComponent } from './jeu/jeu.component'
 
 @NgModule({
   declarations: [
@@ -43,7 +48,12 @@ import { MoreButtonComponent } from './more-button/more-button.component'
     SectionContentComponent,
     YtVideoComponent,
     CcByComponent,
-    MoreButtonComponent
+    MoreButtonComponent,
+    AssociationComponent,
+    EdukeyComponent,
+    MrPhiComponent,
+    AteliersEtFormationsComponent,
+    JeuComponent
   ],
   imports: [
     BrowserModule,
