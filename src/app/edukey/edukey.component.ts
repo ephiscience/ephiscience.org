@@ -4,8 +4,10 @@ import { Component, OnInit } from '@angular/core'
   selector: 'eph-edukey',
   template: `
     <eph-jumbotron type="top">
-      <h2>Edukey, venez participey</h2>
-      <h3>Médiation des sciences de l’éducation</h3>
+      <div class="col">
+        <h2>Edukey, venez participey</h2>
+        <h3>Médiation des sciences de l’éducation</h3>
+      </div>
     </eph-jumbotron>
     <div class="container">
       <div class="row">
@@ -68,9 +70,7 @@ import { Component, OnInit } from '@angular/core'
           <p>
             La dernière vidéo :
           </p>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe id="youtube_video" width="600" height="340" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
-          </div>
+          <eph-last-yt-video channelId="UC6wF0stG_iXMO4mIXM9g3YQ"></eph-last-yt-video>
         </div>
         <div class="col-sm-3 hidden-xs">
           <div

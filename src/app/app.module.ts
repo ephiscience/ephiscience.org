@@ -1,3 +1,4 @@
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http'
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 
@@ -29,6 +30,7 @@ import { EdukeyComponent } from './edukey/edukey.component'
 import { MrPhiComponent } from './mr-phi/mr-phi.component'
 import { AteliersEtFormationsComponent } from './ateliers-et-formations/ateliers-et-formations.component'
 import { JeuComponent } from './jeu/jeu.component'
+import { LastYtVideoComponent } from './last-yt-video/last-yt-video.component'
 
 @NgModule({
   declarations: [
@@ -53,14 +55,17 @@ import { JeuComponent } from './jeu/jeu.component'
     EdukeyComponent,
     MrPhiComponent,
     AteliersEtFormationsComponent,
-    JeuComponent
+    JeuComponent,
+    LastYtVideoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     StoreModule.forRoot(reducers, { metaReducers }),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    HttpClientJsonpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
