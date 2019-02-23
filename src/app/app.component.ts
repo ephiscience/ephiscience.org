@@ -1,4 +1,6 @@
-import { Component } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
+
+// import { NgRgpdService } from 'src/app/ng-rgpd/ng-rgpd.service'
 
 @Component({
   selector: 'eph-root',
@@ -9,4 +11,11 @@ import { Component } from '@angular/core'
     <eph-footer></eph-footer>
   `
 })
-export class AppComponent {}
+export class AppComponent implements OnInit {
+  constructor() // private rgpd: NgRgpdService
+  {}
+
+  ngOnInit(): void {
+    // this.rgpd.init()
+  }
+}

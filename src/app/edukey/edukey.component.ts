@@ -72,33 +72,14 @@ import { Component, OnInit } from '@angular/core'
           </p>
           <eph-last-yt-video channelId="UC6wF0stG_iXMO4mIXM9g3YQ"></eph-last-yt-video>
         </div>
-        <div class="col-sm-3 hidden-xs">
-          <div
-            class="fb-page"
-            data-href="https://www.facebook.com/EduKeyYouTube/"
-            data-tabs="timeline"
-            data-small-header="false"
-            data-adapt-container-width="true"
-            data-hide-cover="false"
-            data-show-facepile="true"
-          >
-            <blockquote cite="https://www.facebook.com/EduKeyYouTube/" class="fb-xfbml-parse-ignore">
-              <a href="https://www.facebook.com/EduKeyYouTube/">EduKey</a>
-            </blockquote>
-          </div>
-          <a class="twitter-timeline" data-lang="fr" data-height="600" href="https://twitter.com/EduKeyFR?ref_src=twsrc%5Etfw"
-            >Tweets by EduKeyFR</a
-          >
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          <img src="assets/images/logo/membre_cafe_des_sciences.png" alt="Membre du café des sciences" class="img img-responsive" />
-        </div>
+        <!--<div class="col-sm-3 hidden-xs">-->
+        <!--<eph-social-column fburl="https://www.facebook.com/EduKeyYouTube" twitterUrl="https://twitter.com/EduKeyFR?ref_src=twsrc%5Etfw"></eph-social-column>-->
+        <!--</div>-->
       </div>
     </div>
   `,
   styles: []
 })
 export class EdukeyComponent implements OnInit {
-  constructor() {}
-
   ngOnInit() {}
 }

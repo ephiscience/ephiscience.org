@@ -73,27 +73,30 @@ import { Component, OnInit } from '@angular/core'
             <p>
               Nos membres sont principalement répartis sur deux continents :
             </p>
-            <p>
-              En Europe et particulièrement en France, l'association comporte 5 membres actifs soutenus et encouragés par le président :
-              <a href="mailto:pleen@edukey.fr?subject=Contact">Pleen Le Jeune</a>
-            </p>
-            <img
-              src="assets/images/team/pleen.jpg"
-              class="img-responsive center-block img-rounded"
-              title="Pleen le Jeune"
-              alt="Photo de Pleen le Jeune"
-            />
-            <p>
-              En Amérique, et particulièrement au Québec, l'association comporte 6 membres actifs coordonnés et motivés par la responsable
-              Québec :
-              <a href="mailto:coaching@lisetteprince.ca?subject=Contact">Lisette Prince</a>
-            </p>
-            <img
-              src="assets/images/team/lisette.jpg"
-              class="img-responsive center-block img-rounded"
-              alt="Photo de Lisette Prince"
-              title="Lisette Prince"
-            />
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-3 d-flex flex-column">
+            <div class="card flex-grow-1">
+              <img class="card-img-top" src="assets/images/team/pleen.jpg" alt="Pleen le Jeune" />
+              <div class="card-body">
+                <p class="card-text">
+                  En Europe et particulièrement en France, l'association comporte 5 membres actifs soutenus et encouragés par le président :
+                  <a href="mailto:pleen@edukey.fr?subject=Contact">Pleen Le Jeune</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <img class="card-img-top" src="assets/images/team/lisette.jpg" alt="Lisette Prince" />
+              <div class="card-body">
+                <p class="card-text">
+                  En Amérique, et particulièrement au Québec, l'association comporte 6 membres actifs coordonnés et motivés par la
+                  responsable Québec : <a href="mailto:coaching@lisetteprince.ca?subject=Contact">Lisette Prince</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </eph-section-content>

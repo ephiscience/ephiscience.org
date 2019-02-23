@@ -64,7 +64,7 @@ import { Component, OnInit } from '@angular/core'
       </eph-section-title>
       <eph-section-content>
         <eph-yt-video
-          src="https://www.youtube.com/embed/b1-PyRin68E"
+          videoId="b1-PyRin68E"
           [social]="{ fb: 'EduKeyYouTube', tw: 'EduKeyFR', yt: 'channel/UC6wF0stG_iXMO4mIXM9g3YQ' }"
         ></eph-yt-video>
       </eph-section-content>
@@ -74,7 +74,7 @@ import { Component, OnInit } from '@angular/core'
       <eph-section-title> <h2>Monsieur Phi</h2> </eph-section-title>
       <eph-section-content>
         <eph-yt-video
-          src="https://www.youtube.com/embed/eXsXTGT0Fx8"
+          videoId="eXsXTGT0Fx8"
           [social]="{ fb: 'graindephilo', tw: 'MonsieurPhi', yt: 'channel/UCqA8H22FwgBVcF3GJpp0MQw' }"
         ></eph-yt-video>
       </eph-section-content>
