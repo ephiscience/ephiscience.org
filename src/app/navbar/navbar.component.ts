@@ -35,7 +35,7 @@ import { Component, OnInit } from '@angular/core'
               <a routerLink="/ateliers-et-formations" class="nav-link">Ateliers et formations</a>
             </li>
             <li class="nav-item" routerLinkActive="active"><a routerLink="/jeu" class="nav-link">Jeu</a></li>
-            <li class="nav-item" routerLinkActive="active"><a routerLink="/actualites" class="nav-link">Actualités</a></li>
+            <!--<li class="nav-item" routerLinkActive="active"><a routerLink="/actualites" class="nav-link">Actualités</a></li>-->
           </ul>
         </div>
       </div>
