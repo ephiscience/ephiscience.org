@@ -43,6 +43,13 @@ import { Component, OnInit } from '@angular/core'
   `,
   styles: [
     `
+      :host {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+      }
       #mainNavbar {
         line-height: 2.1rem;
       }

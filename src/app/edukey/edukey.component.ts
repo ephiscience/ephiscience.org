@@ -37,9 +37,9 @@ import { Component, OnInit } from '@angular/core'
             compétences utiles pour la chaîne&nbsp;!)
           </p>
           <p>
-            Écrivez à <a href="mailto:pleen@edukey.fr">pleen@edukey.fr</a> (pas de prise de tête de CV + Lettre de motivation, faites ça
-            short & sweet et on se rencontrera pour en discuter, de toute façon on sera pas vos patrons, on fonctionne à coup d’<a
-              ui-sref="main.association"
+            Écrivez à <a href="mailto:pleen@ephiscience.org">pleen@ephiscience.org</a> (pas de prise de tête de CV + Lettre de motivation,
+            faites ça short & sweet et on se rencontrera pour en discuter, de toute façon on sera pas vos patrons, on fonctionne à coup d’<a
+              routerLink="/association"
               >Advice Process</a
             >).
           </p>
@@ -60,11 +60,8 @@ import { Component, OnInit } from '@angular/core'
             </li>
             <li>
               Donnez quelque chose sur
-              <a href="https://www.donnerenligne.fr/e-science/faire-un-don"
-                >HelloAsso (https://www.donnerenligne.fr/e-science/faire-un-don)</a
-              >
-              : réduction d’impôt de 66% du montant du don. Ça veut dire que si on reçoit 100 euros, ça vous en aura coûté que 34 après
-              déduction. Mieux que Tipeee&nbsp;!
+              <a href="https://www.donnerenligne.fr/e-science/faire-un-don">HelloAsso</a>&nbsp;: réduction d’impôt de 66% du montant du don.
+              Ça veut dire que si on reçoit 100 euros, ça vous en aura coûté que 34 après déduction. Mieux que Tipeee&nbsp;!
             </li>
           </ul>
           <p>

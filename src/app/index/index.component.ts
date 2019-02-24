@@ -21,7 +21,7 @@ import { Component, OnInit } from '@angular/core'
               <p>Produit de la collaboration d’experts jeu - éducation - philo sur plusieurs continents.</p>
               <p>Disponible gratuitement sur notre site en print&play - <eph-cc-by></eph-cc-by></p>
             </eph-card-content>
-            <eph-more-button routerLink="/jeu">En savoir Plus</eph-more-button>
+            <eph-more-button href="/jeu">En savoir Plus</eph-more-button>
             <!--<a class="center-block" routerLink="/jeu">en savoir plus</a>-->
           </eph-card>
 
@@ -36,7 +36,7 @@ import { Component, OnInit } from '@angular/core'
                 <p>Interventions dans les écoles et en dehors pour 6 ans et plus.</p>
               </div>
             </eph-card-content>
-            <eph-more-button routerLink="/jeu">En savoir Plus</eph-more-button>
+            <eph-more-button href="/ateliers-et-formations">En savoir Plus</eph-more-button>
           </eph-card>
 
           <eph-card color="pink">
@@ -49,7 +49,7 @@ import { Component, OnInit } from '@angular/core'
                 <p>S’adresse aux éducateurs de tous milieux et aux étudiants.</p>
               </div>
             </eph-card-content>
-            <eph-more-button routerLink="/jeu">En savoir Plus</eph-more-button>
+            <eph-more-button href="/ateliers-et-formations">En savoir Plus</eph-more-button>
           </eph-card>
         </div>
       </eph-section-content>

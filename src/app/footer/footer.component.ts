@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core'
           <div class="col-sm-3">
             <eph-logo-white></eph-logo-white>
             <p></p>
-            <p>Ephiscience@edukey.fr</p>
+            <p>contact@ephiscience.org</p>
             <eph-fb-like></eph-fb-like>
           </div>
           <div class="col-sm-6"><eph-contact-form></eph-contact-form></div>

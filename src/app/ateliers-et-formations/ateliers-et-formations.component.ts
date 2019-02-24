@@ -25,8 +25,8 @@ import { Component, OnInit } from '@angular/core'
             Idéalement à raison d’une heure par semaine - modulable selon vos besoins.
           </p>
           <p>
-            <a href="mailto:ephiscience@edukey.fr">Contactez-nous</a> pour en savoir plus sur nos offres&nbsp;! Tarif sur mesure en fonction
-            de vos besoins et de votre contexte.
+            <a href="mailto:ateliers-philo@ephiscience.org">Contactez-nous</a> pour en savoir plus sur nos offres&nbsp;! Tarif sur mesure en
+            fonction de vos besoins et de votre contexte.
           </p>
         </div>
         <div class="col-sm-4">
@@ -55,8 +55,8 @@ import { Component, OnInit } from '@angular/core'
             <b>accompagnés tout au long de votre pratique</b> au fil de l’année.
           </p>
           <p>
-            <a href="mailto:ephiscience@edukey.fr">Contactez-nous</a> pour en savoir plus sur nos offres&nbsp;! Tarif sur mesure en fonction
-            de vos besoins et de votre contexte.
+            <a href="mailto:formations@ephiscience.org">Contactez-nous</a> pour en savoir plus sur nos offres&nbsp;! Tarif sur mesure en
+            fonction de vos besoins et de votre contexte.
           </p>
         </div>
       </div>
@@ -79,8 +79,8 @@ import { Component, OnInit } from '@angular/core'
             <b>clés en main</b> pour continuer vos apprentissages autant que nécessaire.
           </p>
           <p>
-            <a href="mailto:ephiscience@edukey.fr">Contactez-nous</a> pour en savoir plus sur nos offres&nbsp;! Tarif sur mesure en fonction
-            de vos besoin et de votre contexte.
+            <a href="mailto:formations@ephiscience.org">Contactez-nous</a> pour en savoir plus sur nos offres&nbsp;! Tarif sur mesure en
+            fonction de vos besoin et de votre contexte.
           </p>
         </div>
         <div class="col-sm-4">

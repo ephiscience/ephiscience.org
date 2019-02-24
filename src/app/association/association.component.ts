@@ -82,7 +82,7 @@ import { Component, OnInit } from '@angular/core'
               <div class="card-body">
                 <p class="card-text">
                   En Europe et particulièrement en France, l'association comporte 5 membres actifs soutenus et encouragés par le président :
-                  <a href="mailto:pleen@edukey.fr?subject=Contact">Pleen Le Jeune</a>
+                  <a href="mailto:pleen@ephiscience.org?subject=Contact">Pleen Le Jeune</a>
                 </p>
               </div>
             </div>
