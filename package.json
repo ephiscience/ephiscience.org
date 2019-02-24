@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "docker-build": "docker build -t registry.gkny.fr/ephiscience/web .",
+    "build-push": "docker build -t registry.gkny.fr/ephiscience/web . && docker push registry.gkny.fr/ephiscience/web:latest",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
