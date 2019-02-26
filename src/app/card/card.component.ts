@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core'
 @Component({
   selector: 'eph-card',
   template: `
-    <div class="col-sm-{{ size }}">
+    <div class="col-md-{{ size }}">
       <div class="card card-{{ color }}">
         <ng-content select="eph-card-title"></ng-content>
         <br />

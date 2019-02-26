@@ -10,17 +10,17 @@ import { Component, OnInit } from '@angular/core'
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-10">
-          <img src="assets/images/pages/jeu/items.png" class="img-responsive" alt="Détails du jeu de plateau" />
+          <img src="assets/images/pages/jeu/items.webp" class="img-responsive" alt="Détails du jeu de plateau" />
         </div>
         <div class="col-12 col-md-2 d-flex flex-md-column spaced justify-content-around">
           <div>
-            <img src="assets/images/pages/jeu/time.png" class="img-responsive" alt="Durée de 45 minutes" />
+            <img src="assets/images/pages/jeu/time.webp" class="img-responsive" alt="Durée de 45 minutes" />
           </div>
           <div>
-            <img src="assets/images/pages/jeu/players.png" class="img-responsive" alt="De 2 à 5 joueurs" />
+            <img src="assets/images/pages/jeu/players.webp" class="img-responsive" alt="De 2 à 5 joueurs" />
           </div>
           <div>
-            <img src="assets/images/pages/jeu/age.png" class="img-responsive" alt="8 ans et plus" />
+            <img src="assets/images/pages/jeu/age.webp" class="img-responsive" alt="8 ans et plus" />
           </div>
         </div>
       </div>
@@ -48,16 +48,18 @@ import { Component, OnInit } from '@angular/core'
         </div>
         <div class="col-sm-4">
           <div style="display:block; text-align:center; padding-bottom:20px;">
-            <a href="assets/documents/JeuAImprimer_V0.9.pdf" target="_blank" class="download-button">Téléchargement<br />GRATUIT</a>
+            <a href="assets/documents/ExpéditionSagesse_Imprimer.pdf" target="_blank" class="download-button"
+              >Téléchargement<br />GRATUIT</a
+            >
           </div>
           <iframe
             id="haWidget"
             src="https://www.helloasso.com/associations/e-science/formulaires/2/widget-bouton"
             style="width:100%;height:70px;border:none;"
           ></iframe>
-          <div style="width:100%;text-align:center;">Propulsé par <a href="https://www.helloasso.com" rel="nofollow">HelloAsso</a></div>
+          <div style="width:100%;text-align:center;">Propulsé par <a href="https://www.helloasso.com" rel="noreferrer">HelloAsso</a></div>
           <div style="display:block; text-align:center;">
-            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noreferrer">
               <img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /> </a
             ><br />
           </div>

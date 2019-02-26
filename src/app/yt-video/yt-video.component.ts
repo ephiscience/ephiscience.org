@@ -1,6 +1,13 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core'
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser'
 
+export interface SocialParts {
+  fb?: string
+  tw?: string
+  yt?: string
+  utip?: string
+}
+
 @Component({
   selector: 'eph-yt-video',
   template: `
@@ -19,14 +26,17 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser'
           </div>
         </div>
         <div class="col-md-2 col-sm-2 social-links">
-          <a *ngIf="social.fb" href="https://www.facebook.com/{{ social.fb }}">
-            <img src="assets/images/social/Facebook-color.svg" class="" alt="facebook link" />
+          <a *ngIf="social.fb" rel="noreferrer" href="https://www.facebook.com/{{ social.fb }}" target="_blank">
+            <img src="assets/images/social/Facebook-color.svg" alt="facebook link" />
           </a>
-          <a *ngIf="social.tw" href="https://twitter.com/{{ social.tw }}">
-            <img src="assets/images/social/Twitter-color.svg" class="" alt="twitter link" />
+          <a *ngIf="social.tw" rel="noreferrer" href="https://twitter.com/{{ social.tw }}" target="_blank">
+            <img src="assets/images/social/Twitter-color.svg" alt="twitter link" />
           </a>
-          <a *ngIf="social.yt" href="https://www.youtube.com/{{ social.yt }}">
-            <img src="assets/images/social/Youtube-color.svg" class="" alt="youtube link" />
+          <a *ngIf="social.yt" rel="noreferrer" href="https://www.youtube.com/{{ social.yt }}" target="_blank">
+            <img src="assets/images/social/Youtube-color.svg" alt="youtube link" />
+          </a>
+          <a *ngIf="social.utip" rel="noreferrer" href="https://www.utip.io/{{ social.utip }}" target="_blank">
+            <img src="assets/images/social/utip.webp" alt="utip link" />
           </a>
         </div>
       </div>
@@ -42,13 +52,17 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser'
       .social-links a {
         margin-bottom: 1rem;
       }
+
+      .social-links img {
+        max-width: 48px;
+      }
     `
   ]
 })
 export class YtVideoComponent implements OnInit, OnChanges {
   @Input() videoId: string
 
-  @Input() social: { fb?: string; tw?: string; yt?: string } = {}
+  @Input() social: SocialParts = {}
 
   saneSrc: SafeUrl
 

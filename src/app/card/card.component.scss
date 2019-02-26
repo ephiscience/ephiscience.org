@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 :host {
   display: contents;
@@ -27,25 +28,25 @@
 }
 
 .card.card-pink {
-  background-image: url('/assets/images/card/card_pink.png');
+  @include background-image-set('/assets/images/card/card_pink.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .card.card-blue {
-  background-image: url('/assets/images/card/card_blue.png');
+  @include background-image-set('/assets/images/card/card_blue.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .card.card-green {
-  background-image: url('/assets/images/card/card_green.png');
+  @include background-image-set('/assets/images/card/card_green.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .card.card-purple {
-  background-image: url('/assets/images/card/card_purple.png');
+  @include background-image-set('/assets/images/card/card_purple.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }

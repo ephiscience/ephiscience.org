@@ -1,2 +1,8 @@
 0.0.0.0:2015
 gzip
+rewrite {
+  to {path} {path}/ /index.html
+}
+header / {
+  -Server
+}

@@ -3,15 +3,9 @@ import { Component, OnInit } from '@angular/core'
 @Component({
   selector: 'eph-logo-white',
   template: `
-    <img src="assets/images/logo/white_logo.png" alt="Ephiscience" class="logo-white" />
+    <eph-img src="assets/images/logo/white_logo.png" alt="Ephiscience" display="fill"></eph-img>
   `,
-  styles: [
-    `
-      .logo-white {
-        width: 100%;
-      }
-    `
-  ]
+  styles: []
 })
 export class LogoWhiteComponent implements OnInit {
   constructor() {}

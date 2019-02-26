@@ -1,6 +1,8 @@
+@import 'mixins';
+
 .jumbotron-top {
   background-color: transparent;
-  background-image: url('/assets/images/jumbotron/jumbo_top.png');
+  @include background-image-set('/assets/images/jumbotron/jumbo_top.png');
   background-size: 100% 100%;
 
   .container {
@@ -10,13 +12,13 @@
 
 .jumbotron-mid {
   background-color: transparent;
-  background-image: url('/assets/images/jumbotron/jumbo_mid.png');
+  @include background-image-set('/assets/images/jumbotron/jumbo_mid.png');
   background-size: 100% 100%;
 }
 
 .jumbotron-bot {
   background-color: transparent;
-  background-image: url('/assets/images/jumbotron/jumbo_bot.png');
+  @include background-image-set('/assets/images/jumbotron/jumbo_bot.png');
   background-size: 100% 100%;
 }
 

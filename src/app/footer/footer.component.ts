@@ -30,15 +30,7 @@ import { Component, OnInit } from '@angular/core'
       </div>
     </div>
   `,
-  styles: [
-    `
-      .footer-ephi {
-        padding-top: 3em;
-        background-image: url('assets/images/footer_block.png');
-        background-size: 100% 100%;
-      }
-    `
-  ]
+  styleUrls: ['footer.component.scss']
 })
 export class FooterComponent implements OnInit {
   constructor() {}

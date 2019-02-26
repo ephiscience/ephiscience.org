@@ -18,7 +18,7 @@ import { Component, OnInit } from '@angular/core'
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand">
-            <img alt="Ephiscience" src="assets/images/logo/logo_small.png" />
+            <eph-img alt="Ephiscience" src="assets/images/logo/logo_small.png" imgHeight="40px"></eph-img>
           </a>
         </div>
         <!-- Main navbar part -->
@@ -58,7 +58,7 @@ import { Component, OnInit } from '@angular/core'
         padding: 0;
       }
 
-      .navbar-brand > img {
+      .navbar-brand eph-img {
         height: 40px;
       }
 

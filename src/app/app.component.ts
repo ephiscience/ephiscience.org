@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core'
   template: `
     <!-- The content below is only a placeholder and can be replaced. -->
     <eph-navbar></eph-navbar>
-    <router-outlet></router-outlet>
+    <router-outlet (activate)="onActivate($event)"></router-outlet>
     <eph-footer></eph-footer>
   `
 })
@@ -17,5 +17,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     // this.rgpd.init()
+  }
+
+  onActivate(event) {
+    window.scrollTo(0, 0)
   }
 }

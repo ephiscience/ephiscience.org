@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core'
     </eph-jumbotron>
     <div class="container">
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-9">
           <p>
             Nous souhaitons permettre aux enfants de développer leur esprit critique pour
             <b>faire face notamment aux “fake news”</b>. Nous souhaitons les aider à développer leur créativité pour
@@ -29,67 +29,19 @@ import { Component, OnInit } from '@angular/core'
             fonction de vos besoins et de votre contexte.
           </p>
         </div>
-        <div class="col-sm-4">
-          <img src="assets/images/pages/ateliers-et-formations/activites1.png" class="img img-responsive" alt="" />
-        </div>
-      </div>
-    </div>
-    <eph-jumbotron type="mid">
-      <h2>Formations "jeu & philo"</h2>
-    </eph-jumbotron>
-    <div class="container">
-      <div class="row">
         <div class="col-sm-3">
-          <img src="assets/images/pages/ateliers-et-formations/activites2.png" class="img img-responsive" alt="" />
-        </div>
-        <div class="col-sm-9">
-          <p>
-            Les ateliers de pratique philosophique ont été l’objet d’assez d’études scientifiques pour pouvoir affirmer qu’ils ont un
-            <b>réel impact positif</b>. Mais pour offrir le meilleur aux enfants, ces pratiques demandent de l’expérience et de
-            l’entraînement.
-          </p>
-          <p>
-            Afin que le plus grand nombre d’enfants puissent bénéficier de ces ateliers, nous tenons à proposer des
-            <b>formations rigoureuses dans la durée</b>. À l’aide de supports divers (vidéos, documents, etc.) et d’une formation
-            présentielle prenant en compte vos contraintes, un suivi sera réalisé pour vous permettre d’être
-            <b>accompagnés tout au long de votre pratique</b> au fil de l’année.
-          </p>
-          <p>
-            <a href="mailto:formations@ephiscience.org">Contactez-nous</a> pour en savoir plus sur nos offres&nbsp;! Tarif sur mesure en
-            fonction de vos besoins et de votre contexte.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <eph-jumbotron type="bot">
-      <h2>Formations "vidéo & éducation"</h2>
-    </eph-jumbotron>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8">
-          <p>
-            Le média vidéo est extrêmement populaire et peut servir dans de nombreux contextes, notamment à visée éducative.
-          </p>
-          <p>
-            Nous souhaitons aider les enseignants ou les étudiants à obtenir les bases nécessaires pour
-            <b>apprendre en autonomie</b> à développer les aspects importants de la vidéo. Nos formations mêlent apprentissage théorique et
-            pratique, et incluent un <b>mentorat en fonction de vos besoins</b>. De nombreuses ressources vous seront fournies
-            <b>clés en main</b> pour continuer vos apprentissages autant que nécessaire.
-          </p>
-          <p>
-            <a href="mailto:formations@ephiscience.org">Contactez-nous</a> pour en savoir plus sur nos offres&nbsp;! Tarif sur mesure en
-            fonction de vos besoin et de votre contexte.
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <img src="assets/images/pages/ateliers-et-formations/activites1.png" class="img img-responsive" alt="" />
+          <eph-img src="assets/images/pages/ateliers-et-formations/activites1.png" display="fill"></eph-img>
         </div>
       </div>
     </div>
   `,
-  styles: []
+  styles: [
+    `
+      .parent-width {
+        width: 100%;
+      }
+    `
+  ]
 })
 export class AteliersEtFormationsComponent implements OnInit {
   constructor() {}

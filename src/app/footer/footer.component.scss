@@ -1,0 +1,7 @@
+@import 'mixins';
+
+.footer-ephi {
+  @include background-image-set('/assets/images/footer_block.png');
+  background-size: 100% 100%;
+  padding-top: 3em;
+}

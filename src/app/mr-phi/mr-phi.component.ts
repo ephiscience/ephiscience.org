@@ -15,7 +15,8 @@ import { Component, OnInit } from '@angular/core'
         <div class="row">
           <div class="col-sm-9 col-xs-12">
             <p>
-              La dernière vidéo :
+              ÉPhiScience a reçu une aide du CNC pour aider au développement de la chaîne Monsieur Phi. Nous allons donc participer à la
+              production de 10 vidéos que vous retrouverez sur sa chaîne. Abonnez-vous pour ne rien rater !
             </p>
             <eph-last-yt-video channelId="UCqA8H22FwgBVcF3GJpp0MQw"></eph-last-yt-video>
           </div>

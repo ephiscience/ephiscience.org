@@ -6,55 +6,40 @@ import { Component, OnInit } from '@angular/core'
     <eph-section type="top">
       <eph-section-title>
         <div class="col">
-          <h2>Mission</h2>
+          <h2>Notre vision</h2>
         </div>
       </eph-section-title>
       <eph-section-content>
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-md-8">
             <p>
-              ÉPhiScience est une association loi 1901 ayant pour objectif de créer des solutions astucieuses aux problèmes sociétaux et
-              éducatifs.
-            </p>
-
-            <p>
-              Elle s’inscrit dans la continuité du rapport «&nbsp;Vers une société apprenante&nbsp;» de François Taddei. Pour construire
-              cette société, nous visons à <b>développer une culture éducative et scientifique</b> à travers des modèles libres et
-              permettant un passage à l’échelle.
+              L’humanité fait face à des défis nouveaux et pour les relever, des changements profonds semblent nécessaires. Parce que
+              l’éducation représente à la fois un défi, et un potentiel énorme pour notre avenir, nous souhaitons réfléchir et agir afin de
+              faciliter l'accès pour le plus grand nombre à une
+              <b>éducation de qualité</b> - quatrième des dix-sept Objectifs de Développement Durable définis par l’ONU.
             </p>
             <p>
-              Nous agissons partout en France - et au Québec - en coopérant avec divers acteurs de l’éducation et du monde associatif.
-            </p>
-            <br />
-            <p>
-              <b>L'éducation</b> d'aujourd'hui est la base de la société de demain. S'informer pour mieux comprendre l'éducation est donc
-              primordial et concerne chacun d'entre nous. Notre association s'inscrit dans une
-              <b>démarche d'information et de réflexion autour de l'éducation</b>, pour tous : apprenants et transmetteurs de savoirs. Notre
-              chaîne YouTube <a href="https://www.youtube.com/channel/UC6wF0stG_iXMO4mIXM9g3YQ" target="_blank">Edukey</a>
-              propose des capsules vidéos pour mieux comprendre l'éducation.
+              Mais qu’est-ce qu’une éducation de qualité dans un monde incertain ? Et comment la développer malgré sa grande complexité ?<br />
+              La
+              <b>philosophie</b> apporte un éclairage sur ces questions en nous amenant à questionner les valeurs et les choix éthiques en
+              éducation. Les <b>sciences de l’éducation</b> et de <b>l’apprentissage</b> quant à elles permettent un recul critique pour
+              faire de meilleurs choix éducatifs.
             </p>
             <p>
-              <b>La philosophie</b> pratique permet de développer sa capacité de réflexion à tout âge. Construire un argumentaire,
-              développer son point de vue et écouter celui des autres sont autant de compétences cruciales pour bâtir une société
-              apprenante. Notre association encourage et soutient donc ses membres à se former pour encadrer des ateliers dans le domaine.
-              Nous concevons également un jeu de plateau pour apporter une touche ludique dans ces apprentissages. La chaîne YouTube
-              <a href="https://www.youtube.com/channel/UCqA8H22FwgBVcF3GJpp0MQw" target="_blank">Monsieur Phi</a>
-              permet d'approcher la philosophie et son histoire avec un savant mélange de légèreté et de rigueur.
+              C’est ce constat qui a donné son nom à ÉPhiScience, composée des trois mots -
+              <b>Éducation, Philosophie, Science</b> - qui représentent nos thèmes d’intérêt et qui orientent nos actions. Et au delà de ces
+              thèmes, c’est la recherche d’une certaine <b>efficience</b> qui nous guide. Ceci nous conduit donc à chercher des leviers afin
+              de maximiser notre impact pour permettre une éducation de qualité.
             </p>
             <p>
-              <b>La science</b> et la démarche scientifique constituent les fondements de la production de savoirs solides dans notre
-              société. En faisant sa promotion et en la rendant accessible et attrayante, nous aidons tout un chacun à construire une
-              représentation du monde fiable tout en nourrissant notre curiosité naturelle. Alors que la technologie est omniprésente
-              aujourd'hui, il nous apparaît important de donner à chacun les clefs pour comprendre les enjeux qui l'accompagnent.
-            </p>
-            <p>
-              Dans le but d’incarner nos valeurs de progrès social,
-              <b>notre organisation se veut horizontale et égalitaire</b>. Ainsi chaque membre actif peut trouver sa place et contribuer par
-              sa créativité personnelle à la qualité et à la diversité de notre travail.
+              Nous choisissons de mobiliser l’intelligence collective et la coopération pour que ce que nous apprenons puisse être partagé,
+              diffusé, et appris plus facilement par tous. C’est pourquoi tous nos projets sont open-source et qu’ils sont ouverts à la
+              contribution de chacun. Et pourquoi pas à
+              <b>votre</b> contribution !
             </p>
           </div>
-          <div class="col-sm-4">
-            <img src="assets/images/pages/association/mission.png" alt="Mission" />
+          <div class="col-md-4">
+            <eph-img src="assets/images/pages/association/mission.png" alt="Mission" display="fill"></eph-img>
           </div>
         </div>
       </eph-section-content>
@@ -63,7 +48,7 @@ import { Component, OnInit } from '@angular/core'
     <eph-section type="mid">
       <eph-section-title>
         <div class="col">
-          <h2>L'équipe</h2>
+          <h2>Notre équipe</h2>
         </div>
       </eph-section-title>
 
@@ -71,38 +56,88 @@ import { Component, OnInit } from '@angular/core'
         <div class="row">
           <div class="col">
             <p>
-              Nos membres sont principalement répartis sur deux continents :
+              ÉPhiScience comporte environ 15 membres de plusieurs nationalités répartis entre le Québec et la France.
             </p>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-12 col-md-6 col-lg-3 d-flex flex-column">
             <div class="card flex-grow-1">
-              <img class="card-img-top" src="assets/images/team/pleen.jpg" alt="Pleen le Jeune" />
+              <eph-img class="card-img-top" src="assets/images/team/pleen.png" alt="Pleen le Jeune" display="fill"></eph-img>
               <div class="card-body">
                 <p class="card-text">
-                  En Europe et particulièrement en France, l'association comporte 5 membres actifs soutenus et encouragés par le président :
-                  <a href="mailto:pleen@ephiscience.org?subject=Contact">Pleen Le Jeune</a>
+                  En France l’association est coordonnée par <a href="mailto:pleen@ephiscience.org?subject=Contact">Pleen</a>
+                </p>
+                <p class="card-text">
+                  Pleen est président de l’association ÉPhiScience. Il est également créateur d’EduKey et concepteur du jeu Expédition
+                  Sagesse.<br />
+                  Il aime se poser des questions et manger des mangues.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card">
-              <img class="card-img-top" src="assets/images/team/lisette.jpg" alt="Lisette Prince" />
+              <eph-img class="card-img-top" src="assets/images/team/lisette.png" alt="Lisette Prince" display="fill"></eph-img>
               <div class="card-body">
                 <p class="card-text">
-                  En Amérique, et particulièrement au Québec, l'association comporte 6 membres actifs coordonnés et motivés par la
-                  responsable Québec : <a href="mailto:coaching@lisetteprince.ca?subject=Contact">Lisette Prince</a>
+                  Au Québec l’association est coordonnée par <a href="mailto:coaching@lisetteprince.ca?subject=Contact">Lisette</a>
+                </p>
+                <p class="card-text">
+                  Lisette est également animatrice d’ateliers philo et coach.<br />
+                  Elle aime découvrir de nouvelles choses et tout ce qui touche le processus créatif.
                 </p>
               </div>
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col">
+            <p>
+              Si vous souhaitez participer au développer d’une éducation de qualité et que la philosophie ou les sciences de l’éducation
+              vous semblent nécessaires,
+              <b>n’hésitez pas à nous rejoindre</b> ! Toute personne partageant nos valeurs peut devenir membre, et
+              <b>votre implication sera la bienvenue</b>. Que vous ayez un projet à nous soumettre ou l’envie de faire partie de ce qui
+              existe déjà, nous serons ravis d’apprendre à vous connaître. Écrivez-nous vite à
+              <a href="mailto:bureau@ephiscience.org">bureau@ephiscience.org</a>
+            </p>
+          </div>
+        </div>
+      </eph-section-content>
+    </eph-section>
+    <eph-section type="bot">
+      <eph-section-title><h2>Nos partenaires</h2></eph-section-title>
+      <eph-section-content>
+        <div class="row">
+          <div class="col-md-8">
+            <p>
+              ÉPhiScience est également un club étudiant du Centre de Recherches Interdisciplinaires (CRI) à Paris.
+            </p>
+            <p>
+              De nombreux projets ont été menés grâce à l’aide du CRI, notamment grâce à la mise à disposition d’espaces ou au feedback de
+              professionnels du jeu éducatif (Game Lab).
+            </p>
+            <p>
+              Si vous représentez une structure qui participe elle aussi au développement d’une éducation de qualité, n’hésitez pas à nous
+              contacter pour nous proposer un partenariat ! Que ce soit pour relayer nos activités respectives ou même construire des
+              projets communs, nous étudierons attentivement toute proposition. Écrivez-nous vite à
+              <a href="mailto:bureau@ephiscience.org">bureau@ephiscience.org</a>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/images/logo/CRI.svg" alt="CRI Paris" class="parent-width" />
+          </div>
+        </div>
       </eph-section-content>
     </eph-section>
   `,
-  styles: []
+  styles: [
+    `
+      img.parent-width {
+        width: 100%;
+      }
+    `
+  ]
 })
 export class AssociationComponent implements OnInit {
   constructor() {}

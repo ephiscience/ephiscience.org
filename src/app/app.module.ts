@@ -35,6 +35,8 @@ import { SectionTitleComponent } from './section-title/section-title.component'
 import { SectionComponent } from './section/section.component'
 import { SocialColumnComponent } from './social-column/social-column.component'
 import { YtVideoComponent } from './yt-video/yt-video.component'
+import { ServiceWorkerModule } from '@angular/service-worker'
+import { ImgComponent } from './img/img.component'
 
 @NgModule({
   declarations: [
@@ -61,7 +63,8 @@ import { YtVideoComponent } from './yt-video/yt-video.component'
     AteliersEtFormationsComponent,
     JeuComponent,
     LastYtVideoComponent,
-    SocialColumnComponent
+    SocialColumnComponent,
+    ImgComponent
   ],
   imports: [
     BrowserModule,
@@ -71,7 +74,8 @@ import { YtVideoComponent } from './yt-video/yt-video.component'
     !environment.production ? StoreDevtoolsModule.instrument() : [],
     BrowserAnimationsModule,
     HttpClientModule,
-    HttpClientJsonpModule
+    HttpClientJsonpModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
     // StoreModule.forRoot({ ng_rgpd: ngRgpdReducer }),
     // NgRgpdModule.forRoot({
     //   units: [{ id: 'Facebook', scriptUrl: 'mlpijdqlzd' }]

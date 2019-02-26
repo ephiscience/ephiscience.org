@@ -12,12 +12,13 @@ interface Feed {
 @Component({
   selector: 'eph-last-yt-video',
   template: `
-    <eph-yt-video [videoId]="videoId"></eph-yt-video>
+    <eph-yt-video [videoId]="videoId" [social]="social"></eph-yt-video>
   `,
   styles: []
 })
 export class LastYtVideoComponent implements OnInit {
   @Input() channelId: string
+  @Input() social: { fb?: string; tw?: string; yt?: string } = {}
 
   videoId: string = null
 
