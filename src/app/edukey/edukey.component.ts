@@ -20,9 +20,8 @@ import { Component, OnInit } from '@angular/core'
           </p>
           <eph-last-yt-video channelId="UC6wF0stG_iXMO4mIXM9g3YQ"></eph-last-yt-video>
           <p>
-            Si vous aimez EduKey, n’hésitez pas à nous soutenir via uTip en faisant un don ou en regardant des publicités ! [insérer bouton
-            “soutenir EduKey” qui redirige vers uTip] Vous pouvez également partager les vidéos qui vous plaisent et nous laisser des
-            commentaires, on lira tout et on répond à la plupart.
+            Si vous aimez EduKey, n’hésitez pas à nous soutenir via uTip en faisant un don ou en regardant des publicités ! Vous pouvez
+            également partager les vidéos qui vous plaisent et nous laisser des commentaires, on lira tout et on répond à la plupart.
           </p>
           <p>
             Nous cherchons également des gens sur Paris qui peuvent aider pour le cadrage ou le montage. Ou si quelqu’un peut donner des
