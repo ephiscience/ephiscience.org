@@ -1,6 +1,12 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, Injectable, OnInit } from '@angular/core'
+import { Subject } from 'rxjs'
 
 // import { NgRgpdService } from 'src/app/ng-rgpd/ng-rgpd.service'
+
+@Injectable()
+export class RouterActivateEventService {
+  activated = new Subject()
+}
 
 @Component({
   selector: 'eph-root',
@@ -9,11 +15,13 @@ import { Component, OnInit } from '@angular/core'
     <eph-navbar></eph-navbar>
     <router-outlet (activate)="onActivate($event)"></router-outlet>
     <eph-footer></eph-footer>
-  `
+  `,
+  providers: [RouterActivateEventService]
 })
 export class AppComponent implements OnInit {
-  constructor() // private rgpd: NgRgpdService
-  {}
+  constructor(
+    private routerEventService: RouterActivateEventService // private rgpd: NgRgpdService
+  ) {}
 
   ngOnInit(): void {
     // this.rgpd.init()
@@ -21,5 +29,6 @@ export class AppComponent implements OnInit {
 
   onActivate(event) {
     window.scrollTo(0, 0)
+    this.routerEventService.activated.next()
   }
 }

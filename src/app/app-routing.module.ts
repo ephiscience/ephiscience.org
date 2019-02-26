@@ -10,7 +10,7 @@ import { MrPhiComponent } from 'src/app/mr-phi/mr-phi.component'
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: IndexComponent },
   { path: 'association', component: AssociationComponent },
-  { path: 'ateliers-et-formations', component: AteliersEtFormationsComponent },
+  { path: 'ateliers', component: AteliersEtFormationsComponent },
   { path: 'edukey', component: EdukeyComponent },
   { path: 'jeu', component: JeuComponent },
   { path: 'mr-phi', component: MrPhiComponent }

@@ -12,7 +12,9 @@ import { Component, OnInit } from '@angular/core'
             <p>contact@ephiscience.org</p>
             <eph-fb-like></eph-fb-like>
           </div>
-          <div class="col-sm-6"><eph-contact-form></eph-contact-form></div>
+          <div class="col-sm-6">
+            <!--<eph-contact-form></eph-contact-form>-->
+          </div>
           <div class="col-sm-3">
             <h4>Liens utiles</h4>
             <ul class="footer-links">

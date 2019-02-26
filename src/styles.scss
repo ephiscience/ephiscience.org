@@ -6,8 +6,9 @@
 @import '~typeface-roboto/index.css';
 
 @import 'variables';
-
-@import '~bootstrap/scss/bootstrap';
+@import 'defines';
+@import 'bootstrap';
+//@import '~bootstrap/scss/bootstrap';
 
 html,
 body {

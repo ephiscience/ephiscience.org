@@ -60,8 +60,8 @@ import { Component, OnInit } from '@angular/core'
             </p>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-6 col-lg-3 d-flex flex-column">
+        <div class="row justify-content-center d-flex mb-3">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 mb-sm-0 d-flex">
             <div class="card flex-grow-1">
               <eph-img class="card-img-top" src="assets/images/team/pleen.png" alt="Pleen le Jeune" display="fill"></eph-img>
               <div class="card-body">
@@ -76,7 +76,7 @@ import { Component, OnInit } from '@angular/core'
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
             <div class="card">
               <eph-img class="card-img-top" src="assets/images/team/lisette.png" alt="Lisette Prince" display="fill"></eph-img>
               <div class="card-body">
