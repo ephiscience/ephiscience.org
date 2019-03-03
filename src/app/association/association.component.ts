@@ -94,7 +94,7 @@ import { Component, OnInit } from '@angular/core'
         <div class="row">
           <div class="col">
             <p>
-              Si vous souhaitez participer au développer d’une éducation de qualité et que la philosophie ou les sciences de l’éducation
+              Si vous souhaitez participer au développement d’une éducation de qualité et que la philosophie ou les sciences de l’éducation
               vous semblent nécessaires,
               <b>n’hésitez pas à nous rejoindre</b> ! Toute personne partageant nos valeurs peut devenir membre, et
               <b>votre implication sera la bienvenue</b>. Que vous ayez un projet à nous soumettre ou l’envie de faire partie de ce qui
