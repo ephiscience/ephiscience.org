@@ -4,7 +4,7 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core'
   selector: 'eph-img',
   template: `
     <picture>
-      <source [srcset]="webp" />
+      <source [srcset]="webp" type="image/webp" />
       <img [src]="src" [alt]="alt" class="{{ display }}" [style.height]="imgHeight" />
     </picture>
   `,
