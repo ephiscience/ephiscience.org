@@ -20,8 +20,5 @@
 }
 
 @mixin background-image-set($url) {
-  $original: url($url);
-  $webp: url(replace-ext($url, webp));
-  background-image: $original;
-  background-image: $webp;
+  background-image: url($url);
 }

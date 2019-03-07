@@ -19,7 +19,7 @@ export const SOCIAL_MR_PHI = { fb: 'graindephilo', tw: 'MonsieurPhi', yt: 'chann
         <div class="row justify-content-center">
           <eph-card color="purple">
             <eph-card-title>
-              <h2><eph-img src="assets/images/card/icon/test_icon.webp" alt="icon"></eph-img> Jeux</h2>
+              <h2><eph-img src="assets/images/card/icon/test_icon.png" alt="icon"></eph-img> Jeux</h2>
             </eph-card-title>
             <eph-card-content>
               <p>Expédition Sagesse est un jeu original pour faire réfléchir tout le monde à partir de 8 ans.</p>
@@ -33,7 +33,7 @@ export const SOCIAL_MR_PHI = { fb: 'graindephilo', tw: 'MonsieurPhi', yt: 'chann
 
           <eph-card color="blue">
             <eph-card-title>
-              <h2><img src="assets/images/card/icon/test_icon.webp" alt="icon" /> Ateliers</h2>
+              <h2><img src="assets/images/card/icon/test_icon.png" alt="icon" /> Ateliers</h2>
             </eph-card-title>
             <eph-card-content>
               <div class="text-middle card-text">
