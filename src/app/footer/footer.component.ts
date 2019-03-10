@@ -6,26 +6,22 @@ import { Component, OnInit } from '@angular/core'
     <div class="footer footer-ephi">
       <div class="container">
         <div class="row">
-          <div class="col-sm-3">
+          <div class="col-3">
             <eph-logo-white></eph-logo-white>
             <p></p>
-            <p>contact@ephiscience.org</p>
+            <p><a href="mailto:contact@ephiscience.org">contact@ephiscience.org</a></p>
             <eph-fb-like></eph-fb-like>
           </div>
-          <div class="col-sm-6">
-            <!--<eph-contact-form></eph-contact-form>-->
-          </div>
-          <div class="col-sm-3">
+          <div class="col-4 ml-auto">
             <h4>Liens utiles</h4>
             <ul class="footer-links">
-              <li><a>L'association</a></li>
-              <li><a>EduKey</a></li>
-              <li><a>Activités</a></li>
-              <li><a>Jeu</a></li>
-              <li><a>Actualités</a></li>
-              <li><a>Administration</a></li>
+              <li><a routerLink="/association">L'association</a></li>
+              <li><a routerLink="/edukey">EduKey</a></li>
+              <li><a routerLink="/activites">Activités</a></li>
+              <li><a routerLink="/jeu">Jeu</a></li>
             </ul>
-            Envie de nous rejoindre&nbsp;? Contactez-nous pour qu'on se rencontre&nbsp;!
+            Envie de nous rejoindre ?<br />
+            <a href="mailto:contact@ephiscience.org">Contactez-nous</a> pour qu'on se rencontre !
           </div>
         </div>
         <br />
