@@ -39,12 +39,24 @@ import { SOCIAL_EDUKEY } from '../index/index.component'
         <div class="col-sm-4">
           <div style="display:block; text-align:center; padding-bottom:20px;">
             <a
-              href="assets/documents/ExpéditionSagesse_Imprimer.pdf"
+              href="../../assets/documents/ExpeditionSagesse_Imprimer.pdf"
               target="_blank"
               class="btn btn-lg btn-secondary text-white font-weight-bold px-4 py-3"
               style="border-radius: 5px"
+              download
             >
               Téléchargement<br />GRATUIT
+            </a>
+          </div>
+          <div style="display:block; text-align:center; padding-bottom:20px;">
+            <a
+              href="assets/documents/A_Wisdom_Journey.pdf"
+              target="_blank"
+              class="btn btn-sm btn-secondary text-white font-weight-bold"
+              style="border-radius: 5px"
+              download
+            >
+              English version
             </a>
           </div>
           <div style="display:block; text-align:center; padding-bottom:20px;">
