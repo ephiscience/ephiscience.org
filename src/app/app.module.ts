@@ -1,10 +1,15 @@
-import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http'
+import { HttpClient, HttpClientJsonpModule, HttpClientModule } from '@angular/common/http'
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { ServiceWorkerModule } from '@angular/service-worker'
 import { StoreModule } from '@ngrx/store'
 import { StoreDevtoolsModule } from '@ngrx/store-devtools'
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
+import { safeLoad } from 'js-yaml'
 import { FacebookModule } from 'ngx-facebook'
+import { Observable } from 'rxjs'
+import { map } from 'rxjs/operators'
 // import { NgRgpdModule } from 'src/app/ng-rgpd/ng-rgpd.module'
 import { environment } from '../environments/environment'
 
@@ -20,6 +25,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component'
 import { EdukeyComponent } from './edukey/edukey.component'
 import { FbLikeComponent } from './fb-like/fb-like.component'
 import { FooterComponent } from './footer/footer.component'
+import { ImgComponent } from './img/img.component'
 import { IndexComponent } from './index/index.component'
 import { JeuComponent } from './jeu/jeu.component'
 import { JumbotronComponent } from './jumbotron/jumbotron.component'
@@ -35,8 +41,18 @@ import { SectionTitleComponent } from './section-title/section-title.component'
 import { SectionComponent } from './section/section.component'
 import { SocialColumnComponent } from './social-column/social-column.component'
 import { YtVideoComponent } from './yt-video/yt-video.component'
-import { ServiceWorkerModule } from '@angular/service-worker'
-import { ImgComponent } from './img/img.component'
+
+export class YamlTranslationLoader implements TranslateLoader {
+  constructor(private http: HttpClient, private prefix: string, private suffix = '.yaml') {}
+
+  getTranslation(lang: string): Observable<Object> {
+    return this.http.get(`${this.prefix}/${lang}${this.suffix}`, { responseType: 'text' }).pipe(map(yaml => safeLoad(yaml)))
+  }
+}
+
+export function createTranslateLoader(http: HttpClient) {
+  return new YamlTranslationLoader(http, './assets/i18n')
+}
 
 @NgModule({
   declarations: [
@@ -75,7 +91,14 @@ import { ImgComponent } from './img/img.component'
     BrowserAnimationsModule,
     HttpClientModule,
     HttpClientJsonpModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient]
+      }
+    })
     // StoreModule.forRoot({ ng_rgpd: ngRgpdReducer }),
     // NgRgpdModule.forRoot({
     //   units: [{ id: 'Facebook', scriptUrl: 'mlpijdqlzd' }]

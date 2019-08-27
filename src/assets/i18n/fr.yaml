@@ -1,0 +1,161 @@
+common:
+  know_more: En savoir plus
+page:
+  index:
+    title: 'Éducation<br/>Philosophe<br/>Science'
+    education_toolbox:
+      title: Boîte à outils éducative
+      cards:
+        activities:
+          title: Ateliers
+          quality_learning: Des ateliers philo de qualité où l’apprentissage est plaisant.
+          critical_thinking_and_more: Développent l’esprit critique, la coopération, la créativité et bien d’autres choses !
+          in_or_out_schools: Interventions dans les écoles et en dehors dès 6 ans et plus.
+        game:
+          title: Jeux
+          game_for_everyone: Expédition Sagesse est un jeu original pour faire réfléchir tout le monde à partir de 8 ans.
+          built_from_expertise: Il est conçu à partir d’expertises sur le jeu, l’éducation et la philosophie.
+          open_source_and_free: Disponible open-source et imprimable gratuitement sur notre site !
+    edukey:
+      title: Edukey
+      subtitle: Vidéos de médiation scientifique de l'éducation
+    mr_phi:
+      title: Monsieur Phi
+  organization:
+    vision:
+      title: Notre vision
+      new_challenges: |
+        L’humanité fait face à des défis nouveaux et pour les relever, des changements profonds semblent nécessaires. Parce que
+        l’éducation représente à la fois un défi, et un potentiel énorme pour notre avenir, nous souhaitons réfléchir et agir afin de
+        faciliter l'accès pour le plus grand nombre à une
+        <b>éducation de qualité</b> - quatrième des dix-sept Objectifs de Développement Durable définis par l’ONU.
+      what_is_quality_education: |
+        Mais qu’est-ce qu’une éducation de qualité dans un monde incertain ? Et comment la développer malgré sa grande complexité ?<br />
+        La <b>philosophie</b> apporte un éclairage sur ces questions en nous amenant à questionner les valeurs et les choix éthiques en
+        éducation. Les <b>sciences de l’éducation</b> et de <b>l’apprentissage</b> quant à elles permettent un recul critique pour
+        faire de meilleurs choix éducatifs.
+      origin_of_name: |
+        C’est ce constat qui a donné son nom à ÉPhiScience, composée des trois mots -
+        <b>Éducation, Philosophie, Science</b> - qui représentent nos thèmes d’intérêt et qui orientent nos actions. Et au delà de ces
+        thèmes, c’est la recherche d’une certaine <b>efficience</b> qui nous guide. Ceci nous conduit donc à chercher des leviers afin
+        de maximiser notre impact pour permettre une éducation de qualité.
+      we_choose_to_mobilize_collective_intelligence: |
+        Nous choisissons de mobiliser l’intelligence collective et la coopération pour que ce que nous apprenons puisse être partagé,
+        diffusé, et appris plus facilement par tous. C’est pourquoi tous nos projets sont open-source et qu’ils sont ouverts à la
+        contribution de chacun. Et pourquoi pas à <b>votre</b> contribution !
+    team:
+      title: Notre équipe
+      members_between_quebec_and_france: ÉPhiScience comporte environ 15 membres de plusieurs nationalités répartis entre le Québec et la France.
+      members:
+        pleen:
+          intro: En France l’association est coordonnée par <a href="mailto:pleen@ephiscience.org?subject=Contact">Pleen</a>
+          text: Pleen est président de l’association ÉPhiScience. Il est également créateur d’EduKey et concepteur du jeu Expédition Sagesse.<br />Il aime se poser des questions et manger des mangues.
+        lisette:
+          intro: Au Québec l’association est coordonnée par <a href="mailto:coaching@lisetteprince.ca?subject=Contact">Lisette</a>
+          text: Lisette est également animatrice d’ateliers philo et coach.<br />Elle aime découvrir de nouvelles choses et tout ce qui touche le processus créatif.
+      join_us: |
+        Si vous souhaitez participer au développement d’une éducation de qualité et que la philosophie ou les sciences de l’éducation vous semblent nécessaires,
+        <b>n’hésitez pas à nous rejoindre</b> ! Toute personne partageant nos valeurs peut devenir membre, et
+        <b>votre implication sera la bienvenue</b>. Que vous ayez un projet à nous soumettre ou l’envie de faire partie de ce qui
+        existe déjà, nous serons ravis d’apprendre à vous connaître. Écrivez-nous vite à <a href="mailto:bureau@ephiscience.org">bureau@ephiscience.org</a>
+    partners:
+      cri:
+        student_club: ÉPhiScience est également un club étudiant du Centre de Recherches Interdisciplinaires (CRI) à Paris.
+        many_projects: De nombreux projets ont été menés grâce à l’aide du CRI, notamment grâce à la mise à disposition d’espaces ou au feedback de professionnels du jeu éducatif (Game Lab).
+      contact_us: |
+        Si vous représentez une structure qui participe elle aussi au développement d’une éducation de qualité, n’hésitez pas à nous
+        contacter pour nous proposer un partenariat ! Que ce soit pour relayer nos activités respectives ou même construire des
+        projets communs, nous étudierons attentivement toute proposition. Écrivez-nous vite à
+        <a href="mailto:bureau@ephiscience.org">bureau@ephiscience.org</a>
+
+  edukey:
+    title: Edukey, venez participey
+    subtitle: Médiation des sciences de l’éducation
+    description: |
+      EduKey s’adresse principalement aux enseignants, ou aux parents et étudiants, et plus généralement à toute personne qui
+      s’intéresse à l’éducation. L’objectif est de pouvoir faire le lien entre la recherche scientifique et le terrain : quelles sont
+      les meilleures pratiques qui sont validées à la fois par les sciences et l’expertise du terrain ? Comment faire mieux connaître
+      des initiatives intéressantes pour les enseignants ? Voici un aperçu sur EduKey !
+    support_us: |
+      Si vous aimez EduKey, n’hésitez pas à nous soutenir via uTip en faisant un don ou en regardant des publicités ! Vous pouvez
+      également partager les vidéos qui vous plaisent et nous laisser des commentaires, on lira tout et on répond à la plupart.
+    looking_for_help: |
+      Nous cherchons également des gens sur Paris qui peuvent aider pour le cadrage ou le montage. Ou si quelqu’un peut donner des
+      cours d’After Effects, on est preneurs ! Écrivez à <a href="mailto:pleen@ephiscience.org">pleen@ephiscience.org</a>
+    opportunities: |
+      Pour toute proposition commerciale (placement de produit), merci d’écrire à <a href="mailto:bureau@ephiscience.org">bureau@ephiscience.org</a>
+
+  mr_phi:
+    title: Monsieur Phi
+    subtitle: Vulgarisation de philosophie
+    description: |
+      ÉPhiScience a reçu une aide du CNC pour aider au développement de la chaîne Monsieur Phi. Nous allons donc participer à la
+      production de 10 vidéos que vous retrouverez sur sa chaîne. Abonnez-vous pour ne rien rater !
+
+  activities:
+    title:
+    children_and_critical_thinking: |
+      Nous souhaitons permettre aux enfants de développer leur esprit critique pour
+      <b>faire face notamment aux “fake news”</b>. Nous souhaitons les aider à développer leur créativité pour
+      <b>résoudre les problèmes d’aujourd’hui et de demain</b> comme par exemple le changement climatique. Nous souhaitons les
+      encourager à développer une écoute et une <b>compréhension de l’autre</b> à travers les différences.
+    members_are_qualified: |
+      Plusieurs personnes dans l’association ont été formées rigoureusement pour donner des ateliers de philosophie pour enfants. De
+      plus, la création d’un jeu par l’association et son utilisation intégrée dans le cadre d’ateliers en fait un
+      <b>outil original, unique et de grande qualité !</b>
+    schools_or_groups: |
+      Nos offres sont valables en contexte scolaire, périscolaire ou même ailleurs pour des groupes d’enfants à partir de 6 ans.
+      Idéalement à raison d’une heure par semaine - modulable selon vos besoins.
+    know_more: <a href="mailto:ateliers-philo@ephiscience.org">Contactez-nous</a> pour en savoir plus sur nos offres ! Tarif sur mesure en fonction de vos besoins et de votre contexte.
+  game:
+    the_game:
+      title: 'Jeu de plateau : Expédition Sagesse'
+      catchphrase: |
+        Trouvez des réponses astucieuses à ces questions et bien d'autres pour avancer ensemble sur le chemin vers le mont Sagesse, à la
+        poursuite d'anciens philosophes ! Mais prenez garde, des sortilèges vous affecteront et la progression ne sera facilitée
+        que pour les plus sages d'entre vous.
+      multiple_versions: |
+        Le jeu sera jouable avec ou sans le plateau selon plusieurs versions. Quatre niveaux de difficultés existent pour s’adapter aux
+        âges et à l’expérience de tous les joueurs. Plus de 200 questions réparties en 5 catégories vous attendent !
+      created_for_the_needs_of_teachers: |
+        Prévu pour correspondre aux besoins des enseignants,
+        <b>ce jeu s’appuie sur le socle commun de connaissances, de compétences et de culture</b>. Il a bénéficié de l’appui et
+        l’expertise du GameLab du Centre de Recherches Interdisciplinaires et est pensé à partir du travail académique en philosophie pour enfants.
+      will_you_take_the_challenge: Saurez-vous relever le défi ?
+      buttons:
+        free_download: Téléchargement<br/>GRATUIT
+        english_version: English Version
+        donate: Faire un don
+    go_further:
+      title:
+      can_be_downloaded: |
+        Le jeu est beau, il est jouable en le téléchargeant
+        <b>gratuitement</b> et en l’imprimant depuis chez vous. Merveilleux ! Mais il ne vous aura probablement pas échappé que
+        pour jouer il vous manque un sablier. Vous pourrez bientôt imprimer des pions, mais pour le sablier, les téléphones ont une
+        fonction qui permettra de le remplacer facilement.
+      create_a_tool: |
+        Un autre chantier nous tient particulièrement à cœur : créer un outil sur cette page qui vous permette de créer vos propres
+        questions qui seront mises en page automatiquement selon le modèle en vigueur. Ainsi vous, et n’importe qui d’autre, pourrez
+        piocher dans une base de données collective permettant de garder les questions qui vous plaisent le plus, et créer un jeu
+        unique. <b>Votre jeu</b>.
+      for_education: |
+        Par ailleurs, notre association a une vocation pédagogique. L’éducation étant au cœur de nos actions, nous avons pensé le jeu de
+        manière à ce qu’il puisse être utilisé dans un contexte scolaire. Pour faciliter la tâche des éducateurs et des éducatrices,
+        <b>nous travaillons également sur un guide pédagogique</b> pour faciliter la prise en main de l’outil. Nos formations
+        compléteront ce travail pour celles et ceux qui voudront garantir les bienfaits éducatifs de ce jeu !
+      create_pro_version: |
+        <b>Notre travail est bénévole, son fruit est libre</b>. Pourtant nous souhaitons éditer une version professionnelle du jeu pour
+        ceux et celles qui souhaiteront s’en procurer un exemplaire plus pratique et plus agréable que les impressions « maison ». Vous
+        pouvez nous aider en faisant un don ! Nous pourrons ainsi éditer un plus grand nombre de jeux de la meilleure qualité
+        possible. <b>Votre soutien compte, alors merci</b> !
+
+navbar:
+  index: Accueil
+  organization: L'Association
+  edukey: Edukey
+  pr_phi: Mr. Phi
+  game: Jeu
+footer:
+  useful_links: Liens utiles
+  want_to_join: Envie de nous rejoindre ?
+  contact_us: Contactez-nous pour qu'on se rencontre !

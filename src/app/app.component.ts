@@ -1,4 +1,5 @@
 import { Component, Injectable, OnInit } from '@angular/core'
+import { TranslateService } from '@ngx-translate/core'
 import { Subject } from 'rxjs'
 
 // import { NgRgpdService } from 'src/app/ng-rgpd/ng-rgpd.service'
@@ -20,11 +21,14 @@ export class RouterActivateEventService {
 })
 export class AppComponent implements OnInit {
   constructor(
+    private translate: TranslateService,
     private routerEventService: RouterActivateEventService // private rgpd: NgRgpdService
   ) {}
 
   ngOnInit(): void {
     // this.rgpd.init()
+    this.translate.setDefaultLang('fr')
+    this.translate.use('fr')
   }
 
   onActivate(event) {

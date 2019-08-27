@@ -6,18 +6,15 @@ import { Component, OnInit } from '@angular/core'
     <eph-section type="top">
       <eph-section-title>
         <div class="col">
-          <h2>Monsieur Phi</h2>
-          <h3>Vulgarisation de philosophie</h3>
+          <h2 translate>page.mr_phi.title</h2>
+          <h3 translate>page.mr_phi.subtitle</h3>
         </div>
       </eph-section-title>
 
       <eph-section-content>
         <div class="row">
           <div class="col-sm-9 col-xs-12">
-            <p>
-              ÉPhiScience a reçu une aide du CNC pour aider au développement de la chaîne Monsieur Phi. Nous allons donc participer à la
-              production de 10 vidéos que vous retrouverez sur sa chaîne. Abonnez-vous pour ne rien rater !
-            </p>
+            <p translate>page.mr_phi.description</p>
             <eph-last-yt-video channelId="UCqA8H22FwgBVcF3GJpp0MQw"></eph-last-yt-video>
           </div>
           <!--<div class="col-sm-3 hidden-xs">-->
