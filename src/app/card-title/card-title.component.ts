@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core'
   `,
   styles: [
     `
-      /deep/ h2 {
+      ::ng-deep h2 {
         /*.font-arvo;*/
       }
     `

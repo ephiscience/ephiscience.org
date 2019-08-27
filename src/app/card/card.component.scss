@@ -22,7 +22,7 @@
   color: $post-it-black;
 }
 
-.card /deep/ a {
+.card ::ng-deep a {
   color: $post-it-black;
 }
 

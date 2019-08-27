@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core'
   `,
   styles: [
     `
-      /deep/ p {
+      ::ng-deep p {
         margin-bottom: 5px;
       }
 
-      .card-text /deep/ {
+      .card-text ::ng-deep {
         margin-bottom: 10px;
       }
     `

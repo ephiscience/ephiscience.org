@@ -22,12 +22,12 @@
   background-size: 100% 100%;
 }
 
-.jumbotron /deep/ h2 {
+.jumbotron ::ng-deep h2 {
   font-weight: bold;
   color: white;
 }
 
-.jumbotron /deep/ h3 {
+.jumbotron ::ng-deep h3 {
   font-family: 'Cabin Condensed', 'sans-serif';
   color: white;
 }
