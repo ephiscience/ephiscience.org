@@ -2,7 +2,7 @@ common:
   know_more: En savoir plus
 page:
   index:
-    title: 'Éducation<br/>Philosophe<br/>Science'
+    title: 'Éducation<br/>Philosophie<br/>Science'
     education_toolbox:
       title: Boîte à outils éducative
       cards:
