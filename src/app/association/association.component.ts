@@ -6,16 +6,42 @@ import { Component, OnInit } from '@angular/core'
     <eph-section type="top">
       <eph-section-title>
         <div class="col">
-          <h2 translate>page.organization.vision.title</h2>
+          <h2 translate>page.organization.heart.title</h2>
         </div>
       </eph-section-title>
       <eph-section-content>
         <div class="row">
           <div class="col-md-8">
-            <p [innerHTML]="'page.organization.vision.new_challenges' | translate"></p>
-            <p [innerHTML]="'page.organization.vision.what_is_quality_education' | translate"></p>
-            <p [innerHTML]="'page.organization.vision.origin_of_name' | translate"></p>
-            <p [innerHTML]="'page.organization.vision.we_choose_to_mobilize_collective_intelligence' | translate"></p>
+            <h3 translate>page.organization.heart.raison_d_etre.title</h3>
+            <p [innerHTML]="'page.organization.heart.raison_d_etre.text' | translate"></p>
+
+            <h3 translate>page.organization.heart.mission.title</h3>
+            <p [innerHTML]="'page.organization.heart.mission.text' | translate"></p>
+
+            <h3 translate>page.organization.heart.vision.title</h3>
+            <p [innerHTML]="'page.organization.heart.vision.part_1' | translate"></p>
+            <p [innerHTML]="'page.organization.heart.vision.part_2' | translate"></p>
+
+            <h3 translate>page.organization.heart.our_values.title</h3>
+            <h4 class="col-6 values" [innerHTML]="'page.organization.heart.our_values.list' | translate"></h4>
+            <p [innerHTML]="'page.organization.heart.our_values.text' | translate"></p>
+            <div style="display:block; text-align:center; padding-bottom:20px;">
+              <a
+                href="https://www.helloasso.com/associations/e-science/formulaires/1"
+                target="_blank"
+                rel="noreferrer"
+                class="btn btn-lg btn-primary text-white font-weight-bold px-4 py-3"
+                style="border-radius: 5px"
+                translate
+              >
+                page.game.the_game.buttons.donate
+              </a>
+            </div>
+
+            <h3 translate>page.organization.heart.why.title</h3>
+            <p [innerHTML]="'page.organization.heart.why.education' | translate"></p>
+            <p [innerHTML]="'page.organization.heart.why.philosophy' | translate"></p>
+            <p [innerHTML]="'page.organization.heart.why.science' | translate"></p>
           </div>
           <div class="col-md-4">
             <eph-img src="assets/images/pages/association/mission.png" alt="Mission" display="fill"></eph-img>
@@ -27,54 +53,139 @@ import { Component, OnInit } from '@angular/core'
     <eph-section type="mid">
       <eph-section-title>
         <div class="col">
-          <h2 translate>page.organization.team.title</h2>
+          <h2 translate>page.organization.head.title</h2>
         </div>
       </eph-section-title>
 
       <eph-section-content>
         <div class="row">
           <div class="col">
-            <p translate>page.organization.team.members_between_quebec_and_france</p>
-          </div>
-        </div>
-        <div class="row justify-content-center d-flex mb-3">
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 mb-sm-0 d-flex">
-            <div class="card flex-grow-1">
-              <eph-img class="card-img-top" src="assets/images/team/pleen.png" alt="Pleen le Jeune" display="fill"></eph-img>
-              <div class="card-body">
-                <p class="card-text" [innerHTML]="'page.organization.team.members.pleen.intro' | translate"></p>
-                <p class="card-text" [innerHTML]="'page.organization.team.members.pleen.text' | translate"></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
-            <div class="card">
-              <eph-img class="card-img-top" src="assets/images/team/lisette.png" alt="Lisette Prince" display="fill"></eph-img>
-              <div class="card-body">
-                <p class="card-text" [innerHTML]="'page.organization.team.members.lisette.intro' | translate"></p>
-                <p class="card-text" [innerHTML]="'page.organization.team.members.lisette.text' | translate"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <p [innerHTML]="'page.organization.team.join_us' | translate"></p>
+            <p translate>page.organization.head.description</p>
+
+            <h3 translate>page.organization.head.objective_1.title</h3>
+            <ul>
+              <li translate>
+                page.organization.head.objective_1.list.element_1.text
+                <ul>
+                  <li translate>page.organization.head.objective_1.list.element_1.sub_1</li>
+                </ul>
+              </li>
+              <li translate>
+                page.organization.head.objective_1.list.element_2.text
+                <ul>
+                  <li translate>page.organization.head.objective_1.list.element_2.sub_1</li>
+                  <li translate>page.organization.head.objective_1.list.element_2.sub_2</li>
+                </ul>
+              </li>
+              <li translate>
+                page.organization.head.objective_1.list.element_3.text
+              </li>
+              <li translate>
+                page.organization.head.objective_1.list.element_4.text
+                <ul>
+                  <li translate>page.organization.head.objective_1.list.element_4.sub_1</li>
+                  <li translate>page.organization.head.objective_1.list.element_4.sub_2</li>
+                </ul>
+              </li>
+              <li translate>
+                page.organization.head.objective_1.list.element_5.text
+                <ul>
+                  <li translate>page.organization.head.objective_1.list.element_5.sub_1</li>
+                  <li translate>page.organization.head.objective_1.list.element_5.sub_2</li>
+                </ul>
+              </li>
+            </ul>
+
+            <h3 translate>page.organization.head.objective_2.title</h3>
+            <ul>
+              <li translate>
+                page.organization.head.objective_2.list.element_1.text
+                <ul>
+                  <li translate>page.organization.head.objective_2.list.element_1.sub_1</li>
+                  <li translate>page.organization.head.objective_2.list.element_1.sub_2</li>
+                </ul>
+              </li>
+              <li translate>
+                page.organization.head.objective_2.list.element_2.text
+                <ul>
+                  <li translate>page.organization.head.objective_2.list.element_2.sub_1</li>
+                </ul>
+              </li>
+              <li translate>
+                page.organization.head.objective_2.list.element_3.text
+                <ul>
+                  <li translate>page.organization.head.objective_2.list.element_3.sub_1</li>
+                </ul>
+              </li>
+            </ul>
+
+            <h3 translate>page.organization.head.objective_3.title</h3>
+            <ul>
+              <li translate>
+                page.organization.head.objective_3.list.element_1.text
+                <ul>
+                  <li translate>page.organization.head.objective_3.list.element_1.sub_1</li>
+                  <li translate>page.organization.head.objective_3.list.element_1.sub_2</li>
+                </ul>
+              </li>
+              <li translate>
+                page.organization.head.objective_3.list.element_2.text
+                <ul>
+                  <li translate>page.organization.head.objective_3.list.element_2.sub_1</li>
+                </ul>
+              </li>
+              <li translate>
+                page.organization.head.objective_3.list.element_3.text
+              </li>
+            </ul>
+
+            <h3 translate>page.organization.head.objective_4.title</h3>
+            <ul>
+              <li translate>page.organization.head.objective_4.list.element_1.text</li>
+              <li translate>page.organization.head.objective_4.list.element_2.text</li>
+              <li translate>page.organization.head.objective_4.list.element_3.text</li>
+              <li translate>page.organization.head.objective_4.list.element_4.text</li>
+              <li translate>page.organization.head.objective_4.list.element_5.text</li>
+            </ul>
           </div>
         </div>
       </eph-section-content>
     </eph-section>
+
     <eph-section type="bot">
-      <eph-section-title><h2>Nos partenaires</h2></eph-section-title>
+      <eph-section-title><h2 translate>page.organization.members.title</h2></eph-section-title>
       <eph-section-content>
         <div class="row">
           <div class="col-md-8">
-            <p translate>page.organization.partners.cri.student_club</p>
-            <p translate>page.organization.partners.cri.many_projects</p>
-            <p [innerHTML]="'page.organization.partners.contact_us' | translate"></p>
-          </div>
-          <div class="col-md-4">
-            <img src="assets/images/logo/CRI.svg" alt="CRI Paris" class="parent-width" />
+            <p [innerHTML]="'page.organization.members.part_1' | translate"></p>
+            <p [innerHTML]="'page.organization.members.part_2' | translate"></p>
+            <p translate>page.organization.members.part_3.intro</p>
+            <ul>
+              <li [innerHTML]="'page.organization.members.part_3.president' | translate"></li>
+              <li [innerHTML]="'page.organization.members.part_3.treasurer' | translate"></li>
+              <li [innerHTML]="'page.organization.members.part_3.secretary' | translate"></li>
+              <li [innerHTML]="'page.organization.members.part_3.communication' | translate"></li>
+              <li [innerHTML]="'page.organization.members.part_3.other_president' | translate"></li>
+            </ul>
+
+            <p translate>page.organization.members.part_4.desc</p>
+            <ul>
+              <li [innerHTML]="'page.organization.members.part_4.benevoles' | translate"></li>
+              <li [innerHTML]="'page.organization.members.part_4.friends' | translate"></li>
+              <li [innerHTML]="'page.organization.members.part_4.scientific_council' | translate"></li>
+            </ul>
+            <p translate>page.organization.members.part_5</p>
+
+            <div style="display:block; text-align:center; padding-bottom:20px;">
+              <a
+                routerLink="/contribuer"
+                class="btn btn-lg btn-primary text-white font-weight-bold px-4 py-3"
+                style="border-radius: 5px"
+                translate
+              >
+                page.organization.members.how_to_contribute
+              </a>
+            </div>
           </div>
         </div>
       </eph-section-content>
@@ -84,6 +195,13 @@ import { Component, OnInit } from '@angular/core'
     `
       img.parent-width {
         width: 100%;
+      }
+
+      .values {
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 1rem;
+        margin: auto;
       }
     `
   ]

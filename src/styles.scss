@@ -5,7 +5,6 @@
 @import '~typeface-cabin-condensed/index.css';
 @import '~typeface-roboto/index.css';
 
-@import 'variables';
 @import 'defines';
 @import 'bootstrap';
 //@import '~bootstrap/scss/bootstrap';
@@ -13,4 +12,8 @@
 html,
 body {
   height: 100%;
+}
+
+h3 {
+  margin-top: 0.2rem;
 }

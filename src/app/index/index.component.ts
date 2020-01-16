@@ -1,7 +1,17 @@
 import { Component, OnInit } from '@angular/core'
 
-export const SOCIAL_EDUKEY = { fb: 'EduKeyYouTube', tw: 'EduKeyFR', yt: 'channel/UC6wF0stG_iXMO4mIXM9g3YQ', utip: 'edukey' }
-export const SOCIAL_MR_PHI = { fb: 'graindephilo', tw: 'MonsieurPhi', yt: 'channel/UCqA8H22FwgBVcF3GJpp0MQw', utip: 'mrphi' }
+export const SOCIAL_EDUKEY = {
+  fb: 'EduKeyYouTube',
+  tw: 'EduKeyFR',
+  yt: 'channel/UC6wF0stG_iXMO4mIXM9g3YQ',
+  utip: 'edukey'
+}
+export const SOCIAL_MR_PHI = {
+  fb: 'graindephilo',
+  tw: 'MonsieurPhi',
+  yt: 'channel/UCqA8H22FwgBVcF3GJpp0MQw',
+  utip: 'mrphi'
+}
 
 @Component({
   selector: 'eph-index',
@@ -13,40 +23,59 @@ export const SOCIAL_MR_PHI = { fb: 'graindephilo', tw: 'MonsieurPhi', yt: 'chann
       </div>
     </eph-jumbotron>
 
+    <div class="container">
+      <div class="row justify-content-center">
+        <eph-card color="pink" size="11">
+          <eph-card-title>
+            <h2 translate>
+              <eph-img src="assets/images/card/icon/test_icon.png" imgHeight="88px" alt="icon"></eph-img>
+              page.index.our_identity.title
+            </h2>
+          </eph-card-title>
+          <eph-card-content>
+            <p [innerHTML]="'page.index.our_identity.content' | translate"></p>
+            <p [innerHTML]="'page.index.our_identity.content2' | translate"></p>
+          </eph-card-content>
+        </eph-card>
+      </div>
+    </div>
+
     <eph-section type="mid">
-      <eph-section-title> <h2 translate>page.index.education_toolbox.title</h2> </eph-section-title>
+      <eph-section-title><h2 translate>page.index.education_toolbox.title</h2></eph-section-title>
       <eph-section-content>
         <div class="row justify-content-center">
           <eph-card color="purple">
             <eph-card-title>
               <h2 translate>
-                <eph-img src="assets/images/card/icon/test_icon.png" alt="icon"></eph-img> page.index.education_toolbox.cards.game.title
+                <eph-img src="assets/images/card/icon/test_icon.png" imgHeight="88px" alt="icon"></eph-img>
+                page.index.education_toolbox.cards.game.title
               </h2>
             </eph-card-title>
             <eph-card-content>
-              <p translate>page.index.education_toolbox.cards.game.game_for_everyone</p>
-              <p translate>page.index.education_toolbox.cards.game.built_from_expertise</p>
+              <p translate>page.index.education_toolbox.cards.game.expedition_sagesse</p>
+              <p translate>page.index.education_toolbox.cards.game.built_for_school_or_home</p>
               <p translate>page.index.education_toolbox.cards.game.open_source_and_free</p>
-              <p><eph-cc-by></eph-cc-by></p>
             </eph-card-content>
-            <eph-more-button href="/jeu"><span translate>common.know_more</span></eph-more-button>
+            <eph-more-button href="/jeu"><span translate>page.index.education_toolbox.cards.game.discover</span> </eph-more-button>
             <!--<a class="center-block" routerLink="/jeu">en savoir plus</a>-->
           </eph-card>
 
-          <eph-card color="blue">
+          <eph-card color="green">
             <eph-card-title>
               <h2 translate>
-                <img src="assets/images/card/icon/test_icon.png" alt="icon" /> page.index.education_toolbox.cards.activities.title
+                <eph-img src="assets/images/card/icon/test_icon.png" imgHeight="88px" alt="icon"></eph-img>
+                page.index.education_toolbox.cards.video_offers.title
               </h2>
             </eph-card-title>
             <eph-card-content>
               <div class="text-middle card-text">
-                <p translate>page.index.education_toolbox.cards.activities.quality_learning</p>
-                <p translate>page.index.education_toolbox.cards.activities.critical_thinking_and_more</p>
-                <p translate>page.index.education_toolbox.cards.activities.in_or_out_schools</p>
+                <p translate>page.index.education_toolbox.cards.video_offers.our_experience</p>
+                <p translate>page.index.education_toolbox.cards.video_offers.you_have_needs</p>
               </div>
             </eph-card-content>
-            <eph-more-button href="/ateliers-et-formations"><span translate>common.know_more</span></eph-more-button>
+            <eph-more-button href="/offre-audiovisuelle"
+              ><span translate>page.index.education_toolbox.cards.video_offers.see_our_past_work</span>
+            </eph-more-button>
           </eph-card>
         </div>
       </eph-section-content>

@@ -16,7 +16,6 @@ import { environment } from '../environments/environment'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { AssociationComponent } from './association/association.component'
-import { AteliersEtFormationsComponent } from './ateliers-et-formations/ateliers-et-formations.component'
 import { CardContentComponent } from './card-content/card-content.component'
 import { CardTitleComponent } from './card-title/card-title.component'
 import { CardComponent } from './card/card.component'
@@ -41,6 +40,10 @@ import { SectionTitleComponent } from './section-title/section-title.component'
 import { SectionComponent } from './section/section.component'
 import { SocialColumnComponent } from './social-column/social-column.component'
 import { YtVideoComponent } from './yt-video/yt-video.component'
+import { PartnersComponent } from './partners/partners.component'
+import { ContributeComponent } from './contribute/contribute.component'
+import { OffreAudiovisuelleComponent } from './offre-audiovisuelle/offre-audiovisuelle.component'
+import { ButtonComponent } from './button/button.component'
 
 export class YamlTranslationLoader implements TranslateLoader {
   constructor(private http: HttpClient, private prefix: string, private suffix = '.yaml') {}
@@ -76,11 +79,14 @@ export function createTranslateLoader(http: HttpClient) {
     AssociationComponent,
     EdukeyComponent,
     MrPhiComponent,
-    AteliersEtFormationsComponent,
     JeuComponent,
     LastYtVideoComponent,
     SocialColumnComponent,
-    ImgComponent
+    ImgComponent,
+    PartnersComponent,
+    ContributeComponent,
+    OffreAudiovisuelleComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

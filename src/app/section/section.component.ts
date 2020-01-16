@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core'
 
     <ng-content select="eph-section-content"></ng-content>
   `,
-  styles: []
+  styleUrls: ['section.component.scss']
 })
 export class SectionComponent implements OnInit {
   @Input() type: string

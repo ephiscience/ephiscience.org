@@ -2,88 +2,175 @@ common:
   know_more: En savoir plus
 page:
   index:
-    title: 'Éducation<br/>Philosophie<br/>Science'
+    title: 'Créer des liens<br />Inspirer le changement<br /> et la confiance'
+    our_identity:
+      title: Notre Identité
+      content: |
+        Notre raison d’être au sein de ÉPhiscience est d’être médiateurs: créer des liens entre le monde de la recherche
+        et des éducateurs avec les acteurs de changement pour susciter des réflexions sur l’éducation.
+        Nous souhaitons <b>inspirer le changement et la confiance</b> qui permettront de faciliter l’accès pour tou.te.s
+        à des <b>apprentissages porteurs de sens</b> tout au long de la vie.
+      content2: Nous partageons en toute transparence notre fonctionnement et nos objectifs afin de nous permettre d’être plus cohérents et de faciliter nos liens avec vous.
+
     education_toolbox:
-      title: Boîte à outils éducative
+      title: Plaisir d’apprendre
       cards:
-        activities:
-          title: Ateliers
-          quality_learning: Des ateliers philo de qualité où l’apprentissage est plaisant.
-          critical_thinking_and_more: Développent l’esprit critique, la coopération, la créativité et bien d’autres choses !
-          in_or_out_schools: Interventions dans les écoles et en dehors dès 6 ans et plus.
+        video_offers:
+          title: Offre audiovisuelle
+          our_experience: |
+            Notre expérience de vidéos éducatives et philosophiques sur YouTube ainsi que nos collaborations avec des
+            institutions scientifiques font partie de notre savoir-faire.
+          you_have_needs: |
+            Vous avez des besoins de vidéos pour communiquer de façon innovante sur vos projets
+            en lien avec l’éducation, la philosophie ou les sciences ? N’hésitez pas à faire appel à nous.
+          see_our_past_work: Voir nos réalisations passées
         game:
-          title: Jeux
-          game_for_everyone: Expédition Sagesse est un jeu original pour faire réfléchir tout le monde à partir de 8 ans.
-          built_from_expertise: Il est conçu à partir d’expertises sur le jeu, l’éducation et la philosophie.
-          open_source_and_free: Disponible open-source et imprimable gratuitement sur notre site !
+          title: Jeu Philosophique
+          expedition_sagesse: Expédition Sagesse est un jeu amusant qui fait réfléchir avec légèreté autour de questions profondes (ou l’inverse !).
+          built_for_school_or_home: Jeu de société conçu pour l’école et la maison à partir de 8 ans.
+          open_source_and_free: Open-source et imprimable gratuitement depuis notre site !
+          discover: Découvrir
     edukey:
       title: Edukey
       subtitle: Vidéos de médiation scientifique de l'éducation
     mr_phi:
       title: Monsieur Phi
+
   organization:
-    vision:
-      title: Notre vision
-      new_challenges: |
-        L’humanité fait face à des défis nouveaux et pour les relever, des changements profonds semblent nécessaires. Parce que
-        l’éducation représente à la fois un défi, et un potentiel énorme pour notre avenir, nous souhaitons réfléchir et agir afin de
-        faciliter l'accès pour le plus grand nombre à une
-        <b>éducation de qualité</b> - quatrième des dix-sept Objectifs de Développement Durable définis par l’ONU.
-      what_is_quality_education: |
-        Mais qu’est-ce qu’une éducation de qualité dans un monde incertain ? Et comment la développer malgré sa grande complexité ?<br />
-        La <b>philosophie</b> apporte un éclairage sur ces questions en nous amenant à questionner les valeurs et les choix éthiques en
-        éducation. Les <b>sciences de l’éducation</b> et de <b>l’apprentissage</b> quant à elles permettent un recul critique pour
-        faire de meilleurs choix éducatifs.
-      origin_of_name: |
-        C’est ce constat qui a donné son nom à ÉPhiScience, composée des trois mots -
-        <b>Éducation, Philosophie, Science</b> - qui représentent nos thèmes d’intérêt et qui orientent nos actions. Et au delà de ces
-        thèmes, c’est la recherche d’une certaine <b>efficience</b> qui nous guide. Ceci nous conduit donc à chercher des leviers afin
-        de maximiser notre impact pour permettre une éducation de qualité.
-      we_choose_to_mobilize_collective_intelligence: |
-        Nous choisissons de mobiliser l’intelligence collective et la coopération pour que ce que nous apprenons puisse être partagé,
-        diffusé, et appris plus facilement par tous. C’est pourquoi tous nos projets sont open-source et qu’ils sont ouverts à la
-        contribution de chacun. Et pourquoi pas à <b>votre</b> contribution !
-    team:
-      title: Notre équipe
-      members_between_quebec_and_france: ÉPhiScience comporte environ 15 membres de plusieurs nationalités répartis entre le Québec et la France.
-      members:
-        pleen:
-          intro: En France l’association est coordonnée par <a href="mailto:pleen@ephiscience.org?subject=Contact">Pleen</a>
-          text: Pleen est président de l’association ÉPhiScience. Il est également créateur d’EduKey et concepteur du jeu Expédition Sagesse.<br />Il aime se poser des questions et manger des mangues.
-        lisette:
-          intro: Au Québec l’association est coordonnée par <a href="mailto:lisette@ephiscience.org?subject=Contact">Lisette</a>
-          text: Lisette est également animatrice d’ateliers philo et Coach en développement intégral spécialisée avec les familles et professionnels des milieux de l’éducation.<br />Elle aime découvrir de nouvelles choses et tout ce qui touche le processus créatif.
-      join_us: |
-        Si vous souhaitez participer au développement d’une éducation de qualité et que la philosophie ou les sciences de l’éducation vous semblent nécessaires,
-        <b>n’hésitez pas à nous rejoindre</b> ! Toute personne partageant nos valeurs peut devenir membre, et
-        <b>votre implication sera la bienvenue</b>. Que vous ayez un projet à nous soumettre ou l’envie de faire partie de ce qui
-        existe déjà, nous serons ravis d’apprendre à vous connaître. Écrivez-nous vite à <a href="mailto:bureau@ephiscience.org">bureau@ephiscience.org</a>
-    partners:
-      cri:
-        student_club: ÉPhiScience est également un club étudiant du Centre de Recherches Interdisciplinaires (CRI) à Paris.
-        many_projects: De nombreux projets ont été menés grâce à l’aide du CRI, notamment grâce à la mise à disposition d’espaces ou au feedback de professionnels du jeu éducatif (Game Lab).
-      contact_us: |
-        Si vous représentez une structure qui participe elle aussi au développement d’une éducation de qualité, n’hésitez pas à nous
-        contacter pour nous proposer un partenariat ! Que ce soit pour relayer nos activités respectives ou même construire des
-        projets communs, nous étudierons attentivement toute proposition. Écrivez-nous vite à
-        <a href="mailto:bureau@ephiscience.org">bureau@ephiscience.org</a>
+    heart:
+      title: Le Coeur
+      quote:
+        text: “Si tu donnes un poisson à un homme il mangera un jour; si tu lui apprends à pêcher, il mangera toujours" (proverbe universel)
+        quote_subtitle: Aider à développer l’autonomie de chacun dans ses apprentissages est une de nos priorités.
+        description: ÉPhiScience, c’est une association à taille humaine mais avec de grandes ambitions pour le bien commun.
+      raison_d_etre:
+        title: Raison d'être
+        text: |
+          Être médiateurs : créer des <b>liens</b> entre le monde de la recherche et des éducateurs avec les acteurs de changement
+          pour susciter des réflexions sur l’éducation. Nous souhaitons <b>inspirer le changement et la confiance</b> qui permettront
+          de faciliter l’accès pour tou.te.s à des <b>apprentissages porteurs de sens</b> tout au long de la vie.
+      mission:
+        title: Mission
+        text: |
+          Être au coeur de chacun de ces mondes liés à l’éducation pour bien en comprendre les enjeux et faire des liens
+          entre eux afin d’y faciliter le partage de connaissances, le plaisir d’apprendre et surtout un <b>changement de posture</b>.
+      vision:
+        title: Vision
+        part_1: |
+          Face à ce sentiment de <b>solitude et de perte de confiance</b> particulièrement présent dans le milieu de l'éducation,
+          il faut plus que jamais se mobiliser pour que les outils existants (ou à venir), numériques ou pas,
+          soient réellement <b>créateurs de lien social</b>. Aujourd’hui, le sentiment d’une trop grande distance nous sépare.
+        part_2: |
+          C’est pourquoi avec ÉPhiScience nous faisons le pari d’utiliser des <b>outils de communication innovants</b>
+          pour créer en toute transparence et authenticité des liens entre les acteurs de l’éducation.
+      our_values:
+        title: Nos valeurs
+        list: Transparence - Partage - Confiance
+        text: |
+          ÉPhiScience vit notamment grâce aux dons qui nous permettront de proposer toujours plus de contenus gratuitement. Si vous êtes sensibles à notre cause et si vous en avez les moyens, merci par avance pour votre soutien.
+      why:
+        title: Pourquoi Éducation, Philosophie et Science ?
+        education: <b>L’éducation</b> est la base qui sert à développer l’être humain afin qu’il apporte le meilleur de lui-même dans le monde.
+        philosophy: <b>La philosophie</b> nous permet de questionner les valeurs et les choix éthiques en éducation.
+        science: <b>La science</b> nous apporte une posture de curiosité, d’humilité et de recherche des meilleures façons de comprendre le monde.
+
+    head:
+      title: La Tête
+      description: Parce que la transparence nous semble essentielle pour créer la confiance, nous vous partageons ici les objectifs pour le développement de l’association.
+      objective_1:
+        title: 'Objectif 1 : Développer une communauté de praticiens et construire la confiance'
+        list:
+          element_1:
+            text: Identifier les besoins des éducateurs et des apprenants afin de savoir comment EduKey ou Expédition Sagesse peuvent y répondre
+            sub_1: Dialoguer avec nos publics sur les réseaux sociaux et à chaque rencontre (événements, rendez-vous…)
+          element_2:
+            text: Impliquer les éducateurs dans notre processus de création de contenus
+            sub_1: Les impliquer dans le choix des vidéos EduKey à travers des sondages à la fin de chaque vidéo
+            sub_2: Les impliquer dans la création de nouveaux éléments pour Expédition Sagesse ou le guide pédagogique en leur partageant l’outil à chaque interaction avec nos publics
+          element_3:
+            text: Produire des contenus de qualité sur une base régulière (2 vidéos par mois idéalement) sur EduKey
+          element_4:
+            text: Multiplier les formats pour s’adapter aux habitudes de nos publics
+            sub_1: Créer un documentaire centré sur la condition enseignante
+            sub_2: Créer un podcast reliant d’autres podcasts déjà existants
+          element_5:
+            text: Bien communiquer sur nos valeurs et nos actions afin de prouver notre transparence et notre cohérence
+            sub_1: Définir notre stratégie de communication sur les réseaux sociaux
+            sub_2: Mettre le site web à jour régulièrement en incluant nos avancées
+      objective_2:
+        title: 'Objectif 2 : Impliquer les chercheurs dans nos missions'
+        list:
+          element_1:
+            text: Composer un conseil scientifique nous permettant de prioriser les résultats de recherche utiles à partager
+            sub_1: Créer un document clarifiant le rôle et le fonctionnement du conseil scientifique
+            sub_2: Inviter des chercheurs sensibles à notre cause à nous rejoindre
+          element_2:
+            text: Mettre en avant les qualités de curiosité, d’humilité et le goût de trouver les meilleurs façons de comprendre le monde
+            sub_1: Incarner ces qualités dans notre communication et expliciter leur lien avec une posture de chercheur
+          element_3:
+            text: Faire connaître les besoins des milieux éducatifs pour aider les chercheurs à mieux les comprendre et y répondre
+            sub_1: Organiser au moins un événement par an rassemblant les chercheurs et les acteurs de milieux éducatifs (parents, enseignants, etc)
+      objective_3:
+        title: 'Objectif 3 : Toucher le milieu des entreprises innovantes et des acteurs de changement'
+        list:
+          element_1:
+            text: Apporter la connaissance des recherches scientifiques pour les aider à gagner en efficacité
+            sub_1: Faire connaître EduKey auprès d’entreprises ou d’acteurs éducatifs divers
+            sub_2: Proposer des conférences ou des formations sur mesure ainsi que mettre en contact avec des chercheurs pour permettre d’approfondir la réflexion des employés
+          element_2:
+            text: Transmettre les besoins des milieux éducatifs pour les aider à mieux y répondre
+            sub_1: Proposer du consulting pour des choix stratégiques d’acteurs visant à créer des outils ou proposer des services à des publics de milieux éducatifs afin de faciliter la réponse à des besoins réels.
+          element_3:
+            text: Soutenir et encourager les modes de gouvernance horizontaux et équitables à travers notre expérience
+      objective_4:
+        title: 'Objectif 4 : Inspirer le changement et la confiance'
+        list:
+          element_1:
+            text: Être des modèles cohérents des valeurs que l’on incarne en restant authentiques, transparents et en continuant à apprendre
+          element_2:
+            text: Tisser des liens avec les institutions et les acteurs clés qui souhaitent recréer du lien et de la confiance dans les milieux éducatifs.
+          element_3:
+            text: Avoir une structure qui facilite les apprentissages des membres de l’association
+          element_4:
+            text: Faciliter l'accès à nos contenus et outils éducatifs à la communauté afin de diminuer les inégalités sociales en terme d'accès à l'éducation
+          element_5:
+            text: Partager les initiatives d’autres acteurs qui contribuent à améliorer l'éducation ou faciliter les apprentissages
+
+    members:
+      title: Les Membres
+      part_1: |
+        Si l’on parle souvent des bénévoles comme étant des “petites mains”, au sein de ÉPhiScience tout le monde
+        <i>a la main large, prête à s’unir, sobre à punir</i> (Caracole, la Horde du Contrevent).
+      part_2: |
+        Notre association fonctionne avec une gouvernance horizontale - la plupart des décisions peuvent être prises
+        par n’importe qui, sous réserve d’avoir demandé l’avis de personnes appropriées auparavant.
+      part_3:
+        intro: 'Un Bureau est nommé chaque année pour coordonner et gérer la partie administrative de l’association. Il est composé de cinq postes, pour l’instant pourvus comme suit :'
+        president: '<b>Président</b> : Pleen'
+        treasurer: '<b>Trésorier</b> : Rémi'
+        secretary: '<b>Secrétaire</b> : Aziliz'
+        communication: '<b>Responsable communication</b> : Camille'
+        other_president: '<b>Vice-présidente Québec</b> : Lisette'
+      part_4:
+        desc: 'L’association est composée de plusieurs types de membres :'
+        benevoles: <b>Les bénévoles</b>, qui sont les membres actifs, réalisant les projets et contribuant activement au développement de l’association.
+        friends: <b>Les amis</b>, qui sont des personnes qui reconnaissent le bien-fondé de l'association et de ses actions et veulent officialiser leur intérêt et être tenus au courant des activités de l’association.
+        scientific_council: <b>Le Conseil Scientifique</b> qui est en cours de constitution et qui aura pour rôle de donner son avis sur les orientations de l’association
+      part_5: 'Ça vous inspire ? N’hésitez plus : rejoignez-nous vite !'
+      how_to_contribute: 'Comment contribuer ?'
 
   edukey:
-    title: Edukey, venez participey
+    title: Edukey
     subtitle: Médiation des sciences de l’éducation
     description: |
-      EduKey s’adresse principalement aux enseignants, ou aux parents et étudiants, et plus généralement à toute personne qui
-      s’intéresse à l’éducation. L’objectif est de pouvoir faire le lien entre la recherche scientifique et le terrain : quelles sont
-      les meilleures pratiques qui sont validées à la fois par les sciences et l’expertise du terrain ? Comment faire mieux connaître
-      des initiatives intéressantes pour les enseignants ? Voici un aperçu sur EduKey !
-    support_us: |
-      Si vous aimez EduKey, n’hésitez pas à nous soutenir via uTip en faisant un don ou en regardant des publicités ! Vous pouvez
-      également partager les vidéos qui vous plaisent et nous laisser des commentaires, on lira tout et on répond à la plupart.
-    looking_for_help: |
-      Nous cherchons également des gens sur Paris qui peuvent aider pour le cadrage ou le montage. Ou si quelqu’un peut donner des
-      cours d’After Effects, on est preneurs ! Écrivez à <a href="mailto:pleen@ephiscience.org">pleen@ephiscience.org</a>
-    opportunities: |
-      Pour toute proposition commerciale (placement de produit), merci d’écrire à <a href="mailto:bureau@ephiscience.org">bureau@ephiscience.org</a>
+      EduKey s’adresse principalement aux enseignants, ou aux parents et étudiants, et plus généralement à toute personne
+      qui s’intéresse à l’éducation. L’objectif est de pouvoir faire le lien entre la recherche scientifique et le terrain :
+      quelles sont les meilleures pratiques qui sont validées à la fois par les sciences et l’expertise du terrain ?
+      Comment faire mieux connaître des initiatives intéressantes pour les enseignants ? Voici un aperçu sur EduKey !
+    if_you_like: |
+      Si vous aimez EduKey, prenez le temps de partager les vidéos qui vous plaisent !
+      N’hésitez pas si vous le pouvez à nous soutenir via uTip en faisant un don ou en regardant des publicités !
+    support_edukey: Soutenir Edukey
 
   mr_phi:
     title: Monsieur Phi
@@ -92,24 +179,94 @@ page:
       ÉPhiScience a reçu une aide du CNC pour aider au développement de la chaîne Monsieur Phi. Nous allons donc participer à la
       production de 10 vidéos que vous retrouverez sur sa chaîne. Abonnez-vous pour ne rien rater !
 
-  activities:
-    title:
-    children_and_critical_thinking: |
-      Nous souhaitons permettre aux enfants de développer leur esprit critique pour
-      <b>faire face notamment aux “fake news”</b>. Nous souhaitons les aider à développer leur créativité pour
-      <b>résoudre les problèmes d’aujourd’hui et de demain</b> comme par exemple le changement climatique. Nous souhaitons les
-      encourager à développer une écoute et une <b>compréhension de l’autre</b> à travers les différences.
-    members_are_qualified: |
-      Plusieurs personnes dans l’association ont été formées rigoureusement pour donner des ateliers de philosophie pour enfants. De
-      plus, la création d’un jeu par l’association et son utilisation intégrée dans le cadre d’ateliers en fait un
-      <b>outil original, unique et de grande qualité !</b>
-    schools_or_groups: |
-      Nos offres sont valables en contexte scolaire, périscolaire ou même ailleurs pour des groupes d’enfants à partir de 6 ans.
-      Idéalement à raison d’une heure par semaine - modulable selon vos besoins.
-    know_more: <a href="mailto:ateliers-philo@ephiscience.org">Contactez-nous</a> pour en savoir plus sur nos offres ! Tarif sur mesure en fonction de vos besoins et de votre contexte.
+  contribute:
+    become_member:
+      title: Devenir membre
+      part_1: |
+        La coopération est au coeur de nos valeurs et de nos pratiques. C’est pourquoi nous restons ouverts à accueillir
+        toujours de nouveaux membres qui partagent nos valeurs.
+        <br />
+        Parce que nous sommes conscients que votre temps est précieux,
+        il existe deux catégories de membres avec des degrés d’engagement différents.
+      part_2: |
+        Les <b>bénévoles</b> sont les membres impliqués activement dans les projets et le développement de l’association, et
+        ce sont celles et ceux qui détermineront l’avenir de ÉPhiScience. Pour devenir bénévole, il faut être recommandé
+        par au moins deux bénévoles déjà existants. Après validation par le bureau, il suffira de payer sa cotisation
+        (à titre indicatif, elle était de 20€ pour l’année 2019 avec un tarif réduit à 10€) et tadam ! Bienvenue parmi nous,
+        avec le pouvoir de participer aux décisions et au changement au sein de ÉPhiScience.
+      part_3: |
+        Les <b>amis</b> de ÉPhiScience sont les membres qui veulent officialiser leur intérêt vis-à-vis de notre mission et être
+        tenus au courant des activités de l’association. N’importe qui peut devenir ami de l’association simplement en faisant
+        la demande par écrit à <a href="mailto:bureau@ephiscience.org?subject=Devenir ami de ÉPhiScience">bureau@ephiscience.org</a> ou en cliquant sur le bouton ci-dessous.
+      become_member: Devenir ami
+      part_4: |
+        Nous vous invitons chaleureusement, même en tant qu'amis, à vous impliquer ponctuellement dans les projet de
+        l’association ! Cela pourra d’ailleurs être un bon moyen pour vous préparer progressivement, sans engagement, à devenir bénévole.
+      part_5: Vous souhaitez vous impliquer en tant que bénévole ou ami ? Voici comment...
+    projects_and_needs:
+      title: Projets et besoins
+      desc: 'ÉPhiScience oeuvre de deux façons différentes : à travers notre offre audiovisuelle, et à travers Expédition Sagesse.'
+      videos:
+        desc: 'Concernant <b>les vidéos</b>, les besoins sont les suivants :'
+        need_1: Montage de vidéos d’événements et vidéos EduKey
+        need_2: Sound design pour les vidéos EduKey et certains commandes
+        need_3: Aide sur les tournages en général
+        need_4: Aide pour réaliser des animations pour les vidéos EduKey
+      wisdom_journey:
+        desc: 'Concernant <b>Expédition Sagesse</b>, les besoins sont les suivants :'
+        need_1: Traduire le jeu via notre outil dans de nouvelles langues
+        need_2: Animer des ateliers avec le jeu dans différents milieux (école, familles, festivals de jeux, etc.)
+        need_3: Améliorer le game design du jeu à travers la conception et le test de variantes des règles auprès de nos publics cible
+        need_4: Faire tester l'outil de création de nouveaux éléments du jeu afin de nous aider à concevoir la version finale
+        need_5: Adapter le jeu pour divers partenaires et thématiques éducatives prometteuses
+        need_6: Aider à la préparation du design graphique et des illustrations de la version professionnelle
+        need_7: Aider à préparer le financement participatif
+        need_8: Démarcher des entreprises pour la conception industrielle du jeu professionnel
+        need_9: Travailler sur l'UX / UI Design de la version numérique du jeu
+        need_10: Faire la maquette UX / UI pour l'outil d'adaptation du jeu
+        need_11: Programmation de l'outil d'adaptation du jeu
+        need_12: Programmation de la version numérique du jeu
+      organization:
+        desc: 'Nous avons également des besoins concernant le <b>développement de l’association</b> en général :'
+        need_1: Gestion des réseaux sociaux pour une communication plus régulière et engageante pour faire connaître notre travail auprès de notre public cible
+        need_2: Participer à des événements liés à l’éducation afin de faire connaître ÉPhiScience
+        need_3: Organiser régulièrement des rencontres conviviales à Paris ou ailleurs pour animer les communautés locales et permettre de se rencontrer
+        need_4: Être actifs au sein des réseaux dont nous faisons partie, et participer à la mise en liens des uns et des autres
+        need_5: Nous aider à tisser des liens avec des organismes existants partageant nos valeurs afin de développer des partenariats
+        need_6: Gérer la comptabilité de l’association
+        need_7: Faire des demandes de subventions et répondre à des appels à projets pour financer nos activités d’intérêt général
+        need_8: Trouver des mécènes et des donateurs récurrents souhaitant soutenir nos actions
+        need_9: Animer notre communauté de bénévoles et d’amis
+    gifts_skills:
+      title: Dons et mécénat de compétences
+      gift_1: |
+        Une autre façon simple de soutenir ÉPhiScience est de nous faire un don via HelloAsso. <br />
+        Cet argent sera utilisé exclusivement pour <del>nous payer des vacances aux bahamas</del> nos projets d’intérêt général :
+        cela nous permet de continuer à proposer gratuitement des services et des contenus à celles et ceux pour qui ça fait une différence réelle. Merci du fond du coeur.
+      gift_2: 'Vous pourrez obtenir 66% de réduction d’impôts sur vos dons : donner 100€ à ÉPhiScience ne vous coûtera en réalité que 34€.'
+      give: Faire un don
+      skills: |
+        Enfin, si votre organisme en a la possibilité, nous sommes intéressés par le mécénat de compétences principalement
+        relativement à la comptabilité, aux aspects juridiques, au pilotage d’association ou aux métiers du domaine audiovisuel.
+        Merci de nous écrire à <a href="mailto:bureau@ephiscience.org">bureau@ephiscience.org</a>.
+
+  partners:
+    title: Nos partenaires
+    cri_1: ÉPhiScience est soutenue par le Centre de Recherches Interdisciplinaires (CRI) à Paris dont elle est également un club.
+    cri_2: De nombreux projets ont été menés grâce à l’aide du CRI, notamment grâce à la mise à disposition d’espaces ou au feedback de professionnels du jeu éducatif (Game Lab).
+    cecapfi: ÉPhiScience est également partenaire du Centro Educativo para la Creacion Autonoma en Practicas Filosoficas (CECAPFI) en Amérique Latine.
+
   game:
+    about:
+      title: Jeu de société Expédition Sagesse
+      desc: |
+        Un jeu amusant qui fait réfléchir autour de questions philosophiques :
+        il n’existe pas LA bonne réponse, c’est à vous de la construire !<br />
+        À consommer sans modération à partir de 8 ans, à l’école, en famille ou entre amis.
+      available: 'Jeu gratuit en 5 langues : Français - Anglais - Espagnol - Arabe - Russe'
+
     the_game:
-      title: 'Jeu de plateau : Expédition Sagesse'
+      title: Mécaniques de jeu
       catchphrase: |
         Trouvez des réponses astucieuses à ces questions et bien d'autres pour avancer ensemble sur le chemin vers le mont Sagesse, à la
         poursuite d'anciens philosophes ! Mais prenez garde, des sortilèges vous affecteront et la progression ne sera facilitée
@@ -126,28 +283,45 @@ page:
         free_download: Téléchargement<br/>GRATUIT
         english_version: English Version
         donate: Faire un don
-    go_further:
-      title: Pour aller plus loin
-      can_be_downloaded: |
-        Le jeu est beau, il est jouable en le téléchargeant
-        <b>gratuitement</b> et en l’imprimant depuis chez vous. Merveilleux ! Mais il ne vous aura probablement pas échappé que
-        pour jouer il vous manque un sablier. Vous pourrez bientôt imprimer des pions, mais pour le sablier, les téléphones ont une
-        fonction qui permettra de le remplacer facilement.
-      create_a_tool: |
-        Un autre chantier nous tient particulièrement à cœur : créer un outil sur cette page qui vous permette de créer vos propres
-        questions qui seront mises en page automatiquement selon le modèle en vigueur. Ainsi vous, et n’importe qui d’autre, pourrez
-        piocher dans une base de données collective permettant de garder les questions qui vous plaisent le plus, et créer un jeu
-        unique. <b>Votre jeu</b>.
-      for_education: |
-        Par ailleurs, notre association a une vocation pédagogique. L’éducation étant au cœur de nos actions, nous avons pensé le jeu de
-        manière à ce qu’il puisse être utilisé dans un contexte scolaire. Pour faciliter la tâche des éducateurs et des éducatrices,
-        <b>nous travaillons également sur un guide pédagogique</b> pour faciliter la prise en main de l’outil. Nos formations
-        compléteront ce travail pour celles et ceux qui voudront garantir les bienfaits éducatifs de ce jeu !
-      create_pro_version: |
-        <b>Notre travail est bénévole, son fruit est libre</b>. Pourtant nous souhaitons éditer une version professionnelle du jeu pour
-        ceux et celles qui souhaiteront s’en procurer un exemplaire plus pratique et plus agréable que les impressions « maison ». Vous
-        pouvez nous aider en faisant un don ! Nous pourrons ainsi éditer un plus grand nombre de jeux de la meilleure qualité
-        possible. <b>Votre soutien compte, alors merci</b> !
+    create_your_version:
+      title: Créez VOTRE version
+      desc: |
+        Expédition Sagesse est un jeu Open-Source (CC BY-NC-SA), et nous l’avons conçu de façon à vous permettre de créer
+        vos propres éléments du jeu de façon simple et intuitive. Apprendre en jouant, oui, mais apprendre en créant est aussi possible ! <br />
+        Pour ça c’est facile, cliquez sur le bouton ci-dessous et suivez les instructions des premières pages.
+      create_your_version: Créez votre version du jeu
+      need_help: |
+        Besoin d’aide pour l’adapter à la thématique spécifiguideque de votre organisation ?
+        Écrivez-nous à <a href="mailto:bureau@ephiscience.org">bureau@ephiscience.org</a> pour nous préciser votre besoin
+        et nous reviendrons vers vous rapidement.
+    guide:
+      title: Guide pédagogique
+      part_1: |
+        Vous souhaitez utiliser le jeu dans un contexte scolaire, périscolaire, ou avec comme objectif principal
+        l’apprentissage des jeunes ? Nous pouvons vous aider !
+      part_2: |
+        Pour accompagner l’utilisation du jeu dans un contexte éducatif, nous travaillons sur un guide pédagogique pour
+        qu’il soit cohérent avec la réalité du terrain. Nous voulons travailler avec vous pour vous aider à utiliser le jeu en classe,
+        mais aussi améliorer le guide pour qu’il puisse servir à d’autres enseignant.e.s à travers le monde !
+      part_3: Pour en savoir plus, écrivez-nous à <a href="mailto:bureau@ephiscience.org">bureau@ephiscience.org</a>.
+
+  videos:
+    services:
+      title: Nos services
+      desc: |
+        ÉPhiScience a développé un savoir faire dans la production audiovisuelle sur des thématiques éducatives,
+        philosophiques et scientifiques en collaboration avec des chercheurs, des vulgarisateurs ou des éducateurs.
+        Nous avons à coeur de réaliser à des prix abordables en priorité des vidéos interdisciplinaires
+        mêlant art & science au service de projets utiles à la société.
+      project: |
+        Vous avez un projet de ce style ? Remplissez
+        <a target="_blank" rel="noreferrer" href="https://docs.google.com/forms/d/1-wLFW7XfIFT1Qn8_YWmFR9eO1w8JZ3OXy8PAsdrb-Aw/edit">ce formulaire</a>
+        et nous reviendrons vers vous rapidement.
+    past_videos:
+      title: Nos prestations passées
+      e_gloo:
+        title: Projet E-gloo par Premiers Cris
+        desc: Un espace visuel et sonore interactif pour la petite enfance, fruit de la collaboration de chercheuses et designers.
 
 navbar:
   index: Accueil

@@ -16,8 +16,8 @@ import { Component, OnInit } from '@angular/core'
             <h4>Liens utiles</h4>
             <ul class="footer-links">
               <li><a routerLink="/association">L'association</a></li>
-              <li><a routerLink="/edukey">EduKey</a></li>
-              <li><a routerLink="/activites">Activités</a></li>
+              <li><a routerLink="/offre-audiovisuelle">Offre audiovisuelle</a></li>
+              <li><a routerLink="/contribuer">Contribuer</a></li>
               <li><a routerLink="/jeu">Jeu</a></li>
             </ul>
             Envie de nous rejoindre ?<br />

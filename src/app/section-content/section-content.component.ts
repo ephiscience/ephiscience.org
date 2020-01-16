@@ -5,7 +5,13 @@ import { Component, OnInit } from '@angular/core'
   template: `
     <div class="container"><ng-content></ng-content></div>
   `,
-  styles: []
+  styles: [
+    `
+      .container {
+        margin-bottom: 1rem;
+      }
+    `
+  ]
 })
 export class SectionContentComponent implements OnInit {
   constructor() {}
