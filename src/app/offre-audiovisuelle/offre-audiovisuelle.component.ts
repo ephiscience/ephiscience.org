@@ -17,7 +17,7 @@ import { Component, OnInit } from '@angular/core'
       </eph-section-content>
     </eph-section>
 
-    <eph-section type="mid">
+    <eph-section id="prestations" type="mid">
       <eph-section-title>
         <h2 translate>page.videos.past_videos.title</h2>
       </eph-section-title>

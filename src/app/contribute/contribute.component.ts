@@ -21,7 +21,7 @@ import { Component, OnInit } from '@angular/core'
       </eph-section-content>
     </eph-section>
 
-    <eph-section type="mid">
+    <eph-section id="projets" type="mid">
       <eph-section-title><h2 translate>page.contribute.projects_and_needs.title</h2></eph-section-title>
       <eph-section-content>
         <div class="row">
@@ -66,7 +66,7 @@ import { Component, OnInit } from '@angular/core'
       </eph-section-content>
     </eph-section>
 
-    <eph-section type="bot">
+    <eph-section id="dons" type="bot">
       <eph-section-title><h2 translate>page.contribute.gifts_skills.title</h2></eph-section-title>
       <eph-section-content>
         <div class="row">

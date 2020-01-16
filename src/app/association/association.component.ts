@@ -50,7 +50,7 @@ import { Component, OnInit } from '@angular/core'
       </eph-section-content>
     </eph-section>
 
-    <eph-section type="mid">
+    <eph-section id="tete" type="mid">
       <eph-section-title>
         <div class="col">
           <h2 translate>page.organization.head.title</h2>
@@ -152,7 +152,7 @@ import { Component, OnInit } from '@angular/core'
       </eph-section-content>
     </eph-section>
 
-    <eph-section type="bot">
+    <eph-section id="membres" type="bot">
       <eph-section-title><h2 translate>page.organization.members.title</h2></eph-section-title>
       <eph-section-content>
         <div class="row">

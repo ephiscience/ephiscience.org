@@ -79,7 +79,7 @@ import { SOCIAL_EDUKEY } from '../index/index.component'
       </eph-section-content>
     </eph-section>
 
-    <eph-section type="mid">
+    <eph-section id="votre-version" type="mid">
       <eph-section-title>
         <h2 translate>page.game.create_your_version.title</h2>
       </eph-section-title>
