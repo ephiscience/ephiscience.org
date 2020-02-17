@@ -19,7 +19,7 @@ import { SOCIAL_EDUKEY } from '../index/index.component'
 
         <div class="row">
           <div class="col-12 col-md-10 mb-md-3">
-            <eph-yt-video videoId="2_En1cNveok" [social]="social"></eph-yt-video>
+            <eph-yt-video videoId="qGeCoX1itRU" [social]="social"></eph-yt-video>
           </div>
         </div>
 
@@ -33,25 +33,14 @@ import { SOCIAL_EDUKEY } from '../index/index.component'
           <div class="col-sm-4">
             <div style="display:block; text-align:center; padding-bottom:20px;">
               <a
-                href="../../assets/documents/ExpeditionSagesse_Imprimer.pdf"
+                href="https://docs.google.com/presentation/d/1DDVKwN7xkpdom1sa5Accj4L__awMs2Pc6LInrjp2Y8I/edit?usp=sharing"
                 target="_blank"
+                rel="noreferrer"
                 class="btn btn-lg btn-secondary text-white font-weight-bold px-4 py-3"
                 style="border-radius: 5px"
                 download
                 [innerHTML]="'page.game.the_game.buttons.free_download' | translate"
               ></a>
-            </div>
-            <div style="display:block; text-align:center; padding-bottom:20px;">
-              <a
-                href="assets/documents/A_Wisdom_Journey.pdf"
-                target="_blank"
-                class="btn btn-sm btn-secondary text-white font-weight-bold"
-                style="border-radius: 5px"
-                download
-                translate
-              >
-                page.game.the_game.buttons.english_version
-              </a>
             </div>
             <div style="display:block; text-align:center; padding-bottom:20px;">
               <a
