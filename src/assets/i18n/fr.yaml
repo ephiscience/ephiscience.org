@@ -258,12 +258,20 @@ page:
 
   game:
     about:
-      title: Jeu de société Expédition Sagesse
+      title: Expédition Sagesse, jeu d’ambiance coopératif
+      licence_desc: Expédition Sagesse est un jeu pensé pour et avec des enseignants. Le jeu est accessible gratuitement et est partagé sous licence libre (CC BY-NC-SA).
       desc: |
-        Un jeu amusant qui fait réfléchir autour de questions philosophiques :
-        il n’existe pas LA bonne réponse, c’est à vous de la construire !<br />
-        À consommer sans modération à partir de 8 ans, à l’école, en famille ou entre amis.
-      available: 'Jeu gratuit en 5 langues : Français - Anglais - Espagnol - Arabe - Russe'
+        Pour gagner tous ensemble, il vous faudra répondre à des questions qui n’ont jamais LA bonne réponse.
+        Ce qui compte, c’est donc COMMENT on répond.<br />
+        Deux joueurs dialogueront donc pour répondre à la question en essayant de valider un maximum de critères (donner un exemple, définir, argumenter, etc.),
+        à l’appréciation des autres joueurs du groupe.<br />
+        Des défis pourront s’ajouter au jeu et ajouter une couche de rires et de réflexion.
+      for_teachers: |
+        Prévu pour correspondre aux besoins des enseignants, <b>ce jeu s’appuie sur le socle commun de connaissances, de compétences et de culture.</b>
+        Il a été conçu en s’appuyant sur des travaux académiques en philosophie pour enfants et des principes de sciences cognitives afin de faciliter les apprentissages.
+        Le jeu a également bénéficié de l’expertise de plusieurs game designers talentueux, et le côté FUN a été validé par plus de 300 joueurs et joueuses de 8 à 88 ans !
+
+    #      available: 'Jeu gratuit en 5 langues : Français - Anglais - Espagnol - Arabe - Russe'
 
     the_game:
       title: Mécaniques de jeu
@@ -295,16 +303,15 @@ page:
         Écrivez-nous à <a href="mailto:bureau@ephiscience.org">bureau@ephiscience.org</a> pour nous préciser votre besoin
         et nous reviendrons vers vous rapidement.
     guide:
-      title: Guide pédagogique
+      title: Offre de formations
       part_1: |
-        Vous souhaitez utiliser le jeu dans un contexte scolaire, périscolaire, ou avec comme objectif principal
-        l’apprentissage des jeunes ? Nous pouvons vous aider !
+        Vous souhaitez utiliser le jeu avec vos élèves ou dans votre milieu professionnel, mais vous n’êtes pas certains de savoir par où commencer ?
+        Vous souhaitez faire réfléchir et développer de meilleures façons de communiquer ?<br/>
+        Pas d’inquiétude, nous sommes là pour vous aider !
       part_2: |
-        Pour accompagner l’utilisation du jeu dans un contexte éducatif, nous travaillons sur un guide pédagogique pour
-        qu’il soit cohérent avec la réalité du terrain. Nous voulons travailler avec vous pour vous aider à utiliser le jeu en classe,
-        mais aussi améliorer le guide pour qu’il puisse servir à d’autres enseignant.e.s à travers le monde !
-      part_3: Pour en savoir plus, écrivez-nous à <a href="mailto:bureau@ephiscience.org">bureau@ephiscience.org</a>.
-
+        Nous pouvons intervenir pour des formations d’enseignants autant qu’en entreprise, en créant une version du jeu sur mesure pour répondre à vos besoins.
+      part_3: Pour faire appel à nos services, écrivez-nous à <a href="mailto:bureau@ephiscience.org">bureau@ephiscience.org</a>.
+      need_help: Besin d'aide?
   videos:
     services:
       title: Nos services
