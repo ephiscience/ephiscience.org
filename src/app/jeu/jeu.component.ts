@@ -25,22 +25,11 @@ import { SOCIAL_EDUKEY } from '../index/index.component'
         <div class="row">
           <div class="col-sm-8">
             <p [innerHTML]="'page.game.about.for_teachers' | translate"></p>
-            <div class="row justify-content-center mb-3">
-              <div class="col mb-3 mb-md-0" align="center">
-                <eph-img src="assets/images/pages/jeu/players.png"></eph-img>
-              </div>
-              <div class="col mb-3 mb-md-0" align="center">
-                <eph-img src="assets/images/pages/jeu/age.png"></eph-img>
-              </div>
-              <div class="col mb-3 mb-md-0" align="center">
-                <eph-img src="assets/images/pages/jeu/time.png"></eph-img>
-              </div>
-            </div>
           </div>
           <div class="col-sm-4">
             <div style="display:block; text-align:center; padding-bottom:20px;">
               <a
-                href="assets/documents/2020_02_jeu_complet.pdf"
+                href="assets/documents/2020_06_04_jeu_complet.pdf"
                 target="_blank"
                 rel="noreferrer"
                 class="btn btn-lg btn-secondary text-white font-weight-bold px-4 py-3"
