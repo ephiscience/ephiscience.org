@@ -29,7 +29,7 @@ import { SOCIAL_EDUKEY } from '../index/index.component'
           <div class="col-sm-4">
             <div style="display:block; text-align:center; padding-bottom:20px;">
               <a
-                href="assets/documents/2020_06_04_jeu_complet.pdf"
+                href="assets/documents/2020_06_06_jeu_complet.pdf"
                 target="_blank"
                 rel="noreferrer"
                 class="btn btn-lg btn-secondary text-white font-weight-bold px-4 py-3"
