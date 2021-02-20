@@ -26,6 +26,8 @@ export class ImgComponent implements OnChanges {
   constructor() {}
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (this.src) this.webp = this.src.replace(/\.[a-z]+$/, '.webp')
+    if (this.src) {
+      this.webp = this.src.replace(/\.[a-z]+$/, '.webp')
+    }
   }
 }
