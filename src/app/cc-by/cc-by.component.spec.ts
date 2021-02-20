@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing'
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing'
 
 import { CcByComponent } from './cc-by.component'
 
@@ -6,11 +6,13 @@ describe('CcByComponent', () => {
   let component: CcByComponent
   let fixture: ComponentFixture<CcByComponent>
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [CcByComponent]
-    }).compileComponents()
-  }))
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        declarations: [CcByComponent]
+      }).compileComponents()
+    })
+  )
 
   beforeEach(() => {
     fixture = TestBed.createComponent(CcByComponent)
