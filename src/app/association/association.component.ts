@@ -12,19 +12,16 @@ import { Component, OnInit } from '@angular/core'
       <eph-section-content>
         <div class="row">
           <div class="col-md-8">
-            <h3 translate>page.organization.heart.raison_d_etre.title</h3>
-            <p [innerHTML]="'page.organization.heart.raison_d_etre.text' | translate"></p>
+            <h3 translate>page.organization.heart.why_e_phy_science.title</h3>
+            <p [innerHTML]="'page.organization.heart.why_e_phy_science.text' | translate"></p>
 
-            <h3 translate>page.organization.heart.mission.title</h3>
-            <p [innerHTML]="'page.organization.heart.mission.text' | translate"></p>
+            <h3 translate>page.organization.heart.connect_research.title</h3>
+            <p [innerHTML]="'page.organization.heart.connect_research.text' | translate"></p>
 
-            <h3 translate>page.organization.heart.vision.title</h3>
-            <p [innerHTML]="'page.organization.heart.vision.part_1' | translate"></p>
-            <p [innerHTML]="'page.organization.heart.vision.part_2' | translate"></p>
+            <h3 translate>page.organization.heart.fight.title</h3>
+            <p [innerHTML]="'page.organization.heart.fight.part_1' | translate"></p>
+            <p [innerHTML]="'page.organization.heart.fight.part_2' | translate"></p>
 
-            <h3 translate>page.organization.heart.our_values.title</h3>
-            <h4 class="col-6 values" [innerHTML]="'page.organization.heart.our_values.list' | translate"></h4>
-            <p [innerHTML]="'page.organization.heart.our_values.text' | translate"></p>
             <div style="display:block; text-align:center; padding-bottom:20px;">
               <a
                 href="https://www.helloasso.com/associations/e-science/formulaires/1"
@@ -37,14 +34,9 @@ import { Component, OnInit } from '@angular/core'
                 page.game.the_game.buttons.donate
               </a>
             </div>
-
-            <h3 translate>page.organization.heart.why.title</h3>
-            <p [innerHTML]="'page.organization.heart.why.education' | translate"></p>
-            <p [innerHTML]="'page.organization.heart.why.philosophy' | translate"></p>
-            <p [innerHTML]="'page.organization.heart.why.science' | translate"></p>
           </div>
           <div class="col-md-4">
-            <eph-img src="assets/images/pages/association/mission.png" alt="Mission" display="fill"></eph-img>
+            <eph-img src="assets/images/pages/association/heart.png" alt="Mission" display="fill"></eph-img>
           </div>
         </div>
       </eph-section-content>
@@ -59,94 +51,31 @@ import { Component, OnInit } from '@angular/core'
 
       <eph-section-content>
         <div class="row">
-          <div class="col">
-            <p translate>page.organization.head.description</p>
-
-            <h3 translate>page.organization.head.objective_1.title</h3>
-            <ul>
-              <li translate>
-                page.organization.head.objective_1.list.element_1.text
-                <ul>
-                  <li translate>page.organization.head.objective_1.list.element_1.sub_1</li>
-                </ul>
-              </li>
-              <li translate>
-                page.organization.head.objective_1.list.element_2.text
-                <ul>
-                  <li translate>page.organization.head.objective_1.list.element_2.sub_1</li>
-                  <li translate>page.organization.head.objective_1.list.element_2.sub_2</li>
-                </ul>
-              </li>
-              <li translate>
-                page.organization.head.objective_1.list.element_3.text
-              </li>
-              <li translate>
-                page.organization.head.objective_1.list.element_4.text
-                <ul>
-                  <li translate>page.organization.head.objective_1.list.element_4.sub_1</li>
-                  <li translate>page.organization.head.objective_1.list.element_4.sub_2</li>
-                </ul>
-              </li>
-              <li translate>
-                page.organization.head.objective_1.list.element_5.text
-                <ul>
-                  <li translate>page.organization.head.objective_1.list.element_5.sub_1</li>
-                  <li translate>page.organization.head.objective_1.list.element_5.sub_2</li>
-                </ul>
-              </li>
-            </ul>
-
-            <h3 translate>page.organization.head.objective_2.title</h3>
-            <ul>
-              <li translate>
-                page.organization.head.objective_2.list.element_1.text
-                <ul>
-                  <li translate>page.organization.head.objective_2.list.element_1.sub_1</li>
-                  <li translate>page.organization.head.objective_2.list.element_1.sub_2</li>
-                </ul>
-              </li>
-              <li translate>
-                page.organization.head.objective_2.list.element_2.text
-                <ul>
-                  <li translate>page.organization.head.objective_2.list.element_2.sub_1</li>
-                </ul>
-              </li>
-              <li translate>
-                page.organization.head.objective_2.list.element_3.text
-                <ul>
-                  <li translate>page.organization.head.objective_2.list.element_3.sub_1</li>
-                </ul>
-              </li>
-            </ul>
-
-            <h3 translate>page.organization.head.objective_3.title</h3>
-            <ul>
-              <li translate>
-                page.organization.head.objective_3.list.element_1.text
-                <ul>
-                  <li translate>page.organization.head.objective_3.list.element_1.sub_1</li>
-                  <li translate>page.organization.head.objective_3.list.element_1.sub_2</li>
-                </ul>
-              </li>
-              <li translate>
-                page.organization.head.objective_3.list.element_2.text
-                <ul>
-                  <li translate>page.organization.head.objective_3.list.element_2.sub_1</li>
-                </ul>
-              </li>
-              <li translate>
-                page.organization.head.objective_3.list.element_3.text
-              </li>
-            </ul>
-
-            <h3 translate>page.organization.head.objective_4.title</h3>
-            <ul>
-              <li translate>page.organization.head.objective_4.list.element_1.text</li>
-              <li translate>page.organization.head.objective_4.list.element_2.text</li>
-              <li translate>page.organization.head.objective_4.list.element_3.text</li>
-              <li translate>page.organization.head.objective_4.list.element_4.text</li>
-              <li translate>page.organization.head.objective_4.list.element_5.text</li>
-            </ul>
+          <div class="col-md p-4">
+            <h5>Objectif 1 : Développer une communauté d’acteurs de l’éducation et construire la confiance</h5>
+            <div style="max-width: 66%; margin: 0 auto">
+              <eph-img src="assets/images/pages/association/objectives/develop.png" display="fill"></eph-img>
+            </div>
+          </div>
+          <div class="col-md p-4">
+            <h5>Objectif 2 : Impliquer les chercheurs dans nos missions</h5>
+            <div style="max-width: 66%; margin: 0 auto">
+              <eph-img src="assets/images/pages/association/objectives/researchers.png" display="fill"></eph-img>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md p-4">
+            <h5>Objectif 3 : Toucher le milieu des entreprises innovantes et des acteurs de changement</h5>
+            <div style="max-width: 66%; margin: 0 auto">
+              <eph-img src="assets/images/pages/association/objectives/touch.png" display="fill"></eph-img>
+            </div>
+          </div>
+          <div class="col-md p-4">
+            <h5>Objectif 4 : Donner l’exemple et continuer à apprendre</h5>
+            <div style="max-width: 66%; margin: 0 auto">
+              <eph-img src="assets/images/pages/association/objectives/mission.png" display="fill"></eph-img>
+            </div>
           </div>
         </div>
       </eph-section-content>
@@ -162,17 +91,16 @@ import { Component, OnInit } from '@angular/core'
             <p translate>page.organization.members.part_3.intro</p>
             <ul>
               <li [innerHTML]="'page.organization.members.part_3.president' | translate"></li>
+              <li [innerHTML]="'page.organization.members.part_3.general_director' | translate"></li>
               <li [innerHTML]="'page.organization.members.part_3.treasurer' | translate"></li>
               <li [innerHTML]="'page.organization.members.part_3.secretary' | translate"></li>
               <li [innerHTML]="'page.organization.members.part_3.communication' | translate"></li>
-              <li [innerHTML]="'page.organization.members.part_3.other_president' | translate"></li>
             </ul>
 
             <p translate>page.organization.members.part_4.desc</p>
             <ul>
-              <li [innerHTML]="'page.organization.members.part_4.benevoles' | translate"></li>
-              <li [innerHTML]="'page.organization.members.part_4.friends' | translate"></li>
-              <li [innerHTML]="'page.organization.members.part_4.scientific_council' | translate"></li>
+              <li [innerHTML]="'page.organization.members.part_4.audiovisuel' | translate"></li>
+              <li [innerHTML]="'page.organization.members.part_4.numerique' | translate"></li>
             </ul>
             <p translate>page.organization.members.part_5</p>
 

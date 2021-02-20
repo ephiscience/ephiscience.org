@@ -18,17 +18,33 @@ import { Component, OnInit } from '@angular/core'
             </div>
           </div>
           <div class="col-2">
-            <img src="assets/images/logo/CRI.svg" alt="CRI Paris" class="parent-width" />
+            <a href="https://cri-paris.org/fr" target="_blank" rel="noreferrer">
+              <img src="assets/images/logo/CRI.svg" alt="CRI Paris" class="parent-width" />
+            </a>
           </div>
         </div>
         <div class="row mb-4">
           <div class="col-md-4">
-            <eph-img alt="CECAPFI" display="fill" src="assets/images/logo/CECAPFI.png"></eph-img>
+            <a href="https://cecapfi.com/" target="_blank" rel="noreferrer">
+              <eph-img alt="CECAPFI" display="fill" src="assets/images/logo/CECAPFI.png"></eph-img>
+            </a>
           </div>
           <div class="col-md-8 d-flex flex-column justify-content-center">
             <div class="flex">
               <p translate>page.partners.cecapfi</p>
             </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-9 d-flex flex-column justify-content-center">
+            <div class="flex">
+              <p translate>page.partners.cosciences</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <a href="https://cosciences.net/" target="_blank" rel="noreferrer">
+              <img src="assets/images/logo/cosciences.png" alt="Cosciences" class="parent-width" />
+            </a>
           </div>
         </div>
       </eph-section-content>

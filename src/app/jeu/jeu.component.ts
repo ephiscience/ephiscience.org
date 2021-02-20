@@ -18,20 +18,25 @@ import { SOCIAL_EDUKEY } from '../index/index.component'
 
         <div class="row">
           <div class="col-sm-8 col-md-10 mb-md-3">
-            <eph-yt-video videoId="qGeCoX1itRU" [social]="social"></eph-yt-video>
+            <eph-yt-video videoId="L46dYRryjtc"></eph-yt-video>
           </div>
         </div>
 
         <div class="row">
           <div class="col-sm-8">
             <p [innerHTML]="'page.game.about.for_teachers' | translate"></p>
+            <p [innerHTML]="'page.game.about.version_numerique' | translate"></p>
+            <div class="d-flex justify-content-around">
+              <img src="assets/images/pages/jeu/time.png" class="img-responsive" alt="Durée de 45 minutes" />
+              <img src="assets/images/pages/jeu/players.png" class="img-responsive" alt="De 2 à 5 joueurs" />
+              <img src="assets/images/pages/jeu/age.png" class="img-responsive" alt="8 ans et plus" />
+            </div>
           </div>
           <div class="col-sm-4">
             <div style="display:block; text-align:center; padding-bottom:20px;">
               <a
                 href="assets/documents/2020_06_06_jeu_complet.pdf"
                 target="_blank"
-                rel="noreferrer"
                 class="btn btn-lg btn-secondary text-white font-weight-bold px-4 py-3"
                 style="border-radius: 5px"
                 download
@@ -52,12 +57,8 @@ import { SOCIAL_EDUKEY } from '../index/index.component'
             </div>
             <div style="display:block; text-align:center;">
               <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noreferrer">
-                <img
-                  alt="Licence Creative Commons"
-                  style="border-width:0"
-                  src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"
-                /> </a
-              ><br />
+                <img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+              </a>
             </div>
           </div>
         </div>
@@ -107,7 +108,14 @@ import { SOCIAL_EDUKEY } from '../index/index.component'
       </eph-section-content>
     </eph-section>
   `,
-  styles: []
+  styles: [
+    `
+      .img-responsive {
+        max-width: 100%;
+        height: auto;
+      }
+    `
+  ]
 })
 export class JeuComponent implements OnInit {
   social = SOCIAL_EDUKEY

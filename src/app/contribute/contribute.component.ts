@@ -11,11 +11,21 @@ import { Component, OnInit } from '@angular/core'
             <p [innerHTML]="'page.contribute.become_member.part_1' | translate"></p>
             <p [innerHTML]="'page.contribute.become_member.part_2' | translate"></p>
             <p [innerHTML]="'page.contribute.become_member.part_3' | translate"></p>
-            <eph-button href="mailto:bureau@ephiscience.org?subject=Devenir ami de ÉPhiScience" target="_blank" rel="noreferrer">
-              page.contribute.become_member.become_member
-            </eph-button>
             <p [innerHTML]="'page.contribute.become_member.part_4' | translate"></p>
             <p [innerHTML]="'page.contribute.become_member.part_5' | translate"></p>
+            <p [innerHTML]="'page.contribute.become_member.part_6' | translate"></p>
+            <div style="max-width: 66%; margin: 0 auto">
+              <eph-img src="assets/images/pages/contribute/benevole_ami.png" display="fill"></eph-img>
+            </div>
+            <p class="mt-3" [innerHTML]="'page.contribute.become_member.part_7' | translate"></p>
+            <p [innerHTML]="'page.contribute.become_member.part_8' | translate"></p>
+            <eph-button
+              href="https://www.helloasso.com/associations/e-science/adhesions/devenir-ami-de-ephiscience"
+              target="_blank"
+              rel="noreferrer"
+            >
+              page.contribute.become_member.become_friend
+            </eph-button>
           </div>
         </div>
       </eph-section-content>
@@ -26,41 +36,9 @@ import { Component, OnInit } from '@angular/core'
       <eph-section-content>
         <div class="row">
           <div class="col">
-            <p [innerHTML]="'page.contribute.projects_and_needs.desc' | translate"></p>
-            <p [innerHTML]="'page.contribute.projects_and_needs.videos.desc' | translate"></p>
-            <ul>
-              <li translate>page.contribute.projects_and_needs.videos.need_1</li>
-              <li translate>page.contribute.projects_and_needs.videos.need_2</li>
-              <li translate>page.contribute.projects_and_needs.videos.need_3</li>
-              <li translate>page.contribute.projects_and_needs.videos.need_4</li>
-            </ul>
-            <p [innerHTML]="'page.contribute.projects_and_needs.wisdom_journey.desc' | translate"></p>
-            <ul>
-              <li translate>page.contribute.projects_and_needs.wisdom_journey.need_1</li>
-              <li translate>page.contribute.projects_and_needs.wisdom_journey.need_2</li>
-              <li translate>page.contribute.projects_and_needs.wisdom_journey.need_3</li>
-              <li translate>page.contribute.projects_and_needs.wisdom_journey.need_4</li>
-              <li translate>page.contribute.projects_and_needs.wisdom_journey.need_5</li>
-              <li translate>page.contribute.projects_and_needs.wisdom_journey.need_6</li>
-              <li translate>page.contribute.projects_and_needs.wisdom_journey.need_7</li>
-              <li translate>page.contribute.projects_and_needs.wisdom_journey.need_8</li>
-              <li translate>page.contribute.projects_and_needs.wisdom_journey.need_9</li>
-              <li translate>page.contribute.projects_and_needs.wisdom_journey.need_10</li>
-              <li translate>page.contribute.projects_and_needs.wisdom_journey.need_11</li>
-              <li translate>page.contribute.projects_and_needs.wisdom_journey.need_12</li>
-            </ul>
-            <p [innerHTML]="'page.contribute.projects_and_needs.organization.desc' | translate"></p>
-            <ul>
-              <li translate>page.contribute.projects_and_needs.organization.need_1</li>
-              <li translate>page.contribute.projects_and_needs.organization.need_2</li>
-              <li translate>page.contribute.projects_and_needs.organization.need_3</li>
-              <li translate>page.contribute.projects_and_needs.organization.need_4</li>
-              <li translate>page.contribute.projects_and_needs.organization.need_5</li>
-              <li translate>page.contribute.projects_and_needs.organization.need_6</li>
-              <li translate>page.contribute.projects_and_needs.organization.need_7</li>
-              <li translate>page.contribute.projects_and_needs.organization.need_8</li>
-              <li translate>page.contribute.projects_and_needs.organization.need_9</li>
-            </ul>
+            <eph-button href="https://trello.com/b/TOuGbRKa/fonctionnement-interne" target="_blank" rel="noreferrer">
+              page.contribute.projects_and_needs.our_projects
+            </eph-button>
           </div>
         </div>
       </eph-section-content>
@@ -73,7 +51,7 @@ import { Component, OnInit } from '@angular/core'
           <div class="col">
             <p [innerHTML]="'page.contribute.gifts_skills.gift_1' | translate"></p>
             <p [innerHTML]="'page.contribute.gifts_skills.gift_2' | translate"></p>
-            <eph-button href="https://www.helloasso.com/associations/e-science/formulaires/2" target="_blank" rel="noreferrer">
+            <eph-button href="https://www.helloasso.com/associations/e-science/formulaires/1" target="_blank" rel="noreferrer">
               page.contribute.gifts_skills.give
             </eph-button>
             <p [innerHTML]="'page.contribute.gifts_skills.skills' | translate"></p>

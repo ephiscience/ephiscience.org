@@ -1,0 +1,72 @@
+import { Component, OnInit } from '@angular/core'
+
+@Component({
+  selector: 'eph-critical-thinking',
+  template: `
+    <eph-section type="top">
+      <eph-section-title><h2 translate>page.critical_thinking.section_1.title</h2></eph-section-title>
+      <eph-section-content>
+        <div class="row">
+          <div class="col">
+            <p [innerHTML]="'page.critical_thinking.section_1.intro_1' | translate"></p>
+            <p [innerHTML]="'page.critical_thinking.section_1.intro_2' | translate"></p>
+          </div>
+        </div>
+      </eph-section-content>
+    </eph-section>
+    <eph-section type="mid">
+      <eph-section-title><h2 translate>page.critical_thinking.section_2.title</h2></eph-section-title>
+      <eph-section-content>
+        <div class="row">
+          <div class="col">
+            <p [innerHTML]="'page.critical_thinking.section_2.intro_1' | translate"></p>
+            <eph-button target="_blank" href="assets/documents/Synthese_Universcience_V1.pdf" translate>
+              page.critical_thinking.section_2.discover_synthesis
+            </eph-button>
+            <p [innerHTML]="'page.critical_thinking.section_2.intro_2' | translate"></p>
+          </div>
+        </div>
+      </eph-section-content>
+    </eph-section>
+    <eph-section type="bot">
+      <eph-section-title><h2 translate>page.critical_thinking.section_3.title</h2></eph-section-title>
+      <eph-section-content>
+        <div class="row">
+          <div class="col">
+            <p [innerHTML]="'page.critical_thinking.section_3.intro_1' | translate"></p>
+            <p [innerHTML]="'page.critical_thinking.section_3.intro_2' | translate"></p>
+            <p [innerHTML]="'page.critical_thinking.section_3.intro_3' | translate"></p>
+          </div>
+        </div>
+      </eph-section-content>
+    </eph-section>
+    <eph-section type="mid">
+      <eph-section-title><h2 translate>page.critical_thinking.section_4.title</h2></eph-section-title>
+      <eph-section-content>
+        <div class="row">
+          <div class="col">
+            <p [innerHTML]="'page.critical_thinking.section_4.intro_1' | translate"></p>
+            <p [innerHTML]="'page.critical_thinking.section_4.intro_2' | translate"></p>
+          </div>
+        </div>
+      </eph-section-content>
+    </eph-section>
+    <eph-section type="bot">
+      <eph-section-title><h2 translate>page.critical_thinking.section_5.title</h2></eph-section-title>
+      <eph-section-content>
+        <div class="row">
+          <div class="col">
+            <p [innerHTML]="'page.critical_thinking.section_5.intro_1' | translate"></p>
+            <p [innerHTML]="'page.critical_thinking.section_5.intro_2' | translate"></p>
+          </div>
+        </div>
+      </eph-section-content>
+    </eph-section>
+  `,
+  styles: []
+})
+export class CriticalThinkingComponent implements OnInit {
+  constructor() {}
+
+  ngOnInit(): void {}
+}

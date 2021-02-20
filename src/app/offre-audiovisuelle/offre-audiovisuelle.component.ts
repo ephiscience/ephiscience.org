@@ -22,7 +22,7 @@ import { Component, OnInit } from '@angular/core'
         <h2 translate>page.videos.past_videos.title</h2>
       </eph-section-title>
       <eph-section-content>
-        <div class="d-flex">
+        <div class="d-flex mb-5">
           <div class="col-6 flex">
             <eph-yt-video bare="true" videoId="6s37o9NNH-c"></eph-yt-video>
           </div>
@@ -34,6 +34,40 @@ import { Component, OnInit } from '@angular/core'
                 </eph-card-title>
                 <eph-card-content>
                   <p translate>page.videos.past_videos.e_gloo.desc</p>
+                </eph-card-content>
+              </eph-card>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex mb-5">
+          <div class="flex d-flex flex-column justify-content-center">
+            <div class="flex">
+              <eph-card size="12" color="purple">
+                <eph-card-title>
+                  <h3 translate>page.videos.past_videos.profschercheurs.title</h3>
+                </eph-card-title>
+                <eph-card-content>
+                  <p [innerHTML]="'page.videos.past_videos.profschercheurs.desc' | translate"></p>
+                </eph-card-content>
+              </eph-card>
+            </div>
+          </div>
+          <div class="col-6 flex">
+            <eph-yt-playlist bare="true" playlist="PLlgHX5UyElIVlwlVUMj7m_xJBMdYs6as-"></eph-yt-playlist>
+          </div>
+        </div>
+        <div class="d-flex mb-5">
+          <div class="col-6 flex">
+            <eph-yt-video bare="true" videoId="PV182qHtMt8"></eph-yt-video>
+          </div>
+          <div class="flex d-flex flex-column justify-content-center">
+            <div class="flex">
+              <eph-card size="12" color="purple">
+                <eph-card-title>
+                  <h3 translate>page.videos.past_videos.vault_challenge.title</h3>
+                </eph-card-title>
+                <eph-card-content>
+                  <p [innerHTML]="'page.videos.past_videos.vault_challenge.desc' | translate"></p>
                 </eph-card-content>
               </eph-card>
             </div>

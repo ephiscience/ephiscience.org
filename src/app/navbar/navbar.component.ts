@@ -20,7 +20,7 @@ import { RouterActivateEventService } from '../app.component'
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand">
-            <eph-img alt="Ephiscience" src="assets/images/logo/logo_small.png" imgHeight="40px"></eph-img>
+            <eph-img alt="Ephiscience" src="assets/images/logo/logo_small_white.png" imgHeight="40px"></eph-img>
           </a>
         </div>
         <div class="navbar--overlay" (click)="toggleNavbar()" [class.show]="showNavbar"></div>
@@ -34,11 +34,12 @@ import { RouterActivateEventService } from '../app.component'
             <li class="nav-item" routerLinkActive="active"><a routerLink="/association" class="nav-link">L'association</a></li>
             <li class="nav-item" routerLinkActive="active"><a routerLink="/contribuer" class="nav-link">Contribuer</a></li>
             <li class="nav-item" routerLinkActive="active"><a routerLink="/jeu" class="nav-link">Jeu</a></li>
-            <li class="nav-item" routerLinkActive="active"><a routerLink="/edukey" class="nav-link">Edukey</a></li>
-            <li class="nav-item" routerLinkActive="active"><a routerLink="/mr-phi" class="nav-link">Mr. Phi</a></li>
             <li class="nav-item" routerLinkActive="active">
               <a routerLink="/offre-audiovisuelle" class="nav-link">Offre audiovisuelle</a>
             </li>
+            <li class="nav-item" routerLinkActive="active"><a routerLink="/esprit-critique" class="nav-link">Esprit critique</a></li>
+            <li class="nav-item" routerLinkActive="active"><a routerLink="/edukey" class="nav-link">Edukey</a></li>
+            <li class="nav-item" routerLinkActive="active"><a routerLink="/mr-phi" class="nav-link">Mr. Phi</a></li>
             <li class="nav-item" routerLinkActive="active"><a routerLink="/partenaires" class="nav-link">Partenaires</a></li>
           </ul>
         </div>
@@ -50,12 +51,12 @@ import { RouterActivateEventService } from '../app.component'
 export class NavbarComponent implements OnInit, OnDestroy {
   showNavbar = false
 
-  private subscription_Routerservice: Subscription
+  private routerServiceSubscription: Subscription
 
   constructor(private routerActivateEventService: RouterActivateEventService) {}
 
   ngOnInit() {
-    this.subscription_Routerservice = this.routerActivateEventService.activated.asObservable().subscribe(() => (this.showNavbar = false))
+    this.routerServiceSubscription = this.routerActivateEventService.activated.asObservable().subscribe(() => (this.showNavbar = false))
   }
 
   toggleNavbar() {
@@ -63,6 +64,6 @@ export class NavbarComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.subscription_Routerservice.unsubscribe()
+    this.routerServiceSubscription.unsubscribe()
   }
 }

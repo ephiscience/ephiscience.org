@@ -9,8 +9,9 @@ import { Component, Input, OnInit } from '@angular/core'
   `,
   styles: [
     `
-      a {
+      a.btn {
         background-color: white;
+        text-decoration: none;
       }
 
       a:hover {

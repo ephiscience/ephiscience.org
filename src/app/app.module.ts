@@ -44,11 +44,14 @@ import { PartnersComponent } from './partners/partners.component'
 import { ContributeComponent } from './contribute/contribute.component'
 import { OffreAudiovisuelleComponent } from './offre-audiovisuelle/offre-audiovisuelle.component'
 import { ButtonComponent } from './button/button.component'
+import { CriticalThinkingComponent } from './critical-thinking/critical-thinking.component'
+import { SmallLogoWhiteComponent } from './small-logo-white/small-logo-white.component'
+import { YtPlaylistComponent } from './yt-playlist/yt-playlist.component'
 
 export class YamlTranslationLoader implements TranslateLoader {
   constructor(private http: HttpClient, private prefix: string, private suffix = '.yaml') {}
 
-  getTranslation(lang: string): Observable<Object> {
+  getTranslation(lang: string): Observable<unknown> {
     return this.http.get(`${this.prefix}/${lang}${this.suffix}`, { responseType: 'text' }).pipe(map(yaml => safeLoad(yaml)))
   }
 }
@@ -86,7 +89,10 @@ export function createTranslateLoader(http: HttpClient) {
     PartnersComponent,
     ContributeComponent,
     OffreAudiovisuelleComponent,
-    ButtonComponent
+    ButtonComponent,
+    CriticalThinkingComponent,
+    SmallLogoWhiteComponent,
+    YtPlaylistComponent
   ],
   imports: [
     BrowserModule,

@@ -11,7 +11,8 @@
       "extends": [
         "plugin:@angular-eslint/ng-cli-compat",
         "plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
-        "plugin:@angular-eslint/template/process-inline-templates"
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "prettier"
       ],
       "rules": {
         "@typescript-eslint/consistent-type-definitions": "error",
@@ -24,7 +25,15 @@
         ],
         "id-blacklist": "off",
         "id-match": "off",
-        "no-underscore-dangle": "off"
+        "no-underscore-dangle": "off",
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "prefix": "eph",
+            "style": "kebab-case"
+          }
+        ],
+        "prefer-arrow/prefer-arrow-functions": "off"
       }
     },
     {

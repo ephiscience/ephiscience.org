@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core'
-import { SOCIAL_EDUKEY, SOCIAL_MR_PHI } from 'src/app/index/index.component'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'eph-mr-phi',
@@ -16,7 +15,7 @@ import { SOCIAL_EDUKEY, SOCIAL_MR_PHI } from 'src/app/index/index.component'
         <div class="row">
           <div class="col">
             <p translate class="mb-3">page.mr_phi.description</p>
-            <eph-last-yt-video [social]="socialMrPhi" channelId="UCqA8H22FwgBVcF3GJpp0MQw"></eph-last-yt-video>
+            <eph-last-yt-video channelId="UCqA8H22FwgBVcF3GJpp0MQw"></eph-last-yt-video>
           </div>
         </div>
       </eph-section-content>
@@ -30,8 +29,4 @@ import { SOCIAL_EDUKEY, SOCIAL_MR_PHI } from 'src/app/index/index.component'
     `
   ]
 })
-export class MrPhiComponent implements OnInit {
-  socialMrPhi = SOCIAL_MR_PHI
-
-  ngOnInit() {}
-}
+export class MrPhiComponent {}
