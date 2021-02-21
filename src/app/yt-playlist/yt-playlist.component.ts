@@ -59,8 +59,6 @@ export class YtPlaylistComponent implements OnChanges {
 
   constructor(private sanitizer: DomSanitizer) {}
 
-  ngOnInit() {}
-
   ngOnChanges(changes: SimpleChanges): void {
     this.saneSrc = this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/videoseries?list=${this.playlist}`)
   }
