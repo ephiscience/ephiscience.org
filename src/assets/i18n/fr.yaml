@@ -252,14 +252,12 @@ page:
         Prévu pour correspondre aux besoins des enseignants, <b>ce jeu s’appuie sur les programmes scolaires.</b>
         Il a été conçu en s’appuyant sur des travaux académiques en philosophie pour enfants et des principes de sciences cognitives
         afin de faciliter les apprentissages. Le jeu a également bénéficié de l’expertise de plusieurs game designers talentueux,
-        et le côté FUN a été validé par plus de 300 joueurs et joueuses de 8 à 88 ans !
+        et le côté FUN a été validé par plus de 300 joueurs et joueuses de 8 à 88 ans !
       version_numerique: |
-        Une version numérique du jeu est en cours de développement pour que vous puissiez jouer au jeu en classe autour
-        d’une tablette, ou bien à distance depuis différents supports ! <br />
-        Vous voulez être tenus au courant dès qu’une première version sera disponible ?
-        Écrivez-nous à <a href="mailto:bureau@ephiscience.org">bureau@ephiscience.org</a> pour être les premiers à y jouer !
-
-    #      available: 'Jeu gratuit en 5 langues : Français - Anglais - Espagnol - Arabe - Russe'
+        Vous pouvez utiliser la version béta-test pour tablette en cliquant sur le bouton "Version numérique".
+        Faites-nous vos retours si vous le souhaitez à l'adresse <a href="mailto:bureau@ephiscience.org">bureau@ephiscience.org</a> !<br />
+        Le développement du jeu est open-source, et le code est accessible
+        <a href="https://github.com/ephiscience/wisdom-journey-front" rel="noreferrer" target="_blank">sur Github</a>
 
     the_game:
       title: Mécaniques de jeu
@@ -279,6 +277,7 @@ page:
         free_download: Téléchargement<br/>GRATUIT
         english_version: English Version
         donate: Faire un don
+        digital_version: Version numérique
     create_your_version:
       title: Créez VOTRE version
       desc: |

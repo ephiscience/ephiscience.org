@@ -18,7 +18,7 @@ import { SOCIAL_EDUKEY } from '../index/index.component'
 
         <div class="row">
           <div class="col-sm-8 col-md-10 mb-md-3">
-            <eph-yt-video videoId="L46dYRryjtc"></eph-yt-video>
+            <eph-yt-video videoId="Pj_i9qF2gmY"></eph-yt-video>
           </div>
         </div>
 
@@ -35,12 +35,12 @@ import { SOCIAL_EDUKEY } from '../index/index.component'
           <div class="col-sm-4">
             <div style="display:block; text-align:center; padding-bottom:20px;">
               <a
-                href="assets/documents/2020_06_06_jeu_complet.pdf"
+                href="https://game.ephiscience.org"
                 target="_blank"
+                rel="noreferrer"
                 class="btn btn-lg btn-secondary text-white font-weight-bold px-4 py-3"
                 style="border-radius: 5px"
-                download
-                [innerHTML]="'page.game.the_game.buttons.free_download' | translate"
+                [innerHTML]="'page.game.the_game.buttons.digital_version' | translate"
               ></a>
             </div>
             <div style="display:block; text-align:center; padding-bottom:20px;">
@@ -54,6 +54,16 @@ import { SOCIAL_EDUKEY } from '../index/index.component'
               >
                 page.game.the_game.buttons.donate
               </a>
+            </div>
+            <div style="display:block; text-align:center; padding-bottom:20px;">
+              <a
+                href="assets/documents/2020_06_06_jeu_complet.pdf"
+                target="_blank"
+                class="btn btn-lg btn-secondary text-white font-weight-bold px-4 py-3"
+                style="border-radius: 5px"
+                download
+                [innerHTML]="'page.game.the_game.buttons.free_download' | translate"
+              ></a>
             </div>
             <div style="display:block; text-align:center;">
               <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noreferrer">
