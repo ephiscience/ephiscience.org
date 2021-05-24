@@ -217,7 +217,7 @@ page:
         Vous aimeriez également qu’il y ait davantage de liens entre les recherches et les pratiques en éducation, et
         vous voulez favoriser des méthodes à large impact potentiel ?
       gift_2: |
-        Il vous est toujours possible de nous soutenir financièrement à travers un don déductible d’impôts à hauteur
+        Il vous est toujours possible de nous soutenir financièrement à travers un don déductible d’impôts en France uniquement à hauteur
         de 66%. Ainsi, un don de 100€ vous coûtera en réalité 34€. Cela nous permettra de continuer à développer gratuitement des
         outils de qualité qui bénéficient à tous les éducateurs et les apprenants.
       give: Faire un don
@@ -258,7 +258,6 @@ page:
         Faites-nous vos retours si vous le souhaitez à l'adresse <a href="mailto:bureau@ephiscience.org">bureau@ephiscience.org</a> !<br />
         Le développement du jeu est open-source, et le code est accessible
         <a href="https://github.com/ephiscience/wisdom-journey-front" rel="noreferrer" target="_blank">sur Github</a>
-
     the_game:
       title: Mécaniques de jeu
       catchphrase: |
