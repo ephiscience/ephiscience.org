@@ -3,24 +3,23 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { ServiceWorkerModule } from '@angular/service-worker'
-// import { StoreModule } from '@ngrx/store'
-// import { StoreDevtoolsModule } from '@ngrx/store-devtools'
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
-import { safeLoad } from 'js-yaml'
-// import { FacebookModule } from 'ngx-facebook'
+import { load } from 'js-yaml'
 import { Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
-// import { NgRgpdModule } from 'src/app/ng-rgpd/ng-rgpd.module'
 import { environment } from '../environments/environment'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { AssociationComponent } from './association/association.component'
+import { ButtonComponent } from './button/button.component'
 import { CardContentComponent } from './card-content/card-content.component'
 import { CardTitleComponent } from './card-title/card-title.component'
 import { CardComponent } from './card/card.component'
 import { CcByComponent } from './cc-by/cc-by.component'
 import { ContactFormComponent } from './contact-form/contact-form.component'
+import { ContributeComponent } from './contribute/contribute.component'
+import { CriticalThinkingComponent } from './critical-thinking/critical-thinking.component'
 import { EdukeyComponent } from './edukey/edukey.component'
 import { FbLikeComponent } from './fb-like/fb-like.component'
 import { FooterComponent } from './footer/footer.component'
@@ -33,26 +32,21 @@ import { LogoWhiteComponent } from './logo-white/logo-white.component'
 import { MoreButtonComponent } from './more-button/more-button.component'
 import { MrPhiComponent } from './mr-phi/mr-phi.component'
 import { NavbarComponent } from './navbar/navbar.component'
-// import { ngRgpdReducer } from './ng-rgpd/ng-rgpd.reducer'
-// import { metaReducers, reducers } from './reducers'
+import { OffreAudiovisuelleComponent } from './offre-audiovisuelle/offre-audiovisuelle.component'
+import { PartnersComponent } from './partners/partners.component'
 import { SectionContentComponent } from './section-content/section-content.component'
 import { SectionTitleComponent } from './section-title/section-title.component'
 import { SectionComponent } from './section/section.component'
-import { SocialColumnComponent } from './social-column/social-column.component'
-import { YtVideoComponent } from './yt-video/yt-video.component'
-import { PartnersComponent } from './partners/partners.component'
-import { ContributeComponent } from './contribute/contribute.component'
-import { OffreAudiovisuelleComponent } from './offre-audiovisuelle/offre-audiovisuelle.component'
-import { ButtonComponent } from './button/button.component'
-import { CriticalThinkingComponent } from './critical-thinking/critical-thinking.component'
 import { SmallLogoWhiteComponent } from './small-logo-white/small-logo-white.component'
+import { SocialColumnComponent } from './social-column/social-column.component'
 import { YtPlaylistComponent } from './yt-playlist/yt-playlist.component'
+import { YtVideoComponent } from './yt-video/yt-video.component'
 
 export class YamlTranslationLoader implements TranslateLoader {
   constructor(private http: HttpClient, private prefix: string, private suffix = '.yaml') {}
 
   getTranslation(lang: string): Observable<unknown> {
-    return this.http.get(`${this.prefix}/${lang}${this.suffix}`, { responseType: 'text' }).pipe(map(yaml => safeLoad(yaml)))
+    return this.http.get(`${this.prefix}/${lang}${this.suffix}`, { responseType: 'text' }).pipe(map(yaml => load(yaml)))
   }
 }
 
@@ -97,9 +91,6 @@ export function createTranslateLoader(http: HttpClient) {
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // FacebookModule.forRoot(),
-    // StoreModule.forRoot(reducers, { metaReducers }),
-    // !environment.production ? StoreDevtoolsModule.instrument() : [],
     BrowserAnimationsModule,
     HttpClientModule,
     HttpClientJsonpModule,
@@ -111,10 +102,6 @@ export function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient]
       }
     })
-    // StoreModule.forRoot({ ng_rgpd: ngRgpdReducer }),
-    // NgRgpdModule.forRoot({
-    //   units: [{ id: 'Facebook', scriptUrl: 'mlpijdqlzd' }]
-    // })
   ],
   providers: [],
   bootstrap: [AppComponent]
