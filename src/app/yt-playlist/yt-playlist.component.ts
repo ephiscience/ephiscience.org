@@ -9,7 +9,7 @@ import { SocialParts } from 'src/app/yt-video/yt-video.component'
       <iframe [src]="saneSrc"></iframe>
     </div>
     <ng-template #containers>
-      <div class="row mb-3" *ngIf="social == {}; else withSocial">
+      <div class="row mb-3" *ngIf="social === {}; else withSocial">
         <div class="col">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe [src]="saneSrc"></iframe>
