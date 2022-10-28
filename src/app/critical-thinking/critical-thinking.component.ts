@@ -24,6 +24,7 @@ import { Component, OnInit } from '@angular/core'
               page.critical_thinking.section_2.discover_synthesis
             </eph-button>
             <p [innerHTML]="'page.critical_thinking.section_2.intro_2' | translate"></p>
+<!--            <eph-yt-video videoId="pKuArhRdTyQ" bare="true"></eph-yt-video>-->
           </div>
         </div>
       </eph-section-content>
