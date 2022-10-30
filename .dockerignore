@@ -1,2 +1,7 @@
-node_modules/
-dist/
+/.angular/
+/dist/
+/node_modules/
+
+/.dockerignore
+/Dockerfile
+/yarn-error.log

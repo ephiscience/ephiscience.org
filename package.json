@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "docker:build": "docker build --pull -t registry.gkny.fr/ephiscience/web .",
-    "docker:push": "docker build --pull -t registry.gkny.fr/ephiscience/web . && docker push registry.gkny.fr/ephiscience/web:latest",
+    "docker:push": "docker buildx build --pull --load -t registry.gkny.fr/ephiscience/web . && docker push registry.gkny.fr/ephiscience/web:latest",
     "docker:run": "docker run --rm -p 0.0.0.0:2015:2015 -it registry.gkny.fr/ephiscience/web",
     "test": "ng test",
     "lint": "ng lint",

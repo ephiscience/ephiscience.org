@@ -20,11 +20,11 @@ import { Component, OnInit } from '@angular/core'
         <div class="row">
           <div class="col">
             <p [innerHTML]="'page.critical_thinking.section_2.intro_1' | translate"></p>
-            <eph-button target="_blank" href="assets/documents/Synthese_Universcience_V1.pdf" translate>
+            <eph-button target="_blank" href="assets/documents/Synthèse_EEC_V2_Publique.pdf" translate>
               page.critical_thinking.section_2.discover_synthesis
             </eph-button>
             <p [innerHTML]="'page.critical_thinking.section_2.intro_2' | translate"></p>
-<!--            <eph-yt-video videoId="pKuArhRdTyQ" bare="true"></eph-yt-video>-->
+            <eph-yt-video videoId="pKuArhRdTyQ" bare="true"></eph-yt-video>
           </div>
         </div>
       </eph-section-content>
