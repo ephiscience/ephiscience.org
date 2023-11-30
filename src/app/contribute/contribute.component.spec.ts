@@ -1,26 +1,24 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing'
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { ContributeComponent } from './contribute.component'
+import { ContributeComponent } from './contribute.component';
 
 describe('ContributeComponent', () => {
-  let component: ContributeComponent
-  let fixture: ComponentFixture<ContributeComponent>
+  let component: ContributeComponent;
+  let fixture: ComponentFixture<ContributeComponent>;
 
-  beforeEach(
-    waitForAsync(() => {
-      TestBed.configureTestingModule({
-        declarations: [ContributeComponent]
-      }).compileComponents()
-    })
-  )
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      declarations: [ContributeComponent]
+    }).compileComponents();
+  }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ContributeComponent)
-    component = fixture.componentInstance
-    fixture.detectChanges()
-  })
+    fixture = TestBed.createComponent(ContributeComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
   it('should create', () => {
-    expect(component).toBeTruthy()
-  })
-})
+    expect(component).toBeTruthy();
+  });
+});

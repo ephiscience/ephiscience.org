@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core'
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'eph-cc-by',
@@ -10,5 +10,5 @@ import { Component, Input } from '@angular/core'
   styles: []
 })
 export class CcByComponent {
-  @Input() width = 80
+  @Input() width = 80;
 }

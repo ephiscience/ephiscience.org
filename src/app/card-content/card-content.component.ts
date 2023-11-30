@@ -1,10 +1,8 @@
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'eph-card-content',
-  template: `
-    <div class="text-middle card-text"><ng-content></ng-content></div>
-  `,
+  template: ` <div class="text-middle card-text"><ng-content></ng-content></div> `,
   styles: [
     `
       ::ng-deep p {

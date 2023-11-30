@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'eph-edukey',
@@ -14,9 +14,7 @@ import { Component } from '@angular/core'
             <p translate class="mb-3">page.edukey.section_1.description</p>
             <eph-last-yt-video channelId="UC6wF0stG_iXMO4mIXM9g3YQ"></eph-last-yt-video>
             <p translate>page.edukey.section_1.if_you_like</p>
-            <eph-button href="https://www.utip.io/edukey" target="_blank" translate>
-              page.edukey.section_1.support_edukey
-            </eph-button>
+            <eph-button href="https://www.utip.io/edukey" target="_blank" translate> page.edukey.section_1.support_edukey </eph-button>
           </div>
         </div>
       </eph-section-content>

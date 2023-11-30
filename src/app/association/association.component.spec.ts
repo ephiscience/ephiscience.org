@@ -1,26 +1,24 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing'
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { AssociationComponent } from './association.component'
+import { AssociationComponent } from './association.component';
 
 describe('AssociationComponent', () => {
-  let component: AssociationComponent
-  let fixture: ComponentFixture<AssociationComponent>
+  let component: AssociationComponent;
+  let fixture: ComponentFixture<AssociationComponent>;
 
-  beforeEach(
-    waitForAsync(() => {
-      TestBed.configureTestingModule({
-        declarations: [AssociationComponent]
-      }).compileComponents()
-    })
-  )
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      declarations: [AssociationComponent]
+    }).compileComponents();
+  }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AssociationComponent)
-    component = fixture.componentInstance
-    fixture.detectChanges()
-  })
+    fixture = TestBed.createComponent(AssociationComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
   it('should create', () => {
-    expect(component).toBeTruthy()
-  })
-})
+    expect(component).toBeTruthy();
+  });
+});

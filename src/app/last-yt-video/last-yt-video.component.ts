@@ -1,26 +1,24 @@
-import { HttpClient } from '@angular/common/http'
-import { Component, Input, OnInit } from '@angular/core'
+import { HttpClient } from '@angular/common/http';
+import { Component, Input, OnInit } from '@angular/core';
 
 interface Video {
-  guid: string
+  guid: string;
 }
 
 interface Feed {
-  items: { [key: number]: Video }
+  items: { [key: number]: Video };
 }
 
 @Component({
   selector: 'eph-last-yt-video',
-  template: `
-    <eph-yt-video [videoId]="videoId" [bare]="bare"></eph-yt-video>
-  `,
+  template: ` <eph-yt-video [videoId]="videoId" [bare]="bare"></eph-yt-video> `,
   styles: []
 })
 export class LastYtVideoComponent implements OnInit {
-  @Input() channelId: string
-  @Input() bare = false
+  @Input() channelId: string;
+  @Input() bare = false;
 
-  videoId: string = null
+  videoId: string = null;
 
   constructor(private http: HttpClient) {}
 
@@ -31,7 +29,7 @@ export class LastYtVideoComponent implements OnInit {
         'callback'
       )
       .subscribe((data: Feed) => {
-        this.videoId = data.items[0].guid.split(':')[2]
-      })
+        this.videoId = data.items[0].guid.split(':')[2];
+      });
   }
 }

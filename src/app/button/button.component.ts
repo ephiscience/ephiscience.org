@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core'
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'eph-button',
@@ -19,7 +19,7 @@ import { Component, Input } from '@angular/core'
   styles: []
 })
 export class ButtonComponent {
-  @Input() href
-  @Input() target
-  @Input() rel
+  @Input() href;
+  @Input() target;
+  @Input() rel;
 }

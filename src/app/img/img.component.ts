@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges } from '@angular/core'
+import { Component, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'eph-img',
@@ -17,15 +17,15 @@ import { Component, Input, OnChanges } from '@angular/core'
   ]
 })
 export class ImgComponent implements OnChanges {
-  @Input() src: string
-  @Input() alt: string
-  @Input() display = ''
-  @Input() imgHeight = ''
-  webp: string
+  @Input() src: string;
+  @Input() alt: string;
+  @Input() display = '';
+  @Input() imgHeight = '';
+  webp: string;
 
   ngOnChanges(): void {
     if (this.src) {
-      this.webp = this.src.replace(/\.[a-z]+$/, '.webp')
+      this.webp = this.src.replace(/\.[a-z]+$/, '.webp');
     }
   }
 }

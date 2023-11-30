@@ -1,10 +1,8 @@
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'eph-card-title',
-  template: `
-    <div class="d-flex center-block justify-content-center"><ng-content></ng-content></div>
-  `,
+  template: ` <div class="d-flex center-block justify-content-center"><ng-content></ng-content></div> `,
   styles: [
     `
       ::ng-deep h2 {

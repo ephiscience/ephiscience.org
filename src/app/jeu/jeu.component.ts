@@ -1,5 +1,5 @@
-import { Component } from '@angular/core'
-import { SOCIAL_EDUKEY } from '../index/index.component'
+import { Component } from '@angular/core';
+import { SOCIAL_EDUKEY } from '../index/index.component';
 
 @Component({
   selector: 'eph-jeu',
@@ -128,5 +128,5 @@ import { SOCIAL_EDUKEY } from '../index/index.component'
   ]
 })
 export class JeuComponent {
-  social = SOCIAL_EDUKEY
+  social = SOCIAL_EDUKEY;
 }

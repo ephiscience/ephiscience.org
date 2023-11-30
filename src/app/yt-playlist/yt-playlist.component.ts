@@ -1,6 +1,6 @@
-import { Component, Input, OnChanges } from '@angular/core'
-import { DomSanitizer, SafeUrl } from '@angular/platform-browser'
-import { SocialParts } from 'src/app/yt-video/yt-video.component'
+import { Component, Input, OnChanges } from '@angular/core';
+import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import { SocialParts } from 'src/app/yt-video/yt-video.component';
 
 @Component({
   selector: 'eph-yt-playlist',
@@ -50,16 +50,16 @@ import { SocialParts } from 'src/app/yt-video/yt-video.component'
   styles: []
 })
 export class YtPlaylistComponent implements OnChanges {
-  @Input() playlist: string
-  @Input() bare = false
+  @Input() playlist: string;
+  @Input() bare = false;
 
-  @Input() social: SocialParts = {}
+  @Input() social: SocialParts = {};
 
-  saneSrc: SafeUrl
+  saneSrc: SafeUrl;
 
   constructor(private sanitizer: DomSanitizer) {}
 
   ngOnChanges(): void {
-    this.saneSrc = this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/videoseries?list=${this.playlist}`)
+    this.saneSrc = this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/videoseries?list=${this.playlist}`);
   }
 }

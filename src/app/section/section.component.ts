@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core'
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'eph-section',
@@ -10,5 +10,5 @@ import { Component, Input } from '@angular/core'
   styleUrls: ['section.component.scss']
 })
 export class SectionComponent {
-  @Input() type: string
+  @Input() type: string;
 }

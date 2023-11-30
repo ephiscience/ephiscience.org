@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core'
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'eph-card',
@@ -15,7 +15,7 @@ import { Component, Input } from '@angular/core'
   styleUrls: ['card.component.scss']
 })
 export class CardComponent {
-  @Input() color = 'blue'
-  @Input() size = 6
-  @Input() classes = ''
+  @Input() color = 'blue';
+  @Input() size = 6;
+  @Input() classes = '';
 }

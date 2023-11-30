@@ -1,10 +1,8 @@
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'eph-section-content',
-  template: `
-    <div class="container"><ng-content></ng-content></div>
-  `,
+  template: ` <div class="container"><ng-content></ng-content></div> `,
   styles: [
     `
       .container {

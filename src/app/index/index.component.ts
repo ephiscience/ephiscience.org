@@ -1,15 +1,15 @@
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
 
 export const SOCIAL_EDUKEY = {
   yt: 'channel/UC6wF0stG_iXMO4mIXM9g3YQ',
   utip: 'edukey'
-}
+};
 export const SOCIAL_MR_PHI = {
   fb: 'graindephilo',
   tw: 'MonsieurPhi',
   yt: 'channel/UCqA8H22FwgBVcF3GJpp0MQw',
   utip: 'mrphi'
-}
+};
 
 @Component({
   selector: 'eph-index',
@@ -123,6 +123,6 @@ export const SOCIAL_MR_PHI = {
   styles: []
 })
 export class IndexComponent {
-  socialEdukey = SOCIAL_EDUKEY
-  socialMrPhi = SOCIAL_MR_PHI
+  socialEdukey = SOCIAL_EDUKEY;
+  socialMrPhi = SOCIAL_MR_PHI;
 }

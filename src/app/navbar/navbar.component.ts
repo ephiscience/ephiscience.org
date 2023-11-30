@@ -1,6 +1,6 @@
-import { Component, OnDestroy, OnInit } from '@angular/core'
-import { Subscription } from 'rxjs'
-import { RouterActivateEventService } from '../app.component'
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { RouterActivateEventService } from '../app.component';
 
 @Component({
   selector: 'eph-navbar',
@@ -49,21 +49,21 @@ import { RouterActivateEventService } from '../app.component'
   styleUrls: ['navbar.component.scss']
 })
 export class NavbarComponent implements OnInit, OnDestroy {
-  showNavbar = false
+  showNavbar = false;
 
-  private routerServiceSubscription: Subscription
+  private routerServiceSubscription: Subscription;
 
   constructor(private routerActivateEventService: RouterActivateEventService) {}
 
   ngOnInit() {
-    this.routerServiceSubscription = this.routerActivateEventService.activated.asObservable().subscribe(() => (this.showNavbar = false))
+    this.routerServiceSubscription = this.routerActivateEventService.activated.asObservable().subscribe(() => (this.showNavbar = false));
   }
 
   toggleNavbar() {
-    this.showNavbar = !this.showNavbar
+    this.showNavbar = !this.showNavbar;
   }
 
   ngOnDestroy(): void {
-    this.routerServiceSubscription.unsubscribe()
+    this.routerServiceSubscription.unsubscribe();
   }
 }
