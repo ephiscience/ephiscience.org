@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core'
+import { Component, Input } from '@angular/core'
 
 @Component({
   selector: 'eph-cc-by',
@@ -9,10 +9,6 @@ import { Component, Input, OnInit } from '@angular/core'
   `,
   styles: []
 })
-export class CcByComponent implements OnInit {
+export class CcByComponent {
   @Input() width = 80
-
-  constructor() {}
-
-  ngOnInit() {}
 }

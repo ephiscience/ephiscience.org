@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core'
+import { Component, Input } from '@angular/core'
 
 @Component({
   selector: 'eph-button',
@@ -18,10 +18,8 @@ import { Component, Input, OnInit } from '@angular/core'
   `,
   styles: []
 })
-export class ButtonComponent implements OnInit {
+export class ButtonComponent {
   @Input() href
   @Input() target
   @Input() rel
-
-  ngOnInit() {}
 }

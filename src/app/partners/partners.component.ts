@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'eph-partners',
@@ -58,8 +58,4 @@ import { Component, OnInit } from '@angular/core'
     `
   ]
 })
-export class PartnersComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-}
+export class PartnersComponent {}

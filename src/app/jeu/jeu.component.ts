@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 import { SOCIAL_EDUKEY } from '../index/index.component'
 
 @Component({
@@ -127,10 +127,6 @@ import { SOCIAL_EDUKEY } from '../index/index.component'
     `
   ]
 })
-export class JeuComponent implements OnInit {
+export class JeuComponent {
   social = SOCIAL_EDUKEY
-
-  constructor() {}
-
-  ngOnInit() {}
 }

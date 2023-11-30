@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core'
+import { Component, Input, OnChanges } from '@angular/core'
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser'
 import { SocialParts } from 'src/app/yt-video/yt-video.component'
 
@@ -59,7 +59,7 @@ export class YtPlaylistComponent implements OnChanges {
 
   constructor(private sanitizer: DomSanitizer) {}
 
-  ngOnChanges(changes: SimpleChanges): void {
+  ngOnChanges(): void {
     this.saneSrc = this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/videoseries?list=${this.playlist}`)
   }
 }

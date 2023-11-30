@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'eph-association',
@@ -134,8 +134,4 @@ import { Component, OnInit } from '@angular/core'
     `
   ]
 })
-export class AssociationComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-}
+export class AssociationComponent {}

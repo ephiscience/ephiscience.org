@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'eph-logo-white',
@@ -7,8 +7,4 @@ import { Component, OnInit } from '@angular/core'
   `,
   styles: []
 })
-export class LogoWhiteComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-}
+export class LogoWhiteComponent {}

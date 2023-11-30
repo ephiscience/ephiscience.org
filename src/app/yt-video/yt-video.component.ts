@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core'
+import { Component, Input, OnChanges } from '@angular/core'
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser'
 
 export interface SocialParts {
@@ -26,7 +26,7 @@ export interface SocialParts {
   `,
   styles: [``]
 })
-export class YtVideoComponent implements OnInit, OnChanges {
+export class YtVideoComponent implements OnChanges {
   @Input() videoId: string
   @Input() bare = false
 
@@ -34,9 +34,7 @@ export class YtVideoComponent implements OnInit, OnChanges {
 
   constructor(private sanitizer: DomSanitizer) {}
 
-  ngOnInit() {}
-
-  ngOnChanges(changes: SimpleChanges): void {
+  ngOnChanges(): void {
     this.saneSrc = this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${this.videoId}`)
   }
 }

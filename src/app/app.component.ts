@@ -14,7 +14,7 @@ export class RouterActivateEventService {
   template: `
     <!-- The content below is only a placeholder and can be replaced. -->
     <eph-navbar></eph-navbar>
-    <router-outlet (activate)="onActivate($event)"></router-outlet>
+    <router-outlet (activate)="onActivate()"></router-outlet>
     <eph-footer></eph-footer>
   `,
   providers: [RouterActivateEventService]
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
     this.translate.use('fr')
   }
 
-  onActivate(event) {
+  onActivate() {
     window.scrollTo(0, 0)
     this.routerEventService.activated.next()
   }

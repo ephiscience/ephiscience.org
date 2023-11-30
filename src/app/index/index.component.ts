@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 export const SOCIAL_EDUKEY = {
   yt: 'channel/UC6wF0stG_iXMO4mIXM9g3YQ',
@@ -122,11 +122,7 @@ export const SOCIAL_MR_PHI = {
   `,
   styles: []
 })
-export class IndexComponent implements OnInit {
+export class IndexComponent {
   socialEdukey = SOCIAL_EDUKEY
   socialMrPhi = SOCIAL_MR_PHI
-
-  constructor() {}
-
-  ngOnInit() {}
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'eph-card-content',
@@ -17,8 +17,4 @@ import { Component, OnInit } from '@angular/core'
     `
   ]
 })
-export class CardContentComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-}
+export class CardContentComponent {}

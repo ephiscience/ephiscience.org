@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'eph-critical-thinking',
@@ -66,8 +66,4 @@ import { Component, OnInit } from '@angular/core'
   `,
   styles: []
 })
-export class CriticalThinkingComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-}
+export class CriticalThinkingComponent {}

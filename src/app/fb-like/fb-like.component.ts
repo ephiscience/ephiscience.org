@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'eph-fb-like',
@@ -15,8 +15,4 @@ import { Component, OnInit } from '@angular/core'
   `,
   styles: []
 })
-export class FbLikeComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-}
+export class FbLikeComponent {}

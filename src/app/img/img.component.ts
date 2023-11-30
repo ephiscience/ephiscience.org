@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core'
+import { Component, Input, OnChanges } from '@angular/core'
 
 @Component({
   selector: 'eph-img',
@@ -23,9 +23,7 @@ export class ImgComponent implements OnChanges {
   @Input() imgHeight = ''
   webp: string
 
-  constructor() {}
-
-  ngOnChanges(changes: SimpleChanges): void {
+  ngOnChanges(): void {
     if (this.src) {
       this.webp = this.src.replace(/\.[a-z]+$/, '.webp')
     }

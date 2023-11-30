@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'eph-contact-form',
@@ -25,8 +25,4 @@ import { Component, OnInit } from '@angular/core'
   `,
   styles: []
 })
-export class ContactFormComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-}
+export class ContactFormComponent {}

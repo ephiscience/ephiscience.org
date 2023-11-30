@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core'
+import { Component, Input } from '@angular/core'
 
 @Component({
   selector: 'eph-social-column',
@@ -41,11 +41,7 @@ import { Component, Input, OnInit } from '@angular/core'
     `
   ]
 })
-export class SocialColumnComponent implements OnInit {
+export class SocialColumnComponent {
   @Input() fburl: string
   @Input() twitterUrl: string
-
-  constructor() {}
-
-  ngOnInit() {}
 }

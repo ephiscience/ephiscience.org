@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core'
+import { Component, Input } from '@angular/core'
 
 @Component({
   selector: 'eph-jumbotron',
@@ -13,12 +13,8 @@ import { Component, Input, OnInit } from '@angular/core'
   `,
   styleUrls: ['jumbotron.component.scss']
 })
-export class JumbotronComponent implements OnInit {
+export class JumbotronComponent {
   @Input() type: string
-
-  constructor() {}
-
-  ngOnInit() {}
 
   jumboClass() {
     return `jumbotron-${this.type}`

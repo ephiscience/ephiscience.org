@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'eph-offre-audiovisuelle',
@@ -78,8 +78,4 @@ import { Component, OnInit } from '@angular/core'
   `,
   styles: []
 })
-export class OffreAudiovisuelleComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-}
+export class OffreAudiovisuelleComponent {}

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core'
+import { Component, Input } from '@angular/core'
 
 @Component({
   selector: 'eph-more-button',
@@ -20,10 +20,6 @@ import { Component, Input, OnInit } from '@angular/core'
     `
   ]
 })
-export class MoreButtonComponent implements OnInit {
+export class MoreButtonComponent {
   @Input() href: string
-
-  constructor() {}
-
-  ngOnInit() {}
 }

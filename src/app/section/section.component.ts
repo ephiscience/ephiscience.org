@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core'
+import { Component, Input } from '@angular/core'
 
 @Component({
   selector: 'eph-section',
@@ -9,10 +9,6 @@ import { Component, Input, OnInit } from '@angular/core'
   `,
   styleUrls: ['section.component.scss']
 })
-export class SectionComponent implements OnInit {
+export class SectionComponent {
   @Input() type: string
-
-  constructor() {}
-
-  ngOnInit() {}
 }
