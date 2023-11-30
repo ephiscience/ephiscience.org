@@ -45,7 +45,7 @@ import { SOCIAL_EDUKEY } from '../index/index.component';
             </div>
             <div style="display:block; text-align:center; padding-bottom:20px;">
               <a
-                href="https://www.helloasso.com/associations/e-science/formulaires/2"
+                href="https://www.helloasso.com/associations/ephiscience/formulaires/2"
                 target="_blank"
                 rel="noreferrer"
                 class="btn btn-lg btn-primary text-white font-weight-bold px-4 py-3"

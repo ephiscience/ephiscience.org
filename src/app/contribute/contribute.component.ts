@@ -20,7 +20,7 @@ import { Component } from '@angular/core';
             <p class="mt-3" [innerHTML]="'page.contribute.become_member.part_7' | translate"></p>
             <p [innerHTML]="'page.contribute.become_member.part_8' | translate"></p>
             <eph-button
-              href="https://www.helloasso.com/associations/e-science/adhesions/devenir-ami-de-ephiscience"
+              href="https://www.helloasso.com/associations/ephiscience/adhesions/devenir-ami-de-ephiscience"
               target="_blank"
               rel="noreferrer"
             >
@@ -51,7 +51,7 @@ import { Component } from '@angular/core';
           <div class="col">
             <p [innerHTML]="'page.contribute.gifts_skills.gift_1' | translate"></p>
             <p [innerHTML]="'page.contribute.gifts_skills.gift_2' | translate"></p>
-            <eph-button href="https://www.helloasso.com/associations/e-science/formulaires/1" target="_blank" rel="noreferrer">
+            <eph-button href="https://www.helloasso.com/associations/ephiscience/formulaires/1" target="_blank" rel="noreferrer">
               page.contribute.gifts_skills.give
             </eph-button>
             <p [innerHTML]="'page.contribute.gifts_skills.skills' | translate"></p>

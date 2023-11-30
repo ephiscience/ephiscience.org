@@ -24,7 +24,7 @@ import { Component } from '@angular/core';
 
             <div style="display:block; text-align:center; padding-bottom:20px;">
               <a
-                href="https://www.helloasso.com/associations/e-science/formulaires/1"
+                href="https://www.helloasso.com/associations/ephiscience/formulaires/1"
                 target="_blank"
                 rel="noreferrer"
                 class="btn btn-lg btn-primary text-white font-weight-bold px-4 py-3"
