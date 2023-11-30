@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core'
           <div class="col-3">
             <eph-logo-white></eph-logo-white>
             <p></p>
-            <p><a href="mailto:contact@ephiscience.org">contact@ephiscience.org</a></p>
+            <p><a href="mailto:contact@ephiscience.org">contact&#64;ephiscience.org</a></p>
             <eph-fb-like></eph-fb-like>
           </div>
           <div class="col-4 ml-auto">
