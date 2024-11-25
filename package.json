@@ -100,5 +100,9 @@
     "trailingComma": "none",
     "semi": true,
     "singleQuote": true
+  },
+  "volta": {
+    "node": "20.18.1",
+    "yarn": "1.22.22"
   }
 }
