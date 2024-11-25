@@ -5,7 +5,7 @@ import { Subject } from 'rxjs';
 
 @Injectable()
 export class RouterActivateEventService {
-  activated = new Subject();
+  activated = new Subject<void>();
 }
 
 @Component({

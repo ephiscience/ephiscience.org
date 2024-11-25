@@ -1,4 +1,4 @@
-import { HttpClient, HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
+import { HttpClient, provideHttpClient, withInterceptorsFromDi, withJsonpSupport } from '@angular/common/http';
 import { APP_ID, NgModule, TransferState } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -45,56 +45,48 @@ import { YtVideoComponent } from './yt-video/yt-video.component';
 //   return new YamlTranslationLoader(http, './assets/i18n')
 // }
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    IndexComponent,
-    JumbotronComponent,
-    CardComponent,
-    CardTitleComponent,
-    CardContentComponent,
-    FooterComponent,
-    ContactFormComponent,
-    FbLikeComponent,
-    LogoWhiteComponent,
-    SectionComponent,
-    SectionTitleComponent,
-    SectionContentComponent,
-    YtVideoComponent,
-    CcByComponent,
-    MoreButtonComponent,
-    AssociationComponent,
-    EdukeyComponent,
-    MrPhiComponent,
-    JeuComponent,
-    LastYtVideoComponent,
-    SocialColumnComponent,
-    ImgComponent,
-    PartnersComponent,
-    ContributeComponent,
-    OffreAudiovisuelleComponent,
-    ButtonComponent,
-    CriticalThinkingComponent,
-    SmallLogoWhiteComponent,
-    YtPlaylistComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    HttpClientJsonpModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: translateBrowserLoaderFactory,
-        deps: [HttpClient, TransferState]
-      }
-    })
-  ],
-  providers: [{ provide: APP_ID, useValue: 'serverApp' }],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        NavbarComponent,
+        IndexComponent,
+        JumbotronComponent,
+        CardComponent,
+        CardTitleComponent,
+        CardContentComponent,
+        FooterComponent,
+        ContactFormComponent,
+        FbLikeComponent,
+        LogoWhiteComponent,
+        SectionComponent,
+        SectionTitleComponent,
+        SectionContentComponent,
+        YtVideoComponent,
+        CcByComponent,
+        MoreButtonComponent,
+        AssociationComponent,
+        EdukeyComponent,
+        MrPhiComponent,
+        JeuComponent,
+        LastYtVideoComponent,
+        SocialColumnComponent,
+        ImgComponent,
+        PartnersComponent,
+        ContributeComponent,
+        OffreAudiovisuelleComponent,
+        ButtonComponent,
+        CriticalThinkingComponent,
+        SmallLogoWhiteComponent,
+        YtPlaylistComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: translateBrowserLoaderFactory,
+                deps: [HttpClient, TransferState]
+            }
+        })], providers: [{ provide: APP_ID, useValue: 'serverApp' }, provideHttpClient(withInterceptorsFromDi(), withJsonpSupport())] })
 export class AppModule {}
