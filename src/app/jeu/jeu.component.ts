@@ -8,8 +8,8 @@ import { YtVideoComponent } from '../yt-video/yt-video.component';
 import { ButtonComponent } from '../button/button.component';
 
 @Component({
-    selector: 'eph-jeu',
-    template: `
+	selector: 'eph-jeu',
+	template: `
 		<eph-section type="top">
 			<eph-section-title>
 				<h2 translate>page.game.about.title</h2>
@@ -128,15 +128,23 @@ import { ButtonComponent } from '../button/button.component';
 			</eph-section-content>
 		</eph-section>
 	`,
-    styles: [
-        `
+	styles: [
+		`
 			.img-responsive {
 				max-width: 100%;
 				height: auto;
 			}
 		`
-    ],
-    imports: [SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, YtVideoComponent, ButtonComponent, TranslatePipe]
+	],
+	imports: [
+		SectionComponent,
+		SectionTitleComponent,
+		TranslateDirective,
+		SectionContentComponent,
+		YtVideoComponent,
+		ButtonComponent,
+		TranslatePipe
+	]
 })
 export class JeuComponent {
 	social = SOCIAL_EDUKEY;

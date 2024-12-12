@@ -6,8 +6,8 @@ import { SectionContentComponent } from '../section-content/section-content.comp
 import { LastYtVideoComponent } from '../last-yt-video/last-yt-video.component';
 
 @Component({
-    selector: 'eph-mr-phi',
-    template: `
+	selector: 'eph-mr-phi',
+	template: `
 		<eph-section type="top">
 			<eph-section-title>
 				<div class="col">
@@ -26,13 +26,13 @@ import { LastYtVideoComponent } from '../last-yt-video/last-yt-video.component';
 			</eph-section-content>
 		</eph-section>
 	`,
-    styles: [
-        `
+	styles: [
+		`
 			img {
 				width: 100%;
 			}
 		`
-    ],
-    imports: [SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, LastYtVideoComponent]
+	],
+	imports: [SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, LastYtVideoComponent]
 })
 export class MrPhiComponent {}

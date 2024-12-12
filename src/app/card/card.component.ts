@@ -1,8 +1,8 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'eph-card',
-    template: `
+	selector: 'eph-card',
+	template: `
 		<div class="{{ classes }} col-md-{{ size }}">
 			<div class="card card-{{ color }}">
 				<ng-content select="eph-card-title"></ng-content>
@@ -12,7 +12,7 @@ import { Component, Input } from '@angular/core';
 			</div>
 		</div>
 	`,
-    styleUrls: ['card.component.scss']
+	styleUrls: ['card.component.scss']
 })
 export class CardComponent {
 	@Input() color = 'blue';

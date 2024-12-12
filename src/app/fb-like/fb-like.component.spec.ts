@@ -8,8 +8,8 @@ describe('FbLikeComponent', () => {
 
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
-    imports: [FbLikeComponent]
-}).compileComponents();
+			imports: [FbLikeComponent]
+		}).compileComponents();
 	}));
 
 	beforeEach(() => {

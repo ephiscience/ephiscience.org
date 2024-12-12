@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'eph-card-content',
-    template: ` <div class="text-middle card-text"><ng-content></ng-content></div> `,
-    styles: [
-        `
+	selector: 'eph-card-content',
+	template: ` <div class="text-middle card-text"><ng-content></ng-content></div> `,
+	styles: [
+		`
 			::ng-deep p {
 				margin-bottom: 5px;
 			}
@@ -13,6 +13,6 @@ import { Component } from '@angular/core';
 				margin-bottom: 10px;
 			}
 		`
-    ]
+	]
 })
 export class CardContentComponent {}

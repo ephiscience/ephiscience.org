@@ -8,8 +8,8 @@ describe('CriticalThinkingComponent', () => {
 
 	beforeEach(async () => {
 		await TestBed.configureTestingModule({
-    imports: [CriticalThinkingComponent]
-}).compileComponents();
+			imports: [CriticalThinkingComponent]
+		}).compileComponents();
 	});
 
 	beforeEach(() => {

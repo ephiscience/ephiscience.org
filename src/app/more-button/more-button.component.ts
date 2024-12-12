@@ -2,14 +2,14 @@ import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-    selector: 'eph-more-button',
-    template: `
+	selector: 'eph-more-button',
+	template: `
 		<a [routerLink]="href" class="btn" style="border-radius: 5px">
 			<ng-content></ng-content>
 		</a>
 	`,
-    styles: [
-        `
+	styles: [
+		`
 			a.btn {
 				background-color: white;
 				text-decoration: none;
@@ -19,8 +19,8 @@ import { RouterLink } from '@angular/router';
 				background-color: lightgray;
 			}
 		`
-    ],
-    imports: [RouterLink]
+	],
+	imports: [RouterLink]
 })
 export class MoreButtonComponent {
 	@Input() href: string;

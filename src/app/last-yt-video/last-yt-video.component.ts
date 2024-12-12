@@ -11,10 +11,10 @@ interface Feed {
 }
 
 @Component({
-    selector: 'eph-last-yt-video',
-    template: ` <eph-yt-video [videoId]="videoId" [bare]="bare"></eph-yt-video> `,
-    styles: [],
-    imports: [YtVideoComponent]
+	selector: 'eph-last-yt-video',
+	template: ` <eph-yt-video [videoId]="videoId" [bare]="bare"></eph-yt-video> `,
+	styles: [],
+	imports: [YtVideoComponent]
 })
 export class LastYtVideoComponent implements OnInit {
 	@Input() channelId: string;

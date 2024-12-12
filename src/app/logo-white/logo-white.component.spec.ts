@@ -8,8 +8,8 @@ describe('LogoWhiteComponent', () => {
 
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
-    imports: [LogoWhiteComponent]
-}).compileComponents();
+			imports: [LogoWhiteComponent]
+		}).compileComponents();
 	}));
 
 	beforeEach(() => {

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'eph-contact-form',
-    template: `
+	selector: 'eph-contact-form',
+	template: `
 		<form name="contact_form" class="form-horizontal">
 			<div class="form-group">
 				<label class="col-sm-2 control-label" for="contact-name">Nom</label>
@@ -32,6 +32,6 @@ import { Component } from '@angular/core';
 			<button class="btn btn-success center-block">Envoyer</button>
 		</form>
 	`,
-    styles: []
+	styles: []
 })
 export class ContactFormComponent {}

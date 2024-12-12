@@ -8,8 +8,8 @@ describe('OffreAudiovisuelleComponent', () => {
 
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
-    imports: [OffreAudiovisuelleComponent]
-}).compileComponents();
+			imports: [OffreAudiovisuelleComponent]
+		}).compileComponents();
 	}));
 
 	beforeEach(() => {

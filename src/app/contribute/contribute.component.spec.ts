@@ -8,8 +8,8 @@ describe('ContributeComponent', () => {
 
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
-    imports: [ContributeComponent]
-}).compileComponents();
+			imports: [ContributeComponent]
+		}).compileComponents();
 	}));
 
 	beforeEach(() => {

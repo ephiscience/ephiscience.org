@@ -10,8 +10,8 @@ import { CardContentComponent } from '../card-content/card-content.component';
 import { YtPlaylistComponent } from '../yt-playlist/yt-playlist.component';
 
 @Component({
-    selector: 'eph-offre-audiovisuelle',
-    template: `
+	selector: 'eph-offre-audiovisuelle',
+	template: `
 		<eph-section type="top">
 			<eph-section-title>
 				<h2 translate>page.videos.services.title</h2>
@@ -85,7 +85,18 @@ import { YtPlaylistComponent } from '../yt-playlist/yt-playlist.component';
 			</eph-section-content>
 		</eph-section>
 	`,
-    styles: [],
-    imports: [SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, YtVideoComponent, CardComponent, CardTitleComponent, CardContentComponent, YtPlaylistComponent, TranslatePipe]
+	styles: [],
+	imports: [
+		SectionComponent,
+		SectionTitleComponent,
+		TranslateDirective,
+		SectionContentComponent,
+		YtVideoComponent,
+		CardComponent,
+		CardTitleComponent,
+		CardContentComponent,
+		YtPlaylistComponent,
+		TranslatePipe
+	]
 })
 export class OffreAudiovisuelleComponent {}

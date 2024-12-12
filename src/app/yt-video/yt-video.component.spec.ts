@@ -8,8 +8,8 @@ describe('YtVideoComponent', () => {
 
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
-    imports: [YtVideoComponent]
-}).compileComponents();
+			imports: [YtVideoComponent]
+		}).compileComponents();
 	}));
 
 	beforeEach(() => {

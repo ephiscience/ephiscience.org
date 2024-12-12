@@ -8,8 +8,8 @@ import { ButtonComponent } from '../button/button.component';
 import { YtVideoComponent } from '../yt-video/yt-video.component';
 
 @Component({
-    selector: 'eph-edukey',
-    template: `
+	selector: 'eph-edukey',
+	template: `
 		<eph-section type="top">
 			<eph-section-title>
 				<h2 translate>page.edukey.section_1.title</h2>
@@ -43,7 +43,15 @@ import { YtVideoComponent } from '../yt-video/yt-video.component';
 			</eph-section-content>
 		</eph-section>
 	`,
-    styles: [],
-    imports: [SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, LastYtVideoComponent, ButtonComponent, YtVideoComponent]
+	styles: [],
+	imports: [
+		SectionComponent,
+		SectionTitleComponent,
+		TranslateDirective,
+		SectionContentComponent,
+		LastYtVideoComponent,
+		ButtonComponent,
+		YtVideoComponent
+	]
 })
 export class EdukeyComponent {}

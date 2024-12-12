@@ -7,8 +7,8 @@ import { ImgComponent } from '../img/img.component';
 import { RouterLink } from '@angular/router';
 
 @Component({
-    selector: 'eph-association',
-    template: `
+	selector: 'eph-association',
+	template: `
 		<eph-section type="top">
 			<eph-section-title>
 				<div class="col">
@@ -125,8 +125,8 @@ import { RouterLink } from '@angular/router';
 			</eph-section-content>
 		</eph-section>
 	`,
-    styles: [
-        `
+	styles: [
+		`
 			img.parent-width {
 				width: 100%;
 			}
@@ -138,7 +138,7 @@ import { RouterLink } from '@angular/router';
 				margin: auto;
 			}
 		`
-    ],
-    imports: [SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, ImgComponent, RouterLink, TranslatePipe]
+	],
+	imports: [SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, ImgComponent, RouterLink, TranslatePipe]
 })
 export class AssociationComponent {}

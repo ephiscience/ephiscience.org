@@ -2,8 +2,8 @@ import { Component, Input } from '@angular/core';
 import { TranslateDirective } from '@ngx-translate/core';
 
 @Component({
-    selector: 'eph-button',
-    template: `
+	selector: 'eph-button',
+	template: `
 		<div style="display:block; text-align:center; padding-bottom:20px;">
 			<a
 				[href]="href"
@@ -17,8 +17,8 @@ import { TranslateDirective } from '@ngx-translate/core';
 			</a>
 		</div>
 	`,
-    styles: [],
-    imports: [TranslateDirective]
+	styles: [],
+	imports: [TranslateDirective]
 })
 export class ButtonComponent {
 	@Input() href;

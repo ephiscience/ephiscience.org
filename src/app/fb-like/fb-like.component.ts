@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'eph-fb-like',
-    template: `
+	selector: 'eph-fb-like',
+	template: `
 		<span
 			class="fb-like"
 			data-href="https://www.facebook.com/EduKeyYouTube"
@@ -13,6 +13,6 @@ import { Component } from '@angular/core';
 			data-share="true"
 		></span>
 	`,
-    styles: []
+	styles: []
 })
 export class FbLikeComponent {}

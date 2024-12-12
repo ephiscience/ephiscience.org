@@ -4,8 +4,8 @@ import { FbLikeComponent } from '../fb-like/fb-like.component';
 import { RouterLink } from '@angular/router';
 
 @Component({
-    selector: 'eph-footer',
-    template: `
+	selector: 'eph-footer',
+	template: `
 		<div class="footer footer-ephi">
 			<div class="container">
 				<div class="row">
@@ -39,7 +39,7 @@ import { RouterLink } from '@angular/router';
 			</div>
 		</div>
 	`,
-    styleUrls: ['footer.component.scss'],
-    imports: [LogoWhiteComponent, FbLikeComponent, RouterLink]
+	styleUrls: ['footer.component.scss'],
+	imports: [LogoWhiteComponent, FbLikeComponent, RouterLink]
 })
 export class FooterComponent {}

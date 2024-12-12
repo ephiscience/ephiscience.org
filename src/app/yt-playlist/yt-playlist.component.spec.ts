@@ -8,8 +8,8 @@ describe('YtPlaylistComponent', () => {
 
 	beforeEach(async () => {
 		await TestBed.configureTestingModule({
-    imports: [YtPlaylistComponent]
-}).compileComponents();
+			imports: [YtPlaylistComponent]
+		}).compileComponents();
 	});
 
 	beforeEach(() => {

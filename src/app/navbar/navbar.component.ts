@@ -5,8 +5,8 @@ import { ImgComponent } from '../img/img.component';
 import { RouterLinkActive, RouterLink } from '@angular/router';
 
 @Component({
-    selector: 'eph-navbar',
-    template: `
+	selector: 'eph-navbar',
+	template: `
 		<nav class="navbar navbar-dark navbar-fixed-top navbar-expand-md bg-dark">
 			<div class="container">
 				<!-- Navbar brand logo -->
@@ -50,8 +50,8 @@ import { RouterLinkActive, RouterLink } from '@angular/router';
 			</div>
 		</nav>
 	`,
-    styleUrls: ['navbar.component.scss'],
-    imports: [ImgComponent, RouterLinkActive, RouterLink]
+	styleUrls: ['navbar.component.scss'],
+	imports: [ImgComponent, RouterLinkActive, RouterLink]
 })
 export class NavbarComponent implements OnInit, OnDestroy {
 	showNavbar = false;

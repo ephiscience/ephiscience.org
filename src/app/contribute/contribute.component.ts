@@ -7,8 +7,8 @@ import { ImgComponent } from '../img/img.component';
 import { ButtonComponent } from '../button/button.component';
 
 @Component({
-    selector: 'eph-contribute',
-    template: `
+	selector: 'eph-contribute',
+	template: `
 		<eph-section type="top">
 			<eph-section-title><h2 translate>page.contribute.become_member.title</h2></eph-section-title>
 			<eph-section-content>
@@ -70,7 +70,15 @@ import { ButtonComponent } from '../button/button.component';
 			</eph-section-content>
 		</eph-section>
 	`,
-    styles: [],
-    imports: [SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, ImgComponent, ButtonComponent, TranslatePipe]
+	styles: [],
+	imports: [
+		SectionComponent,
+		SectionTitleComponent,
+		TranslateDirective,
+		SectionContentComponent,
+		ImgComponent,
+		ButtonComponent,
+		TranslatePipe
+	]
 })
 export class ContributeComponent {}

@@ -8,8 +8,8 @@ describe('MoreButtonComponent', () => {
 
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
-    imports: [MoreButtonComponent]
-}).compileComponents();
+			imports: [MoreButtonComponent]
+		}).compileComponents();
 	}));
 
 	beforeEach(() => {

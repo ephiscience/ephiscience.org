@@ -8,8 +8,8 @@ describe('SocialColumnComponent', () => {
 
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
-    imports: [SocialColumnComponent]
-}).compileComponents();
+			imports: [SocialColumnComponent]
+		}).compileComponents();
 	}));
 
 	beforeEach(() => {

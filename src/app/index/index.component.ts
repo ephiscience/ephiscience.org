@@ -26,8 +26,8 @@ export const SOCIAL_MR_PHI = {
 };
 
 @Component({
-    selector: 'eph-index',
-    template: `
+	selector: 'eph-index',
+	template: `
 		<eph-jumbotron type="top">
 			<eph-logo-white class="col-sm-3"></eph-logo-white>
 			<div class="ml-auto">
@@ -136,8 +136,24 @@ export const SOCIAL_MR_PHI = {
 			</eph-section-content>
 		</eph-section>
 	`,
-    styles: [],
-    imports: [JumbotronComponent, LogoWhiteComponent, SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, CardComponent, CardTitleComponent, SmallLogoWhiteComponent, CardContentComponent, MoreButtonComponent, RouterLink, LastYtVideoComponent, ButtonComponent, TranslatePipe]
+	styles: [],
+	imports: [
+		JumbotronComponent,
+		LogoWhiteComponent,
+		SectionComponent,
+		SectionTitleComponent,
+		TranslateDirective,
+		SectionContentComponent,
+		CardComponent,
+		CardTitleComponent,
+		SmallLogoWhiteComponent,
+		CardContentComponent,
+		MoreButtonComponent,
+		RouterLink,
+		LastYtVideoComponent,
+		ButtonComponent,
+		TranslatePipe
+	]
 })
 export class IndexComponent {
 	socialEdukey = SOCIAL_EDUKEY;

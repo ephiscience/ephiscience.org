@@ -6,8 +6,8 @@ import { SectionContentComponent } from '../section-content/section-content.comp
 import { ImgComponent } from '../img/img.component';
 
 @Component({
-    selector: 'eph-partners',
-    template: `
+	selector: 'eph-partners',
+	template: `
 		<eph-section type="top">
 			<eph-section-title>
 				<div class="col">
@@ -55,13 +55,13 @@ import { ImgComponent } from '../img/img.component';
 			</eph-section-content>
 		</eph-section>
 	`,
-    styles: [
-        `
+	styles: [
+		`
 			img.parent-width {
 				width: 100%;
 			}
 		`
-    ],
-    imports: [SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, ImgComponent]
+	],
+	imports: [SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, ImgComponent]
 })
 export class PartnersComponent {}

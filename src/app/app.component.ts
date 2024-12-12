@@ -12,15 +12,15 @@ export class RouterActivateEventService {
 }
 
 @Component({
-    selector: 'eph-root',
-    template: `
+	selector: 'eph-root',
+	template: `
 		<!-- The content below is only a placeholder and can be replaced. -->
 		<eph-navbar></eph-navbar>
 		<router-outlet (activate)="onActivate()"></router-outlet>
 		<eph-footer></eph-footer>
 	`,
-    providers: [RouterActivateEventService],
-    imports: [NavbarComponent, RouterOutlet, FooterComponent]
+	providers: [RouterActivateEventService],
+	imports: [NavbarComponent, RouterOutlet, FooterComponent]
 })
 export class AppComponent implements OnInit {
 	constructor(

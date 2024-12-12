@@ -7,8 +7,8 @@ import { ButtonComponent } from '../button/button.component';
 import { YtVideoComponent } from '../yt-video/yt-video.component';
 
 @Component({
-    selector: 'eph-critical-thinking',
-    template: `
+	selector: 'eph-critical-thinking',
+	template: `
 		<eph-section type="top">
 			<eph-section-title><h2 translate>page.critical_thinking.section_1.title</h2></eph-section-title>
 			<eph-section-content>
@@ -70,7 +70,15 @@ import { YtVideoComponent } from '../yt-video/yt-video.component';
 			</eph-section-content>
 		</eph-section>
 	`,
-    styles: [],
-    imports: [SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, ButtonComponent, YtVideoComponent, TranslatePipe]
+	styles: [],
+	imports: [
+		SectionComponent,
+		SectionTitleComponent,
+		TranslateDirective,
+		SectionContentComponent,
+		ButtonComponent,
+		YtVideoComponent,
+		TranslatePipe
+	]
 })
 export class CriticalThinkingComponent {}
