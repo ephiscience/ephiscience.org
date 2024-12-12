@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'eph-partners',
-  template: `
+    selector: 'eph-partners',
+    template: `
     <eph-section type="top">
       <eph-section-title>
         <div class="col">
@@ -50,12 +50,13 @@ import { Component } from '@angular/core';
       </eph-section-content>
     </eph-section>
   `,
-  styles: [
-    `
+    styles: [
+        `
       img.parent-width {
         width: 100%;
       }
     `
-  ]
+    ],
+    standalone: false
 })
 export class PartnersComponent {}

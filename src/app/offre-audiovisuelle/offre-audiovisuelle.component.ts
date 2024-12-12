@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'eph-offre-audiovisuelle',
-  template: `
+    selector: 'eph-offre-audiovisuelle',
+    template: `
     <eph-section type="top">
       <eph-section-title>
         <h2 translate>page.videos.services.title</h2>
@@ -76,6 +76,7 @@ import { Component } from '@angular/core';
       </eph-section-content>
     </eph-section>
   `,
-  styles: []
+    styles: [],
+    standalone: false
 })
 export class OffreAudiovisuelleComponent {}

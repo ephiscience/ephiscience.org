@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'eph-footer',
-  template: `
+    selector: 'eph-footer',
+    template: `
     <div class="footer footer-ephi">
       <div class="container">
         <div class="row">
@@ -33,6 +33,7 @@ import { Component } from '@angular/core';
       </div>
     </div>
   `,
-  styleUrls: ['footer.component.scss']
+    styleUrls: ['footer.component.scss'],
+    standalone: false
 })
 export class FooterComponent {}

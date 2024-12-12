@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'eph-mr-phi',
-  template: `
+    selector: 'eph-mr-phi',
+    template: `
     <eph-section type="top">
       <eph-section-title>
         <div class="col">
@@ -21,12 +21,13 @@ import { Component } from '@angular/core';
       </eph-section-content>
     </eph-section>
   `,
-  styles: [
-    `
+    styles: [
+        `
       img {
         width: 100%;
       }
     `
-  ]
+    ],
+    standalone: false
 })
 export class MrPhiComponent {}

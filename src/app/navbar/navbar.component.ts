@@ -3,8 +3,8 @@ import { Subscription } from 'rxjs';
 import { RouterActivateEventService } from '../app.component';
 
 @Component({
-  selector: 'eph-navbar',
-  template: `
+    selector: 'eph-navbar',
+    template: `
     <nav class="navbar navbar-dark navbar-fixed-top navbar-expand-md bg-dark">
       <div class="container">
         <!-- Navbar brand logo -->
@@ -46,7 +46,8 @@ import { RouterActivateEventService } from '../app.component';
       </div>
     </nav>
   `,
-  styleUrls: ['navbar.component.scss']
+    styleUrls: ['navbar.component.scss'],
+    standalone: false
 })
 export class NavbarComponent implements OnInit, OnDestroy {
   showNavbar = false;

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'eph-contribute',
-  template: `
+    selector: 'eph-contribute',
+    template: `
     <eph-section type="top">
       <eph-section-title><h2 translate>page.contribute.become_member.title</h2></eph-section-title>
       <eph-section-content>
@@ -60,6 +60,7 @@ import { Component } from '@angular/core';
       </eph-section-content>
     </eph-section>
   `,
-  styles: []
+    styles: [],
+    standalone: false
 })
 export class ContributeComponent {}
