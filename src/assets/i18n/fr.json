@@ -1,40 +1,40 @@
 {
-  "common": {
-    "know_more": "En savoir plus"
-  },
-  "page": {
-    "index": {
-      "title": "Éducation<br/>Philosophe<br/>Science",
-      "education_toolbox": {
-        "title": "Boîte à outils éducative",
-        "cards": {
-          "game": {
-            "title": "Jeux",
-            "game_for_everyone": "Expédition Sagesse est un jeu original pour faire réfléchir tout le monde à partir de 8 ans.",
-            "built_from_expertise": "Il est conçu à partir d’expertises sur le jeu, l’éducation et la philosophie.",
-            "open_source_and_free": "Disponible open-source et imprimable gratuitement sur notre site !"
-          },
-          "activities": {
-            "title": "Ateliers",
-            "quality_learning": "Des ateliers philo de qualité où l’apprentissage est plaisant.",
-            "critical_thinking_and_more": "Développent l’esprit critique, la coopération, la créativité et bien d’autres choses !",
-            "in_or_out_schools": "Interventions dans les écoles et en dehors dès 6 ans et plus."
-          }
-        }
-      },
-      "edukey": {
-        "title": "EduKey",
-        "subtitle": "Vidéos de médiation scientifique de l'éducation"
-      },
-      "mr_phi": {
-        "title": "Monsieur Phi"
-      }
-    },
-    "organization": {
-      "vision": {
-        "title": "",
-        "text": ""
-      }
-    }
-  }
+	"common": {
+		"know_more": "En savoir plus"
+	},
+	"page": {
+		"index": {
+			"title": "Éducation<br/>Philosophe<br/>Science",
+			"education_toolbox": {
+				"title": "Boîte à outils éducative",
+				"cards": {
+					"game": {
+						"title": "Jeux",
+						"game_for_everyone": "Expédition Sagesse est un jeu original pour faire réfléchir tout le monde à partir de 8 ans.",
+						"built_from_expertise": "Il est conçu à partir d’expertises sur le jeu, l’éducation et la philosophie.",
+						"open_source_and_free": "Disponible open-source et imprimable gratuitement sur notre site !"
+					},
+					"activities": {
+						"title": "Ateliers",
+						"quality_learning": "Des ateliers philo de qualité où l’apprentissage est plaisant.",
+						"critical_thinking_and_more": "Développent l’esprit critique, la coopération, la créativité et bien d’autres choses !",
+						"in_or_out_schools": "Interventions dans les écoles et en dehors dès 6 ans et plus."
+					}
+				}
+			},
+			"edukey": {
+				"title": "EduKey",
+				"subtitle": "Vidéos de médiation scientifique de l'éducation"
+			},
+			"mr_phi": {
+				"title": "Monsieur Phi"
+			}
+		},
+		"organization": {
+			"vision": {
+				"title": "",
+				"text": ""
+			}
+		}
+	}
 }

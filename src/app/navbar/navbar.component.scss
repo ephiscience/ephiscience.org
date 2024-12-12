@@ -1,73 +1,73 @@
 @import 'defines';
 
 :host {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
 }
 
 #mainNavbar {
-  line-height: 2.1rem;
+	line-height: 2.1rem;
 }
 
 .navbar {
-  padding: 0;
+	padding: 0;
 }
 
 .navbar-brand eph-img {
-  height: 40px;
+	height: 40px;
 }
 
 .navbar-nav a {
-  color: #9d9d9d;
+	color: #9d9d9d;
 }
 
 .navbar-nav .active a,
 .navbar-nav a:hover {
-  color: white;
+	color: white;
 }
 
 li.active {
-  background-color: #080808;
+	background-color: #080808;
 }
 
 @include media-breakpoint-down(sm) {
-  .navbar-collapse {
-    display: block;
-    width: 18rem;
-    position: fixed;
-    top: 50px;
-    padding: 1rem 0;
-    left: -18rem;
-    bottom: 0;
-    z-index: 2000;
-    background-color: var(--dark);
-    transition: left 0.3s ease-in-out;
+	.navbar-collapse {
+		display: block;
+		width: 18rem;
+		position: fixed;
+		top: 50px;
+		padding: 1rem 0;
+		left: -18rem;
+		bottom: 0;
+		z-index: 2000;
+		background-color: var(--dark);
+		transition: left 0.3s ease-in-out;
 
-    &.show {
-      left: 0;
-    }
+		&.show {
+			left: 0;
+		}
 
-    .nav-item {
-      padding-left: 1rem;
-    }
-  }
+		.nav-item {
+			padding-left: 1rem;
+		}
+	}
 
-  .navbar--overlay {
-    display: none;
-    position: fixed;
-    top: 50px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: $gray-500;
-    opacity: 0.4;
-    transition: all 0.3s ease-in-out;
+	.navbar--overlay {
+		display: none;
+		position: fixed;
+		top: 50px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: $gray-500;
+		opacity: 0.4;
+		transition: all 0.3s ease-in-out;
 
-    &.show {
-      display: block;
-    }
-  }
+		&.show {
+			display: block;
+		}
+	}
 }

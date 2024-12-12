@@ -5,36 +5,36 @@ import { Subject } from 'rxjs';
 
 @Injectable()
 export class RouterActivateEventService {
-  activated = new Subject<void>();
+	activated = new Subject<void>();
 }
 
 @Component({
-    selector: 'eph-root',
-    template: `
-    <!-- The content below is only a placeholder and can be replaced. -->
-    <eph-navbar></eph-navbar>
-    <router-outlet (activate)="onActivate()"></router-outlet>
-    <eph-footer></eph-footer>
-  `,
-    providers: [RouterActivateEventService],
-    standalone: false
+	selector: 'eph-root',
+	template: `
+		<!-- The content below is only a placeholder and can be replaced. -->
+		<eph-navbar></eph-navbar>
+		<router-outlet (activate)="onActivate()"></router-outlet>
+		<eph-footer></eph-footer>
+	`,
+	providers: [RouterActivateEventService],
+	standalone: false
 })
 export class AppComponent implements OnInit {
-  constructor(
-    private translate: TranslateService,
-    private routerEventService: RouterActivateEventService,
-    @Inject(PLATFORM_ID) private platformId: unknown
-  ) {}
+	constructor(
+		private translate: TranslateService,
+		private routerEventService: RouterActivateEventService,
+		@Inject(PLATFORM_ID) private platformId: unknown
+	) {}
 
-  ngOnInit(): void {
-    this.translate.setDefaultLang('fr');
-    this.translate.use('fr');
-  }
+	ngOnInit(): void {
+		this.translate.setDefaultLang('fr');
+		this.translate.use('fr');
+	}
 
-  onActivate() {
-    if (isPlatformBrowser(this.platformId)) {
-      window.scrollTo(0, 0);
-    }
-    this.routerEventService.activated.next();
-  }
+	onActivate() {
+		if (isPlatformBrowser(this.platformId)) {
+			window.scrollTo(0, 0);
+		}
+		this.routerEventService.activated.next();
+	}
 }

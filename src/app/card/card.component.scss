@@ -1,54 +1,54 @@
 @import 'defines';
 
 :host {
-  display: contents;
+	display: contents;
 }
 
 .card {
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  /* ...and now for the proper property */
-  transition: 0.5s;
-  padding: 30px;
-  padding-left: 45px;
-  padding-right: 45px;
-  text-align: center;
-  //font-size: 1.2em;
-  border: none;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	/* ...and now for the proper property */
+	transition: 0.5s;
+	padding: 30px;
+	padding-left: 45px;
+	padding-right: 45px;
+	text-align: center;
+	//font-size: 1.2em;
+	border: none;
 
-  //.font-cabin
-  color: $post-it-black;
+	//.font-cabin
+	color: $post-it-black;
 }
 
 .card ::ng-deep a {
-  color: $post-it-black;
-  text-decoration: underline;
+	color: $post-it-black;
+	text-decoration: underline;
 }
 
 .card.card-pink {
-  @include background-image-set('/assets/images/card/card_pink.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+	@include background-image-set('/assets/images/card/card_pink.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 .card.card-blue {
-  @include background-image-set('/assets/images/card/card_blue.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+	@include background-image-set('/assets/images/card/card_blue.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 .card.card-green {
-  @include background-image-set('/assets/images/card/card_green.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+	@include background-image-set('/assets/images/card/card_green.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 .card.card-purple {
-  @include background-image-set('/assets/images/card/card_purple.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+	@include background-image-set('/assets/images/card/card_purple.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 .card:hover {

@@ -1,34 +1,34 @@
 @import 'defines';
 
 .jumbotron-top {
-  background-color: transparent;
-  @include background-image-set('/assets/images/jumbotron/jumbo_top.png');
-  background-size: 100% 100%;
+	background-color: transparent;
+	@include background-image-set('/assets/images/jumbotron/jumbo_top.png');
+	background-size: 100% 100%;
 
-  .container {
-    margin-top: 2rem;
-  }
+	.container {
+		margin-top: 2rem;
+	}
 }
 
 .jumbotron-mid {
-  background-color: transparent;
-  @include background-image-set('/assets/images/jumbotron/jumbo_mid.png');
-  background-size: 100% 100%;
-  margin-bottom: 1rem;
+	background-color: transparent;
+	@include background-image-set('/assets/images/jumbotron/jumbo_mid.png');
+	background-size: 100% 100%;
+	margin-bottom: 1rem;
 }
 
 .jumbotron-bot {
-  background-color: transparent;
-  @include background-image-set('/assets/images/jumbotron/jumbo_bot.png');
-  background-size: 100% 100%;
+	background-color: transparent;
+	@include background-image-set('/assets/images/jumbotron/jumbo_bot.png');
+	background-size: 100% 100%;
 }
 
 .jumbotron ::ng-deep h2 {
-  font-weight: bold;
-  color: white;
+	font-weight: bold;
+	color: white;
 }
 
 .jumbotron ::ng-deep h3 {
-  font-family: 'Cabin Condensed', 'sans-serif';
-  color: white;
+	font-family: 'Cabin Condensed', 'sans-serif';
+	color: white;
 }

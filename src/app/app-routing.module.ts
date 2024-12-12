@@ -11,19 +11,19 @@ import { OffreAudiovisuelleComponent } from 'src/app/offre-audiovisuelle/offre-a
 import { PartnersComponent } from 'src/app/partners/partners.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', component: IndexComponent },
-  { path: 'association', component: AssociationComponent },
-  { path: 'offre-audiovisuelle', component: OffreAudiovisuelleComponent },
-  { path: 'edukey', component: EdukeyComponent },
-  { path: 'esprit-critique', component: CriticalThinkingComponent },
-  { path: 'jeu', component: JeuComponent },
-  { path: 'mr-phi', component: MrPhiComponent },
-  { path: 'partenaires', component: PartnersComponent },
-  { path: 'contribuer', component: ContributeComponent }
+	{ path: '', pathMatch: 'full', component: IndexComponent },
+	{ path: 'association', component: AssociationComponent },
+	{ path: 'offre-audiovisuelle', component: OffreAudiovisuelleComponent },
+	{ path: 'edukey', component: EdukeyComponent },
+	{ path: 'esprit-critique', component: CriticalThinkingComponent },
+	{ path: 'jeu', component: JeuComponent },
+	{ path: 'mr-phi', component: MrPhiComponent },
+	{ path: 'partenaires', component: PartnersComponent },
+	{ path: 'contribuer', component: ContributeComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {})],
-  exports: [RouterModule]
+	imports: [RouterModule.forRoot(routes, {})],
+	exports: [RouterModule]
 })
 export class AppRoutingModule {}

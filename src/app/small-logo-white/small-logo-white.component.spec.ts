@@ -3,22 +3,22 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { SmallLogoWhiteComponent } from './small-logo-white.component';
 
 describe('SmallLogoWhiteComponent', () => {
-  let component: SmallLogoWhiteComponent;
-  let fixture: ComponentFixture<SmallLogoWhiteComponent>;
+	let component: SmallLogoWhiteComponent;
+	let fixture: ComponentFixture<SmallLogoWhiteComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [SmallLogoWhiteComponent]
-    }).compileComponents();
-  });
+	beforeEach(async () => {
+		await TestBed.configureTestingModule({
+			declarations: [SmallLogoWhiteComponent]
+		}).compileComponents();
+	});
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(SmallLogoWhiteComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+	beforeEach(() => {
+		fixture = TestBed.createComponent(SmallLogoWhiteComponent);
+		component = fixture.componentInstance;
+		fixture.detectChanges();
+	});
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+	it('should create', () => {
+		expect(component).toBeTruthy();
+	});
 });

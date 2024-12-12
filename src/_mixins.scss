@@ -1,24 +1,24 @@
 @function last-index-of($str, $needle) {
-  $remaining: $str;
-  $prev: 0;
-  $index: 0;
-  @while $index != null {
-    $remaining: str-slice($remaining, $index + str-length($needle));
-    $prev: $prev + $index;
-    $index: str-index($remaining, $needle);
-  }
+	$remaining: $str;
+	$prev: 0;
+	$index: 0;
+	@while $index != null {
+		$remaining: str-slice($remaining, $index + str-length($needle));
+		$prev: $prev + $index;
+		$index: str-index($remaining, $needle);
+	}
 
-  @return $prev;
+	@return $prev;
 }
 
 @function replace-ext($str, $ext) {
-  $last-index: last-index-of($str, '.');
-  @if $last-index == 0 {
-    @return $str;
-  }
-  @return str-slice($str, 1, $last-index) + $ext;
+	$last-index: last-index-of($str, '.');
+	@if $last-index == 0 {
+		@return $str;
+	}
+	@return str-slice($str, 1, $last-index) + $ext;
 }
 
 @mixin background-image-set($url) {
-  background-image: url($url);
+	background-image: url($url);
 }
