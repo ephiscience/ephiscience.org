@@ -8,8 +8,8 @@ describe('MrPhiComponent', () => {
 
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
-			declarations: [MrPhiComponent]
-		}).compileComponents();
+    imports: [MrPhiComponent]
+}).compileComponents();
 	}));
 
 	beforeEach(() => {

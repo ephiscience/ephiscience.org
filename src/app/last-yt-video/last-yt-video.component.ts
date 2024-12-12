@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
+import { YtVideoComponent } from '../yt-video/yt-video.component';
 
 interface Video {
 	guid: string;
@@ -10,10 +11,10 @@ interface Feed {
 }
 
 @Component({
-	selector: 'eph-last-yt-video',
-	template: ` <eph-yt-video [videoId]="videoId" [bare]="bare"></eph-yt-video> `,
-	styles: [],
-	standalone: false
+    selector: 'eph-last-yt-video',
+    template: ` <eph-yt-video [videoId]="videoId" [bare]="bare"></eph-yt-video> `,
+    styles: [],
+    imports: [YtVideoComponent]
 })
 export class LastYtVideoComponent implements OnInit {
 	@Input() channelId: string;

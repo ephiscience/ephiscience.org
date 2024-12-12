@@ -1,8 +1,14 @@
 import { Component } from '@angular/core';
+import { SectionComponent } from '../section/section.component';
+import { SectionTitleComponent } from '../section-title/section-title.component';
+import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
+import { SectionContentComponent } from '../section-content/section-content.component';
+import { ImgComponent } from '../img/img.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
-	selector: 'eph-association',
-	template: `
+    selector: 'eph-association',
+    template: `
 		<eph-section type="top">
 			<eph-section-title>
 				<div class="col">
@@ -119,8 +125,8 @@ import { Component } from '@angular/core';
 			</eph-section-content>
 		</eph-section>
 	`,
-	styles: [
-		`
+    styles: [
+        `
 			img.parent-width {
 				width: 100%;
 			}
@@ -132,7 +138,7 @@ import { Component } from '@angular/core';
 				margin: auto;
 			}
 		`
-	],
-	standalone: false
+    ],
+    imports: [SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, ImgComponent, RouterLink, TranslatePipe]
 })
 export class AssociationComponent {}

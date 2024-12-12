@@ -1,21 +1,20 @@
 import { Component, Input, OnChanges } from '@angular/core';
 
 @Component({
-	selector: 'eph-img',
-	template: `
+    selector: 'eph-img',
+    template: `
 		<picture>
 			<source [srcset]="webp" type="image/webp" />
 			<img [src]="src" [alt]="alt" class="{{ display }}" [style.height]="imgHeight" />
 		</picture>
 	`,
-	styles: [
-		`
+    styles: [
+        `
 			.fill {
 				width: 100%;
 			}
 		`
-	],
-	standalone: false
+    ]
 })
 export class ImgComponent implements OnChanges {
 	@Input() src: string;

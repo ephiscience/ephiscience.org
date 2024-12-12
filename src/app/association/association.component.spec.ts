@@ -8,8 +8,8 @@ describe('AssociationComponent', () => {
 
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
-			declarations: [AssociationComponent]
-		}).compileComponents();
+    imports: [AssociationComponent]
+}).compileComponents();
 	}));
 
 	beforeEach(() => {

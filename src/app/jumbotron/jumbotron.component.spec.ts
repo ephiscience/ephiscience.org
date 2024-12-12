@@ -8,8 +8,8 @@ describe('JumbotronComponent', () => {
 
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
-			declarations: [JumbotronComponent]
-		}).compileComponents();
+    imports: [JumbotronComponent]
+}).compileComponents();
 	}));
 
 	beforeEach(() => {

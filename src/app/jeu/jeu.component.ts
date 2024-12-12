@@ -1,9 +1,15 @@
 import { Component } from '@angular/core';
 import { SOCIAL_EDUKEY } from '../index/index.component';
+import { SectionComponent } from '../section/section.component';
+import { SectionTitleComponent } from '../section-title/section-title.component';
+import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
+import { SectionContentComponent } from '../section-content/section-content.component';
+import { YtVideoComponent } from '../yt-video/yt-video.component';
+import { ButtonComponent } from '../button/button.component';
 
 @Component({
-	selector: 'eph-jeu',
-	template: `
+    selector: 'eph-jeu',
+    template: `
 		<eph-section type="top">
 			<eph-section-title>
 				<h2 translate>page.game.about.title</h2>
@@ -122,15 +128,15 @@ import { SOCIAL_EDUKEY } from '../index/index.component';
 			</eph-section-content>
 		</eph-section>
 	`,
-	styles: [
-		`
+    styles: [
+        `
 			.img-responsive {
 				max-width: 100%;
 				height: auto;
 			}
 		`
-	],
-	standalone: false
+    ],
+    imports: [SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, YtVideoComponent, ButtonComponent, TranslatePipe]
 })
 export class JeuComponent {
 	social = SOCIAL_EDUKEY;

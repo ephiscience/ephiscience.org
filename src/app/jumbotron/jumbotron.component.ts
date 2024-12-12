@@ -1,8 +1,8 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-	selector: 'eph-jumbotron',
-	template: `
+    selector: 'eph-jumbotron',
+    template: `
 		<div class="jumbotron {{ jumboClass() }}">
 			<div class="container">
 				<div class="row">
@@ -11,8 +11,7 @@ import { Component, Input } from '@angular/core';
 			</div>
 		</div>
 	`,
-	styleUrls: ['jumbotron.component.scss'],
-	standalone: false
+    styleUrls: ['jumbotron.component.scss']
 })
 export class JumbotronComponent {
 	@Input() type: string;

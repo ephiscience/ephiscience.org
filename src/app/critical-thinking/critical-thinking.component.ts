@@ -1,8 +1,14 @@
 import { Component } from '@angular/core';
+import { SectionComponent } from '../section/section.component';
+import { SectionTitleComponent } from '../section-title/section-title.component';
+import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
+import { SectionContentComponent } from '../section-content/section-content.component';
+import { ButtonComponent } from '../button/button.component';
+import { YtVideoComponent } from '../yt-video/yt-video.component';
 
 @Component({
-	selector: 'eph-critical-thinking',
-	template: `
+    selector: 'eph-critical-thinking',
+    template: `
 		<eph-section type="top">
 			<eph-section-title><h2 translate>page.critical_thinking.section_1.title</h2></eph-section-title>
 			<eph-section-content>
@@ -64,7 +70,7 @@ import { Component } from '@angular/core';
 			</eph-section-content>
 		</eph-section>
 	`,
-	styles: [],
-	standalone: false
+    styles: [],
+    imports: [SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, ButtonComponent, YtVideoComponent, TranslatePipe]
 })
 export class CriticalThinkingComponent {}

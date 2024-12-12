@@ -1,4 +1,18 @@
 import { Component } from '@angular/core';
+import { JumbotronComponent } from '../jumbotron/jumbotron.component';
+import { LogoWhiteComponent } from '../logo-white/logo-white.component';
+import { SectionComponent } from '../section/section.component';
+import { SectionTitleComponent } from '../section-title/section-title.component';
+import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
+import { SectionContentComponent } from '../section-content/section-content.component';
+import { CardComponent } from '../card/card.component';
+import { CardTitleComponent } from '../card-title/card-title.component';
+import { SmallLogoWhiteComponent } from '../small-logo-white/small-logo-white.component';
+import { CardContentComponent } from '../card-content/card-content.component';
+import { MoreButtonComponent } from '../more-button/more-button.component';
+import { RouterLink } from '@angular/router';
+import { LastYtVideoComponent } from '../last-yt-video/last-yt-video.component';
+import { ButtonComponent } from '../button/button.component';
 
 export const SOCIAL_EDUKEY = {
 	yt: 'channel/UC6wF0stG_iXMO4mIXM9g3YQ',
@@ -12,8 +26,8 @@ export const SOCIAL_MR_PHI = {
 };
 
 @Component({
-	selector: 'eph-index',
-	template: `
+    selector: 'eph-index',
+    template: `
 		<eph-jumbotron type="top">
 			<eph-logo-white class="col-sm-3"></eph-logo-white>
 			<div class="ml-auto">
@@ -122,8 +136,8 @@ export const SOCIAL_MR_PHI = {
 			</eph-section-content>
 		</eph-section>
 	`,
-	styles: [],
-	standalone: false
+    styles: [],
+    imports: [JumbotronComponent, LogoWhiteComponent, SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, CardComponent, CardTitleComponent, SmallLogoWhiteComponent, CardContentComponent, MoreButtonComponent, RouterLink, LastYtVideoComponent, ButtonComponent, TranslatePipe]
 })
 export class IndexComponent {
 	socialEdukey = SOCIAL_EDUKEY;

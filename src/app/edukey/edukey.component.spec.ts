@@ -8,8 +8,8 @@ describe('EdukeyComponent', () => {
 
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
-			declarations: [EdukeyComponent]
-		}).compileComponents();
+    imports: [EdukeyComponent]
+}).compileComponents();
 	}));
 
 	beforeEach(() => {

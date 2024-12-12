@@ -1,8 +1,17 @@
 import { Component } from '@angular/core';
+import { SectionComponent } from '../section/section.component';
+import { SectionTitleComponent } from '../section-title/section-title.component';
+import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
+import { SectionContentComponent } from '../section-content/section-content.component';
+import { YtVideoComponent } from '../yt-video/yt-video.component';
+import { CardComponent } from '../card/card.component';
+import { CardTitleComponent } from '../card-title/card-title.component';
+import { CardContentComponent } from '../card-content/card-content.component';
+import { YtPlaylistComponent } from '../yt-playlist/yt-playlist.component';
 
 @Component({
-	selector: 'eph-offre-audiovisuelle',
-	template: `
+    selector: 'eph-offre-audiovisuelle',
+    template: `
 		<eph-section type="top">
 			<eph-section-title>
 				<h2 translate>page.videos.services.title</h2>
@@ -76,7 +85,7 @@ import { Component } from '@angular/core';
 			</eph-section-content>
 		</eph-section>
 	`,
-	styles: [],
-	standalone: false
+    styles: [],
+    imports: [SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, YtVideoComponent, CardComponent, CardTitleComponent, CardContentComponent, YtPlaylistComponent, TranslatePipe]
 })
 export class OffreAudiovisuelleComponent {}

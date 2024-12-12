@@ -1,5 +1,6 @@
 import { Component, Input, OnChanges } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import { NgIf } from '@angular/common';
 
 export interface SocialParts {
 	fb?: string;
@@ -9,8 +10,8 @@ export interface SocialParts {
 }
 
 @Component({
-	selector: 'eph-yt-video',
-	template: `
+    selector: 'eph-yt-video',
+    template: `
 		<div *ngIf="bare; else containers" class="embed-responsive embed-responsive-16by9">
 			<iframe [src]="saneSrc"></iframe>
 		</div>
@@ -24,8 +25,8 @@ export interface SocialParts {
 			</div>
 		</ng-template>
 	`,
-	styles: [``],
-	standalone: false
+    styles: [``],
+    imports: [NgIf]
 })
 export class YtVideoComponent implements OnChanges {
 	@Input() videoId: string;

@@ -1,8 +1,9 @@
 import { Component, Input } from '@angular/core';
+import { NgIf } from '@angular/common';
 
 @Component({
-	selector: 'eph-social-column',
-	template: `
+    selector: 'eph-social-column',
+    template: `
 		<fb-page *ngIf="fburl" [href]="fburl" tabs="timeline" [smallHeader]="false" [adaptContainerWidth]="true"></fb-page>
 		<!--<div-->
 		<!--class="fb-page"-->
@@ -18,8 +19,8 @@ import { Component, Input } from '@angular/core';
 		</div>
 		<img src="assets/images/logo/membre_cafe_des_sciences.png" alt="Membre du café des sciences" class="img img-responsive" />
 	`,
-	styles: [
-		`
+    styles: [
+        `
 			.img {
 				width: 100%;
 			}
@@ -39,8 +40,8 @@ import { Component, Input } from '@angular/core';
 				max-height: 50vh;
 			}
 		`
-	],
-	standalone: false
+    ],
+    imports: [NgIf]
 })
 export class SocialColumnComponent {
 	@Input() fburl: string;

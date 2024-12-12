@@ -8,8 +8,8 @@ describe('ImgComponent', () => {
 
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
-			declarations: [ImgComponent]
-		}).compileComponents();
+    imports: [ImgComponent]
+}).compileComponents();
 	}));
 
 	beforeEach(() => {

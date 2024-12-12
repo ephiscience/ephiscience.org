@@ -1,10 +1,12 @@
 import { Component, Input, OnChanges } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { SocialParts } from 'src/app/yt-video/yt-video.component';
+import { NgIf } from '@angular/common';
+import { ImgComponent } from '../img/img.component';
 
 @Component({
-	selector: 'eph-yt-playlist',
-	template: `
+    selector: 'eph-yt-playlist',
+    template: `
 		<div *ngIf="bare; else containers" class="embed-responsive embed-responsive-16by9">
 			<iframe [src]="saneSrc"></iframe>
 		</div>
@@ -65,8 +67,8 @@ import { SocialParts } from 'src/app/yt-video/yt-video.component';
 			</ng-template>
 		</ng-template>
 	`,
-	styles: [],
-	standalone: false
+    styles: [],
+    imports: [NgIf, ImgComponent]
 })
 export class YtPlaylistComponent implements OnChanges {
 	@Input() playlist: string;

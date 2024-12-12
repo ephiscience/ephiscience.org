@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
+import { SectionComponent } from '../section/section.component';
+import { SectionTitleComponent } from '../section-title/section-title.component';
+import { TranslateDirective } from '@ngx-translate/core';
+import { SectionContentComponent } from '../section-content/section-content.component';
+import { ImgComponent } from '../img/img.component';
 
 @Component({
-	selector: 'eph-partners',
-	template: `
+    selector: 'eph-partners',
+    template: `
 		<eph-section type="top">
 			<eph-section-title>
 				<div class="col">
@@ -50,13 +55,13 @@ import { Component } from '@angular/core';
 			</eph-section-content>
 		</eph-section>
 	`,
-	styles: [
-		`
+    styles: [
+        `
 			img.parent-width {
 				width: 100%;
 			}
 		`
-	],
-	standalone: false
+    ],
+    imports: [SectionComponent, SectionTitleComponent, TranslateDirective, SectionContentComponent, ImgComponent]
 })
 export class PartnersComponent {}

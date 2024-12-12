@@ -1,14 +1,15 @@
 import { Component, Input } from '@angular/core';
+import { JumbotronComponent } from '../jumbotron/jumbotron.component';
 
 @Component({
-	selector: 'eph-section',
-	template: `
+    selector: 'eph-section',
+    template: `
 		<eph-jumbotron [type]="type"> <ng-content select="eph-section-title"></ng-content> </eph-jumbotron>
 
 		<ng-content select="eph-section-content"></ng-content>
 	`,
-	styleUrls: ['section.component.scss'],
-	standalone: false
+    styleUrls: ['section.component.scss'],
+    imports: [JumbotronComponent]
 })
 export class SectionComponent {
 	@Input() type: string;
