@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges } from '@angular/core';
+import { Component, computed, inject, input, Input, OnChanges } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { NgIf } from '@angular/common';
 
@@ -12,31 +12,27 @@ export interface SocialParts {
 @Component({
 	selector: 'eph-yt-video',
 	template: `
-		<div *ngIf="bare; else containers" class="embed-responsive embed-responsive-16by9">
-			<iframe [src]="saneSrc"></iframe>
-		</div>
-		<ng-template #containers>
+		@if (bare()) {
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe [src]="saneSrc()"></iframe>
+			</div>
+		} @else {
 			<div class="row justify-content-center mb-3">
 				<div class="col-10">
 					<div class="embed-responsive embed-responsive-16by9">
-						<iframe [src]="saneSrc"></iframe>
+						<iframe [src]="saneSrc()"></iframe>
 					</div>
 				</div>
 			</div>
-		</ng-template>
-	`,
+		}  `,
 	styles: [``],
 	imports: [NgIf]
 })
-export class YtVideoComponent implements OnChanges {
-	@Input() videoId: string;
-	@Input() bare = false;
+export class YtVideoComponent {
+	readonly #sanitizer = inject(DomSanitizer)
 
-	saneSrc: SafeUrl;
+	videoId = input.required<string>()
+	bare = input(false);
 
-	constructor(private sanitizer: DomSanitizer) {}
-
-	ngOnChanges(): void {
-		this.saneSrc = this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${this.videoId}`);
-	}
+	saneSrc = computed(() => this.#sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${this.videoId()}`));
 }

@@ -1,11 +1,11 @@
-import { Component, Input, OnChanges } from '@angular/core';
+import { Component, computed, input, Input, OnChanges } from '@angular/core';
 
 @Component({
 	selector: 'eph-img',
 	template: `
 		<picture>
-			<source [srcset]="webp" type="image/webp" />
-			<img [src]="src" [alt]="alt" class="{{ display }}" [style.height]="imgHeight" />
+			<source [srcset]="webp()" type="image/webp" />
+			<img [src]="src()" [alt]="alt()" class="{{ display() }}" [style.height]="imgHeight()" />
 		</picture>
 	`,
 	styles: [
@@ -16,16 +16,10 @@ import { Component, Input, OnChanges } from '@angular/core';
 		`
 	]
 })
-export class ImgComponent implements OnChanges {
-	@Input() src: string;
-	@Input() alt: string;
-	@Input() display = '';
-	@Input() imgHeight = '';
-	webp: string;
-
-	ngOnChanges(): void {
-		if (this.src) {
-			this.webp = this.src.replace(/\.[a-z]+$/, '.webp');
-		}
-	}
+export class ImgComponent {
+    src = input.required<string>()
+    alt = input<string>("")
+    display = input('')
+    imgHeight = input('')
+    webp = computed(() => this.src().replace(/\.[a-z]+$/, '.webp'));
 }

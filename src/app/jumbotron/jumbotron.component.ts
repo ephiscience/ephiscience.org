@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, computed, input, Input } from '@angular/core';
 
 @Component({
 	selector: 'eph-jumbotron',
@@ -14,9 +14,6 @@ import { Component, Input } from '@angular/core';
 	styleUrls: ['jumbotron.component.scss']
 })
 export class JumbotronComponent {
-	@Input() type: string;
-
-	jumboClass() {
-		return `jumbotron-${this.type}`;
-	}
+	type = input.required<string>()
+    jumboClass = computed(() => `jumbotron-${this.type()}`);
 }

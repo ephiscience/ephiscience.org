@@ -101,7 +101,9 @@ export const SOCIAL_MR_PHI = {
 			<eph-section-content>
 				<div class="row justify-content-center mb-3">
 					<div class="col-10">
-						<eph-last-yt-video channelId="UC6wF0stG_iXMO4mIXM9g3YQ" [bare]="true"></eph-last-yt-video>
+						@defer {
+							<eph-last-yt-video channelId="UC6wF0stG_iXMO4mIXM9g3YQ" [bare]="true"></eph-last-yt-video>
+						}
 					</div>
 				</div>
 				<div class="row">
@@ -119,7 +121,7 @@ export const SOCIAL_MR_PHI = {
 				</div>
 			</eph-section-title>
 			<eph-section-content>
-				<eph-card color="pink" size="11">
+				<eph-card color="pink" [size]="11">
 					<eph-card-title>
 						<h2 translate>
 							<eph-small-logo-white imgHeight="88px"></eph-small-logo-white>

@@ -1,187 +1,110 @@
 {
-	"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-	"version": 1,
-	"newProjectRoot": "projects",
-	"projects": {
-		"ngweb": {
-			"root": "",
-			"sourceRoot": "src",
-			"projectType": "application",
-			"prefix": "eph",
-			"schematics": {
-				"@schematics/angular:component": {
-					"style": "scss"
-				}
-			},
-			"architect": {
-				"build": {
-					"builder": "@angular-devkit/build-angular:browser",
-					"options": {
-						"outputPath": "dist/ngweb/browser",
-						"index": "src/index.html",
-						"main": "src/main.ts",
-						"polyfills": "src/polyfills.ts",
-						"tsConfig": "src/tsconfig.app.json",
-						"assets": ["src/favicon.ico", "src/assets", "src/manifest.json", "src/robots.txt"],
-						"styles": ["src/styles.scss"],
-						"stylePreprocessorOptions": {
-							"includePaths": ["../node_modules/bootstrap/scss", "src"]
-						},
-						"scripts": [],
-						"vendorChunk": true,
-						"extractLicenses": false,
-						"buildOptimizer": false,
-						"sourceMap": true,
-						"optimization": false,
-						"namedChunks": true
-					},
-					"configurations": {
-						"production": {
-							"fileReplacements": [
-								{
-									"replace": "src/environments/environment.ts",
-									"with": "src/environments/environment.prod.ts"
-								}
-							],
-							"optimization": true,
-							"outputHashing": "all",
-							"sourceMap": false,
-							"namedChunks": false,
-							"extractLicenses": true,
-							"vendorChunk": false,
-							"buildOptimizer": true,
-							"budgets": [
-								{
-									"type": "initial",
-									"maximumWarning": "2mb",
-									"maximumError": "5mb"
-								},
-								{
-									"type": "anyComponentStyle",
-									"maximumWarning": "6kb"
-								}
-							],
-							"serviceWorker": true
-						},
-						"development": {}
-					},
-					"defaultConfiguration": ""
-				},
-				"serve": {
-					"builder": "@angular-devkit/build-angular:dev-server",
-					"options": {
-						"buildTarget": "ngweb:build"
-					},
-					"configurations": {
-						"production": {
-							"buildTarget": "ngweb:build:production"
-						}
-					}
-				},
-				"extract-i18n": {
-					"builder": "@angular-devkit/build-angular:extract-i18n",
-					"options": {
-						"buildTarget": "ngweb:build"
-					}
-				},
-				"test": {
-					"builder": "@angular-devkit/build-angular:karma",
-					"options": {
-						"main": "src/test.ts",
-						"polyfills": "src/polyfills.ts",
-						"tsConfig": "src/tsconfig.spec.json",
-						"karmaConfig": "src/karma.conf.js",
-						"styles": ["src/styles.scss"],
-						"stylePreprocessorOptions": {
-							"includePaths": ["../node_modules/bootstrap/scss", "src"]
-						},
-						"scripts": [],
-						"assets": ["src/favicon.ico", "src/assets", "src/manifest.json", "src/robots.txt"]
-					}
-				},
-				"lint": {
-					"builder": "@angular-eslint/builder:lint",
-					"options": {
-						"lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
-					}
-				},
-				"server": {
-					"builder": "@angular-devkit/build-angular:server",
-					"options": {
-						"outputPath": "dist/ngweb/server",
-						"main": "server.ts",
-						"tsConfig": "src/tsconfig.server.json",
-						"optimization": false,
-						"sourceMap": true,
-						"stylePreprocessorOptions": {
-							"includePaths": ["../node_modules/bootstrap/scss", "src"]
-						},
-						"extractLicenses": false,
-						"buildOptimizer": false
-					},
-					"configurations": {
-						"production": {
-							"outputHashing": "media",
-							"fileReplacements": [
-								{
-									"replace": "src/environments/environment.ts",
-									"with": "src/environments/environment.prod.ts"
-								}
-							],
-							"optimization": true,
-							"sourceMap": false,
-							"extractLicenses": true,
-							"buildOptimizer": true
-						},
-						"development": {
-							"vendorChunk": true
-						}
-					},
-					"defaultConfiguration": "production"
-				},
-				"serve-ssr": {
-					"builder": "@angular-devkit/build-angular:ssr-dev-server",
-					"configurations": {
-						"development": {
-							"browserTarget": "ngweb:build:development",
-							"serverTarget": "ngweb:server:development"
-						},
-						"production": {
-							"browserTarget": "ngweb:build:production",
-							"serverTarget": "ngweb:server:production"
-						}
-					},
-					"defaultConfiguration": "development"
-				},
-				"prerender": {
-					"builder": "@angular-devkit/build-angular:prerender",
-					"options": {
-						"routes": ["/"]
-					},
-					"configurations": {
-						"production": {
-							"browserTarget": "ngweb:build:production",
-							"serverTarget": "ngweb:server:production"
-						},
-						"development": {
-							"browserTarget": "ngweb:build:development",
-							"serverTarget": "ngweb:server:development"
-						}
-					},
-					"defaultConfiguration": "production"
-				}
-			}
-		}
-	},
-	"schematics": {
-		"@angular-eslint/schematics:application": {
-			"setParserOptionsProject": true
-		},
-		"@angular-eslint/schematics:library": {
-			"setParserOptionsProject": true
-		}
-	},
-	"cli": {
-		"analytics": false
-	}
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ephiscience-web": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/ephiscience-web",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "stylePreprocessorOptions": {
+              "includePaths": ["../node_modules/bootstrap/scss", "src"]
+            },
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "src/server.ts"
+            }
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "ephiscience-web:build:production"
+            },
+            "development": {
+              "buildTarget": "ephiscience-web:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "tsconfig.spec.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
+  }
 }

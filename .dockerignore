@@ -1,7 +1,0 @@
-/.angular/
-/dist/
-/node_modules/
-
-/.dockerignore
-/Dockerfile
-/yarn-error.log

@@ -1,8 +1,9 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, DestroyRef, inject, OnDestroy, OnInit, signal } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { RouterActivateEventService } from '../app.component';
 import { ImgComponent } from '../img/img.component';
 import { RouterLinkActive, RouterLink } from '@angular/router';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Component({
 	selector: 'eph-navbar',
@@ -25,9 +26,9 @@ import { RouterLinkActive, RouterLink } from '@angular/router';
 						<eph-img alt="Ephiscience" src="assets/images/logo/logo_small_white.png" imgHeight="40px"></eph-img>
 					</a>
 				</div>
-				<div class="navbar--overlay" (click)="toggleNavbar()" [class.show]="showNavbar"></div>
+				<div class="navbar--overlay" (click)="toggleNavbar()" [class.show]="showNavbar()"></div>
 				<!-- Main navbar part -->
-				<div class="collapse navbar-collapse" [class.show]="showNavbar" id="mainNavbar">
+				<div class="collapse navbar-collapse" [class.show]="showNavbar()" id="mainNavbar">
 					<!-- Main part center -->
 					<ul class="navbar-nav">
 						<li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
@@ -53,24 +54,21 @@ import { RouterLinkActive, RouterLink } from '@angular/router';
 	styleUrls: ['navbar.component.scss'],
 	imports: [ImgComponent, RouterLinkActive, RouterLink]
 })
-export class NavbarComponent implements OnInit, OnDestroy {
-	showNavbar = false;
+export class NavbarComponent implements OnInit {
+	readonly #destroyRef = inject(DestroyRef)
 
-	private routerServiceSubscription: Subscription;
+	showNavbar = signal(false);
 
 	constructor(private routerActivateEventService: RouterActivateEventService) {}
 
 	ngOnInit() {
-		this.routerServiceSubscription = this.routerActivateEventService.activated
+		this.routerActivateEventService.activated
 			.asObservable()
-			.subscribe(() => (this.showNavbar = false));
+			.pipe(takeUntilDestroyed(this.#destroyRef))
+			.subscribe(() => (this.showNavbar.set(false)));
 	}
 
 	toggleNavbar() {
-		this.showNavbar = !this.showNavbar;
-	}
-
-	ngOnDestroy(): void {
-		this.routerServiceSubscription.unsubscribe();
+		this.showNavbar.update((prev) => !prev)
 	}
 }

@@ -1,10 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component, input, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
 	selector: 'eph-more-button',
 	template: `
-		<a [routerLink]="href" class="btn" style="border-radius: 5px">
+		<a [routerLink]="href()" class="btn" style="border-radius: 5px">
 			<ng-content></ng-content>
 		</a>
 	`,
@@ -23,5 +23,5 @@ import { RouterLink } from '@angular/router';
 	imports: [RouterLink]
 })
 export class MoreButtonComponent {
-	@Input() href: string;
+	href = input.required<string>();
 }

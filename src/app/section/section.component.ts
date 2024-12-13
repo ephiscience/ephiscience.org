@@ -1,10 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component, input, Input } from '@angular/core';
 import { JumbotronComponent } from '../jumbotron/jumbotron.component';
 
 @Component({
 	selector: 'eph-section',
 	template: `
-		<eph-jumbotron [type]="type"> <ng-content select="eph-section-title"></ng-content> </eph-jumbotron>
+		<eph-jumbotron [type]="type()"> <ng-content select="eph-section-title"></ng-content> </eph-jumbotron>
 
 		<ng-content select="eph-section-content"></ng-content>
 	`,
@@ -12,5 +12,5 @@ import { JumbotronComponent } from '../jumbotron/jumbotron.component';
 	imports: [JumbotronComponent]
 })
 export class SectionComponent {
-	@Input() type: string;
+	type = input.required<string>()
 }

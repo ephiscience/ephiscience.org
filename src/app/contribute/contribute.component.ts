@@ -21,7 +21,7 @@ import { ButtonComponent } from '../button/button.component';
 						<p [innerHTML]="'page.contribute.become_member.part_5' | translate"></p>
 						<p [innerHTML]="'page.contribute.become_member.part_6' | translate"></p>
 						<div style="max-width: 66%; margin: 0 auto">
-							<eph-img src="assets/images/pages/contribute/benevole_ami.png" display="fill"></eph-img>
+							<eph-img src="assets/images/pages/contribute/benevole_ami.png" alt="" display="fill"></eph-img>
 						</div>
 						<p class="mt-3" [innerHTML]="'page.contribute.become_member.part_7' | translate"></p>
 						<p [innerHTML]="'page.contribute.become_member.part_8' | translate"></p>

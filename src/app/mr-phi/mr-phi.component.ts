@@ -20,7 +20,9 @@ import { LastYtVideoComponent } from '../last-yt-video/last-yt-video.component';
 				<div class="row">
 					<div class="col">
 						<p translate class="mb-3">page.mr_phi.description</p>
-						<eph-last-yt-video channelId="UCqA8H22FwgBVcF3GJpp0MQw"></eph-last-yt-video>
+						@defer {
+							<eph-last-yt-video channelId="UCqA8H22FwgBVcF3GJpp0MQw"></eph-last-yt-video>
+						}
 					</div>
 				</div>
 			</eph-section-content>

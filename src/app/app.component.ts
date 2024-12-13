@@ -1,5 +1,5 @@
 import { isPlatformBrowser } from '@angular/common';
-import { Component, Inject, Injectable, OnInit, PLATFORM_ID } from '@angular/core';
+import { Component, inject, Injectable, OnInit, PLATFORM_ID } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Subject } from 'rxjs';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -14,7 +14,6 @@ export class RouterActivateEventService {
 @Component({
 	selector: 'eph-root',
 	template: `
-		<!-- The content below is only a placeholder and can be replaced. -->
 		<eph-navbar></eph-navbar>
 		<router-outlet (activate)="onActivate()"></router-outlet>
 		<eph-footer></eph-footer>
@@ -23,10 +22,11 @@ export class RouterActivateEventService {
 	imports: [NavbarComponent, RouterOutlet, FooterComponent]
 })
 export class AppComponent implements OnInit {
+	readonly #platformId= inject(PLATFORM_ID);
+
 	constructor(
 		private translate: TranslateService,
 		private routerEventService: RouterActivateEventService,
-		@Inject(PLATFORM_ID) private platformId: unknown
 	) {}
 
 	ngOnInit(): void {
@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
 	}
 
 	onActivate() {
-		if (isPlatformBrowser(this.platformId)) {
+		if (isPlatformBrowser(this.#platformId)) {
 			window.scrollTo(0, 0);
 		}
 		this.routerEventService.activated.next();
