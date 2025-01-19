@@ -36,16 +36,16 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 						</li>
 						<li class="nav-item" routerLinkActive="active"><a routerLink="/association" class="nav-link">L'association</a></li>
 						<li class="nav-item" routerLinkActive="active"><a routerLink="/contribuer" class="nav-link">Contribuer</a></li>
+						<li class="nav-item" routerLinkActive="active">
+							<a routerLink="/esprit-critique" class="nav-link">Esprit critique</a>
+						</li>
 						<li class="nav-item" routerLinkActive="active"><a routerLink="/jeu" class="nav-link">Jeu</a></li>
 						<li class="nav-item" routerLinkActive="active">
 							<a routerLink="/offre-audiovisuelle" class="nav-link">Offre audiovisuelle</a>
 						</li>
-						<li class="nav-item" routerLinkActive="active">
-							<a routerLink="/esprit-critique" class="nav-link">Esprit critique</a>
+                        <li class="nav-item" routerLinkActive="active">
+							<a routerLink="/ateliers-formations" class="nav-link">Ateliers & formations</a>
 						</li>
-						<li class="nav-item" routerLinkActive="active"><a routerLink="/edukey" class="nav-link">Edukey</a></li>
-						<li class="nav-item" routerLinkActive="active"><a routerLink="/mr-phi" class="nav-link">Mr. Phi</a></li>
-						<li class="nav-item" routerLinkActive="active"><a routerLink="/partenaires" class="nav-link">Partenaires</a></li>
 					</ul>
 				</div>
 			</div>

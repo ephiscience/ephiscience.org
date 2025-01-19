@@ -40,8 +40,6 @@ const RAW_RUNTIME_STATE =
           ["@angular/platform-server", "virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:19.0.4"],\
           ["@angular/router", "virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:19.0.4"],\
           ["@angular/ssr", "virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:19.0.5"],\
-          ["@ngx-translate/core", "virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:16.0.3"],\
-          ["@ngx-translate/http-loader", "virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:16.0.0"],\
           ["@types/express", "npm:4.17.21"],\
           ["@types/jasmine", "npm:5.1.5"],\
           ["@types/js-yaml", "npm:4.0.9"],\
@@ -3953,60 +3951,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["@ngx-translate/core", [\
-      ["npm:16.0.3", {\
-        "packageLocation": "../../.yarn/berry/cache/@ngx-translate-core-npm-16.0.3-388ad81749-10c0.zip/node_modules/@ngx-translate/core/",\
-        "packageDependencies": [\
-          ["@ngx-translate/core", "npm:16.0.3"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:16.0.3", {\
-        "packageLocation": "./.yarn/__virtual__/@ngx-translate-core-virtual-19ab5d835e/3/.yarn/berry/cache/@ngx-translate-core-npm-16.0.3-388ad81749-10c0.zip/node_modules/@ngx-translate/core/",\
-        "packageDependencies": [\
-          ["@ngx-translate/core", "virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:16.0.3"],\
-          ["@angular/common", "virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:19.0.4"],\
-          ["@angular/core", "virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:19.0.4"],\
-          ["@types/angular__common", null],\
-          ["@types/angular__core", null],\
-          ["tslib", "npm:2.8.1"]\
-        ],\
-        "packagePeers": [\
-          "@angular/common",\
-          "@angular/core",\
-          "@types/angular__common",\
-          "@types/angular__core"\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["@ngx-translate/http-loader", [\
-      ["npm:16.0.0", {\
-        "packageLocation": "../../.yarn/berry/cache/@ngx-translate-http-loader-npm-16.0.0-353bdee2a9-10c0.zip/node_modules/@ngx-translate/http-loader/",\
-        "packageDependencies": [\
-          ["@ngx-translate/http-loader", "npm:16.0.0"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:16.0.0", {\
-        "packageLocation": "./.yarn/__virtual__/@ngx-translate-http-loader-virtual-4a4a45f73b/3/.yarn/berry/cache/@ngx-translate-http-loader-npm-16.0.0-353bdee2a9-10c0.zip/node_modules/@ngx-translate/http-loader/",\
-        "packageDependencies": [\
-          ["@ngx-translate/http-loader", "virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:16.0.0"],\
-          ["@angular/common", "virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:19.0.4"],\
-          ["@angular/core", "virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:19.0.4"],\
-          ["@types/angular__common", null],\
-          ["@types/angular__core", null],\
-          ["tslib", "npm:2.8.1"]\
-        ],\
-        "packagePeers": [\
-          "@angular/common",\
-          "@angular/core",\
-          "@types/angular__common",\
-          "@types/angular__core"\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["@nodelib/fs.scandir", [\
       ["npm:2.1.5", {\
         "packageLocation": "../../.yarn/berry/cache/@nodelib-fs.scandir-npm-2.1.5-89c67370dd-10c0.zip/node_modules/@nodelib/fs.scandir/",\
@@ -6886,8 +6830,6 @@ const RAW_RUNTIME_STATE =
           ["@angular/platform-server", "virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:19.0.4"],\
           ["@angular/router", "virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:19.0.4"],\
           ["@angular/ssr", "virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:19.0.5"],\
-          ["@ngx-translate/core", "virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:16.0.3"],\
-          ["@ngx-translate/http-loader", "virtual:c0b32f8a30c02ec6048bc07ef62f7c251fa8995ce393da230de57d716e66e68a5681a2f35101e7368c1a75eade2aa985da53e1e4dab3f9b0a2755fa6377fc8b9#npm:16.0.0"],\
           ["@types/express", "npm:4.17.21"],\
           ["@types/jasmine", "npm:5.1.5"],\
           ["@types/js-yaml", "npm:4.0.9"],\

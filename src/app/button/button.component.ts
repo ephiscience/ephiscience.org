@@ -1,5 +1,4 @@
-import { Component, input, Input } from '@angular/core';
-import { TranslateDirective } from '@ngx-translate/core';
+import { Component, input } from '@angular/core';
 
 @Component({
 	selector: 'eph-button',
@@ -11,14 +10,12 @@ import { TranslateDirective } from '@ngx-translate/core';
 				[rel]="rel()"
 				class="btn btn-lg btn-primary text-white font-weight-bold px-4 py-3"
 				style="border-radius: 5px"
-				translate
 			>
 				<ng-content></ng-content>
 			</a>
 		</div>
 	`,
 	styles: [],
-	imports: [TranslateDirective]
 })
 export class ButtonComponent {
 	href = input("")

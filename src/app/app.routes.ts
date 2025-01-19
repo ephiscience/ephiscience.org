@@ -1,22 +1,18 @@
 import { Routes } from '@angular/router';
-import { IndexComponent } from './index/index.component';
-import { AssociationComponent } from './association/association.component';
-import { OffreAudiovisuelleComponent } from './offre-audiovisuelle/offre-audiovisuelle.component';
-import { EdukeyComponent } from './edukey/edukey.component';
-import { CriticalThinkingComponent } from './critical-thinking/critical-thinking.component';
-import { JeuComponent } from './jeu/jeu.component';
-import { MrPhiComponent } from './mr-phi/mr-phi.component';
-import { PartnersComponent } from './partners/partners.component';
-import { ContributeComponent } from './contribute/contribute.component';
+import { OffreAudiovisuelleComponent } from './pages/offre-audiovisuelle.component';
+import { CriticalThinkingComponent } from './pages/critical-thinking.component';
+import { JeuComponent } from './pages/jeu.component';
+import { ContributeComponent } from './pages/contribute.component';
+import { IndexComponent } from './pages/index.component';
+import { AssociationComponent } from './pages/association.component';
+import { AteliersComponent } from './pages/ateliers.component';
 
 export const routes: Routes = [
     { path: '', pathMatch: 'full', component: IndexComponent },
     { path: 'association', component: AssociationComponent },
     { path: 'offre-audiovisuelle', component: OffreAudiovisuelleComponent },
-    { path: 'edukey', component: EdukeyComponent },
     { path: 'esprit-critique', component: CriticalThinkingComponent },
     { path: 'jeu', component: JeuComponent },
-    { path: 'mr-phi', component: MrPhiComponent },
-    { path: 'partenaires', component: PartnersComponent },
+    { path: 'ateliers-formations', component: AteliersComponent },
     { path: 'contribuer', component: ContributeComponent }
 ];

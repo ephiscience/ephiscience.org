@@ -2532,30 +2532,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ngx-translate/core@npm:^16.0.0":
-  version: 16.0.3
-  resolution: "@ngx-translate/core@npm:16.0.3"
-  dependencies:
-    tslib: "npm:^2.3.0"
-  peerDependencies:
-    "@angular/common": ">=16"
-    "@angular/core": ">=16"
-  checksum: 10c0/e458cf66681eeceaf01290a774c9babebc2a601e661fa9acf21bf0992ab800888fbb62710ab3f344a5ddaa3c8bce3035a84e221693ab2287bc6dd5a5f170e61c
-  languageName: node
-  linkType: hard
-
-"@ngx-translate/http-loader@npm:^16.0.0":
-  version: 16.0.0
-  resolution: "@ngx-translate/http-loader@npm:16.0.0"
-  dependencies:
-    tslib: "npm:^2.3.0"
-  peerDependencies:
-    "@angular/common": ">=16"
-    "@angular/core": ">=16"
-  checksum: 10c0/75f00631d64723910fe5b1e267ea4240bdc64499ac0039e3f7b64f0c2a756447db395091ece7655d9edd2500320828d4edd22866b54feae1a6733208c7526ca4
-  languageName: node
-  linkType: hard
-
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -4962,8 +4938,6 @@ __metadata:
     "@angular/platform-server": "npm:^19.0.0"
     "@angular/router": "npm:^19.0.0"
     "@angular/ssr": "npm:^19.0.5"
-    "@ngx-translate/core": "npm:^16.0.0"
-    "@ngx-translate/http-loader": "npm:^16.0.0"
     "@types/express": "npm:^4.17.17"
     "@types/jasmine": "npm:~5.1.0"
     "@types/js-yaml": "npm:^4.0.9"
