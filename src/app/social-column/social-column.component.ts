@@ -1,10 +1,12 @@
 import { Component, Input } from '@angular/core';
-import { NgIf } from '@angular/common';
+
 
 @Component({
 	selector: 'eph-social-column',
 	template: `
-		<fb-page *ngIf="fburl" [href]="fburl" tabs="timeline" [smallHeader]="false" [adaptContainerWidth]="true"></fb-page>
+		@if (fburl) {
+		  <fb-page [href]="fburl" tabs="timeline" [smallHeader]="false" [adaptContainerWidth]="true"></fb-page>
+		}
 		<!--<div-->
 		<!--class="fb-page"-->
 		<!--data-href="https://www.facebook.com/EduKeyYouTube/"-->
@@ -14,11 +16,13 @@ import { NgIf } from '@angular/common';
 		<!--data-hide-cover="false"-->
 		<!--data-show-facepile="true"-->
 		<!--&gt;</div>-->
-		<div *ngIf="twitterUrl" class="eph-twitter-timeline">
-			<a class="twitter-timeline" [href]="twitterUrl">Tweets by EduKeyFR</a>
-		</div>
+		@if (twitterUrl) {
+		  <div class="eph-twitter-timeline">
+		    <a class="twitter-timeline" [href]="twitterUrl">Tweets by EduKeyFR</a>
+		  </div>
+		}
 		<img src="assets/images/logo/membre_cafe_des_sciences.png" alt="Membre du café des sciences" class="img img-responsive" />
-	`,
+		`,
 	styles: [
 		`
 			.img {
@@ -41,7 +45,7 @@ import { NgIf } from '@angular/common';
 			}
 		`
 	],
-	imports: [NgIf]
+	imports: []
 })
 export class SocialColumnComponent {
 	@Input() fburl: string;

@@ -1,6 +1,6 @@
 import { Component, computed, inject, input, Input, OnChanges } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
-import { NgIf } from '@angular/common';
+
 
 export interface SocialParts {
 	fb?: string;
@@ -26,7 +26,7 @@ export interface SocialParts {
 			</div>
 		}  `,
 	styles: [``],
-	imports: [NgIf]
+	imports: []
 })
 export class YtVideoComponent {
 	readonly #sanitizer = inject(DomSanitizer)
