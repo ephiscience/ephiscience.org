@@ -1,5 +1,5 @@
 variable "DOCKER_FQ_IMAGE_NAME" {
-    default = "registry.gkny.fr/ephiscience/web"
+    default = "ghcr.io/ephiscience/ephiscience.org"
 }
 
 target "ephiscience" {
