@@ -44,6 +44,11 @@ function pr_number {
     result = replace(GITHUB_REF_NAME, "/merge", "")
 }
 
+function buildcache {
+    params = [ base_image ]
+    result = "${base_image}_buildcache"
+}
+
 # ------ IMAGE NAME CONFIG ------
 function main_branch_image_name {
     params = [ base_image ]
@@ -58,23 +63,23 @@ function pr_image_name {
 # ------ CACHE FROM CONFIG ------
 function main_branch_cache_from {
     params = [ base_image ]
-    result = is_main() ? "type=registry,ref=${main_branch_image_name(base_image)}-buildcache" : ""
+    result = is_main() ? "type=registry,ref=${main_branch_image_name(buildcache(base_image))}" : ""
 }
 
 function pr_cache_from {
     params = [ base_image ]
-    result = is_pr() ? "type=registry,ref=${pr_image_name(base_image)}-buildcache" : ""
+    result = is_pr() ? "type=registry,ref=${pr_image_name(buildcache(base_image))}" : ""
 }
 
 # ------ CACHE TO CONFIG ------
 function main_branch_cache_to {
     params = [ base_image ]
-    result = is_main() && is_ci() ? "type=registry,ref=${main_branch_image_name(base_image)}-buildcache" : ""
+    result = is_main() && is_ci() ? "type=registry,ref=${main_branch_image_name(buildcache(base_image))}" : ""
 }
 
 function pr_cache_to {
     params = [ base_image ]
-    result = is_pr() && is_ci() ? "type=registry,ref=${pr_image_name(base_image)}-buildcache" : ""
+    result = is_pr() && is_ci() ? "type=registry,ref=${pr_image_name(buildcache(base_image))}" : ""
 }
 
 # ------ TAG CONFIG ------
