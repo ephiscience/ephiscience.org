@@ -1,5 +1,5 @@
 import { provideRouter } from '@angular/router';
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MoreButtonComponent } from './more-button.component';
 
@@ -7,12 +7,12 @@ describe('MoreButtonComponent', () => {
 	let component: MoreButtonComponent;
 	let fixture: ComponentFixture<MoreButtonComponent>;
 
-	beforeEach(waitForAsync(() => {
-		TestBed.configureTestingModule({
+	beforeEach(async () => {
+		await TestBed.configureTestingModule({
 			imports: [MoreButtonComponent],
 			providers: [provideRouter([])]
 		}).compileComponents();
-	}));
+	});
 
 	beforeEach(() => {
 		fixture = TestBed.createComponent(MoreButtonComponent);
