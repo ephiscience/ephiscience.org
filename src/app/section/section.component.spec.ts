@@ -15,6 +15,7 @@ describe('SectionComponent', () => {
 	beforeEach(() => {
 		fixture = TestBed.createComponent(SectionComponent);
 		component = fixture.componentInstance;
+		fixture.componentRef.setInput('type', 'mid');
 		fixture.detectChanges();
 	});
 

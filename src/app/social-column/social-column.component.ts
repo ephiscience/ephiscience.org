@@ -1,11 +1,11 @@
-import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 
 
 @Component({
 	selector: 'eph-social-column',
 	template: `
-		@if (fburl) {
-		  <fb-page [href]="fburl" tabs="timeline" [smallHeader]="false" [adaptContainerWidth]="true"></fb-page>
+		@if (fburl()) {
+		  <fb-page [href]="fburl()" tabs="timeline" [smallHeader]="false" [adaptContainerWidth]="true"></fb-page>
 		}
 		<!--<div-->
 		<!--class="fb-page"-->
@@ -16,9 +16,9 @@ import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 		<!--data-hide-cover="false"-->
 		<!--data-show-facepile="true"-->
 		<!--&gt;</div>-->
-		@if (twitterUrl) {
+		@if (twitterUrl()) {
 		  <div class="eph-twitter-timeline">
-		    <a class="twitter-timeline" [href]="twitterUrl">Tweets by EduKeyFR</a>
+		    <a class="twitter-timeline" [href]="twitterUrl()">Tweets by EduKeyFR</a>
 		  </div>
 		}
 		<img src="assets/images/logo/membre_cafe_des_sciences.png" alt="Membre du café des sciences" class="img img-responsive" />
@@ -49,6 +49,6 @@ import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 	imports: []
 })
 export class SocialColumnComponent {
-	@Input() fburl: string;
-	@Input() twitterUrl: string;
+	fburl = input("");
+	twitterUrl = input("");
 }

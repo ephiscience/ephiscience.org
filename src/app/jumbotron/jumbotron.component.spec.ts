@@ -15,6 +15,7 @@ describe('JumbotronComponent', () => {
 	beforeEach(() => {
 		fixture = TestBed.createComponent(JumbotronComponent);
 		component = fixture.componentInstance;
+		fixture.componentRef.setInput('type', 'top');
 		fixture.detectChanges();
 	});
 

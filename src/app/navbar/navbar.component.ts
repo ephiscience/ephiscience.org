@@ -1,6 +1,6 @@
 import { Component, DestroyRef, inject, OnDestroy, OnInit, signal, ChangeDetectionStrategy } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { RouterActivateEventService } from '../app.component';
+import { RouterActivateEventService } from '../router-activate-event.service';
 import { ImgComponent } from '../img/img.component';
 import { RouterLinkActive, RouterLink } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';

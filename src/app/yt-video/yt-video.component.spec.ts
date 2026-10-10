@@ -15,6 +15,7 @@ describe('YtVideoComponent', () => {
 	beforeEach(() => {
 		fixture = TestBed.createComponent(YtVideoComponent);
 		component = fixture.componentInstance;
+		fixture.componentRef.setInput('videoId', 'dQw4w9WgXcQ');
 		fixture.detectChanges();
 	});
 

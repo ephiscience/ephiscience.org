@@ -1,14 +1,9 @@
 import { isPlatformBrowser } from '@angular/common';
-import { Component, inject, Injectable, PLATFORM_ID, ChangeDetectionStrategy } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Component, inject, PLATFORM_ID, ChangeDetectionStrategy } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
-
-@Injectable()
-export class RouterActivateEventService {
-	activated = new Subject<void>();
-}
+import { RouterActivateEventService } from './router-activate-event.service';
 
 @Component({
 	selector: 'eph-root',

@@ -1,3 +1,5 @@
+import { provideRouter } from '@angular/router';
+import { RouterActivateEventService } from '../router-activate-event.service';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { NavbarComponent } from './navbar.component';
@@ -8,7 +10,8 @@ describe('NavbarComponent', () => {
 
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
-			imports: [NavbarComponent]
+			imports: [NavbarComponent],
+			providers: [provideRouter([]), RouterActivateEventService]
 		}).compileComponents();
 	}));
 

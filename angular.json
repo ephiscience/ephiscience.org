@@ -92,6 +92,9 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
+            "stylePreprocessorOptions": {
+              "includePaths": ["../node_modules/bootstrap/scss", "src"]
+            },
             "assets": [
               {
                 "glob": "**/*",

@@ -15,6 +15,7 @@ describe('SmallLogoWhiteComponent', () => {
 	beforeEach(() => {
 		fixture = TestBed.createComponent(SmallLogoWhiteComponent);
 		component = fixture.componentInstance;
+		fixture.componentRef.setInput('imgHeight', '40px');
 		fixture.detectChanges();
 	});
 

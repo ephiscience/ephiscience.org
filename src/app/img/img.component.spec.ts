@@ -15,6 +15,7 @@ describe('ImgComponent', () => {
 	beforeEach(() => {
 		fixture = TestBed.createComponent(ImgComponent);
 		component = fixture.componentInstance;
+		fixture.componentRef.setInput('src', 'assets/images/logo.png');
 		fixture.detectChanges();
 	});
 

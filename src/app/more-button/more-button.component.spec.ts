@@ -1,3 +1,4 @@
+import { provideRouter } from '@angular/router';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { MoreButtonComponent } from './more-button.component';
@@ -8,13 +9,15 @@ describe('MoreButtonComponent', () => {
 
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
-			imports: [MoreButtonComponent]
+			imports: [MoreButtonComponent],
+			providers: [provideRouter([])]
 		}).compileComponents();
 	}));
 
 	beforeEach(() => {
 		fixture = TestBed.createComponent(MoreButtonComponent);
 		component = fixture.componentInstance;
+		fixture.componentRef.setInput('href', '/association');
 		fixture.detectChanges();
 	});
 
