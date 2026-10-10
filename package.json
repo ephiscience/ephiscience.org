@@ -21,7 +21,7 @@
     "@angular/router": "22.2.2",
     "@angular/ssr": "22.2.2",
     "bootstrap": "^5.3.8",
-    "express": "^5.2.1",
+    "express": "^5.3.0",
     "js-yaml": "^5.4.3",
     "rxjs": "~7.8.2",
     "tslib": "^2.8.1",
@@ -29,7 +29,7 @@
     "typeface-cabin": "^1.1.13",
     "typeface-cabin-condensed": "^1.1.13",
     "typeface-roboto": "^1.1.13",
-    "zone.js": "~0.16.1"
+    "zone.js": "~0.16.3"
   },
   "devDependencies": {
     "@angular/build": "^22.2.2",
