@@ -4,7 +4,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 	selector: 'eph-contact-form',
 	template: `
 		<form name="contact_form" class="form-horizontal">
-			<div class="form-group">
+			<div class="mb-3">
 				<label class="col-sm-2 control-label" for="contact-name">Nom</label>
 				<div class="col-sm-10">
 					<input class="form-control" type="text" name="contact-name" value="" placeholder="inscris ton nom." />
@@ -23,7 +23,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 					/>
 				</div>
 			</div>
-			<div class="form-group">
+			<div class="mb-3">
 				<label class="col-sm-2 control-label" for="contact-text-area">Message</label>
 				<div class="col-sm-10">
 					<textarea class="form-control" name="contact-text-area" rows="8" cols="40" placeholder="écris ton message."></textarea>

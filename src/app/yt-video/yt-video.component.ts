@@ -13,13 +13,13 @@ export interface SocialParts {
 	selector: 'eph-yt-video',
 	template: `
 		@if (bare()) {
-			<div class="embed-responsive embed-responsive-16by9">
+			<div class="ratio ratio-16x9">
 				<iframe [src]="saneSrc()"></iframe>
 			</div>
 		} @else {
 			<div class="row justify-content-center mb-3">
 				<div class="col-10">
-					<div class="embed-responsive embed-responsive-16by9">
+					<div class="ratio ratio-16x9">
 						<iframe [src]="saneSrc()"></iframe>
 					</div>
 				</div>

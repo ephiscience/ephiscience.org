@@ -8,7 +8,7 @@ import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 				[href]="href()"
 				[target]="target()"
 				[rel]="rel()"
-				class="btn btn-lg btn-primary text-white font-weight-bold px-4 py-3"
+				class="btn btn-lg btn-primary text-white fw-bold px-4 py-3"
 				style="border-radius: 5px"
 			>
 				<ng-content></ng-content>

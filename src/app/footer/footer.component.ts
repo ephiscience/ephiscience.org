@@ -15,7 +15,7 @@ import { RouterLink } from '@angular/router';
 						<p><a href="mailto:contact@ephiscience.org">contact&#64;ephiscience.org</a></p>
 						<eph-fb-like></eph-fb-like>
 					</div>
-					<div class="col-4 ml-auto">
+					<div class="col-4 ms-auto">
 						<h4>Liens utiles</h4>
 						<ul class="footer-links">
 							<li><a routerLink="/association">L'association</a></li>

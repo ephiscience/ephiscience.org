@@ -21,8 +21,8 @@ export const SOCIAL_EDUKEY = {
 	template: `
         <eph-jumbotron type="top">
             <eph-logo-white class="col-sm-3"></eph-logo-white>
-            <div class="ml-auto">
-                <h2 class="text-left">Renforcer les liens entre <br /> acteur·rices de l’éducation <br /> et de la
+            <div class="ms-auto">
+                <h2 class="text-start">Renforcer les liens entre <br /> acteur·rices de l’éducation <br /> et de la
                     recherche académique</h2>
             </div>
         </eph-jumbotron>

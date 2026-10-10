@@ -33,7 +33,7 @@ li.active {
 	background-color: #080808;
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
 	.navbar-collapse {
 		display: block;
 		width: 18rem;
@@ -43,7 +43,7 @@ li.active {
 		left: -18rem;
 		bottom: 0;
 		z-index: 2000;
-		background-color: var(--dark);
+		background-color: var(--bs-dark);
 		transition: left 0.3s ease-in-out;
 
 		&.show {

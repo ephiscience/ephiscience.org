@@ -9,14 +9,14 @@ import { SocialParts } from '../yt-video/yt-video.component';
 	selector: 'eph-yt-playlist',
 	template: `
     @if (bare()) {
-      <div class="embed-responsive embed-responsive-16by9">
+      <div class="ratio ratio-16x9">
         <iframe [src]="saneSrc()"></iframe>
       </div>
     } @else {
       @if (social() === {}) {
         <div class="row mb-3">
           <div class="col">
-            <div class="embed-responsive embed-responsive-16by9">
+            <div class="ratio ratio-16x9">
               <iframe [src]="saneSrc()"></iframe>
             </div>
           </div>
@@ -24,14 +24,14 @@ import { SocialParts } from '../yt-video/yt-video.component';
       } @else {
         <div class="row justify-content-center mb-3">
           <div class="col-12 col-md-10 col-lg-8">
-            <div class="embed-responsive embed-responsive-16by9">
+            <div class="ratio ratio-16x9">
               <iframe [src]="saneSrc()"></iframe>
             </div>
           </div>
           <div class="col-12 col-md-2 flex-row flex-md-column social-links py-2 py-md-0">
             @if (social().fb) {
               <a
-                class="pr-2 pl-0 pl-md-2 pt-md-0 d-md-block"
+                class="pe-2 ps-0 ps-md-2 pt-md-0 d-md-block"
                 rel="noreferrer"
                 href="https://www.facebook.com/{{ social().fb }}"
                 target="_blank"
