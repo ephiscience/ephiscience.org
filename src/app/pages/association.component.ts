@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { SectionComponent } from '../section/section.component';
 import { SectionTitleComponent } from '../section-title/section-title.component';
@@ -160,6 +160,7 @@ import { ImgComponent } from '../img/img.component';
 			}
 		`
 	],
+	changeDetection: ChangeDetectionStrategy.Eager,
 	imports: [SectionComponent, SectionTitleComponent, SectionContentComponent, ImgComponent, RouterLink]
 })
 export class AssociationComponent {}

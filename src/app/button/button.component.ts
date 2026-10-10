@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
 	selector: 'eph-button',
@@ -15,6 +15,7 @@ import { Component, input } from '@angular/core';
 			</a>
 		</div>
 	`,
+	changeDetection: ChangeDetectionStrategy.Eager,
 	styles: [],
 })
 export class ButtonComponent {

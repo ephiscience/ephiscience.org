@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
 	selector: 'eph-fb-like',
@@ -13,6 +13,7 @@ import { Component } from '@angular/core';
 			data-share="true"
 		></span>
 	`,
+	changeDetection: ChangeDetectionStrategy.Eager,
 	styles: []
 })
 export class FbLikeComponent {}

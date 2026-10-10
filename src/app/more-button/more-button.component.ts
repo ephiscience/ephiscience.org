@@ -1,4 +1,4 @@
-import { Component, input, Input } from '@angular/core';
+import { Component, input, Input, ChangeDetectionStrategy } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -20,6 +20,7 @@ import { RouterLink } from '@angular/router';
 			}
 		`
 	],
+	changeDetection: ChangeDetectionStrategy.Eager,
 	imports: [RouterLink]
 })
 export class MoreButtonComponent {

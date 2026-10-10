@@ -1,5 +1,5 @@
 import { isPlatformBrowser } from '@angular/common';
-import { Component, inject, Injectable, PLATFORM_ID } from '@angular/core';
+import { Component, inject, Injectable, PLATFORM_ID, ChangeDetectionStrategy } from '@angular/core';
 import { Subject } from 'rxjs';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterOutlet } from '@angular/router';
@@ -18,6 +18,7 @@ export class RouterActivateEventService {
 		<eph-footer></eph-footer>
 	`,
 	providers: [RouterActivateEventService],
+	changeDetection: ChangeDetectionStrategy.Eager,
 	imports: [NavbarComponent, RouterOutlet, FooterComponent]
 })
 export class AppComponent {

@@ -1,4 +1,4 @@
-import { Component, DestroyRef, inject, OnDestroy, OnInit, signal } from '@angular/core';
+import { Component, DestroyRef, inject, OnDestroy, OnInit, signal, ChangeDetectionStrategy } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { RouterActivateEventService } from '../app.component';
 import { ImgComponent } from '../img/img.component';
@@ -52,6 +52,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 		</nav>
 	`,
 	styleUrls: ['navbar.component.scss'],
+	changeDetection: ChangeDetectionStrategy.Eager,
 	imports: [ImgComponent, RouterLinkActive, RouterLink]
 })
 export class NavbarComponent implements OnInit {

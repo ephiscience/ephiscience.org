@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, input, Input, OnInit, signal } from '@angular/core';
+import { Component, input, Input, OnInit, signal, ChangeDetectionStrategy } from '@angular/core';
 import { YtVideoComponent } from '../yt-video/yt-video.component';
 
 interface Video {
@@ -14,6 +14,7 @@ interface Feed {
 	selector: 'eph-last-yt-video',
 	template: ` <eph-yt-video [videoId]="videoId()" [bare]="bare()"></eph-yt-video> `,
 	styles: [],
+	changeDetection: ChangeDetectionStrategy.Eager,
 	imports: [YtVideoComponent]
 })
 export class LastYtVideoComponent implements OnInit {

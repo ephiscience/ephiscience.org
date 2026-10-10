@@ -10,7 +10,9 @@ const browserDistFolder = resolve(serverDistFolder, '../browser');
 const indexHtml = join(serverDistFolder, 'index.server.html');
 
 const app = express();
-const commonEngine = new CommonEngine();
+const commonEngine = new CommonEngine({
+  allowedHosts: ['ephiscience.org', '*.ephiscience.org', 'localhost'],
+});
 
 /**
  * Example Express Rest API endpoints can be defined here.
@@ -27,8 +29,7 @@ const commonEngine = new CommonEngine();
 /**
  * Serve static files from /browser
  */
-app.get(
-  '**',
+app.use(
   express.static(browserDistFolder, {
     maxAge: '1y',
     index: 'index.html'
@@ -38,7 +39,7 @@ app.get(
 /**
  * Handle all other requests by rendering the Angular application.
  */
-app.get('**', (req, res, next) => {
+app.use((req, res, next) => {
   const { protocol, originalUrl, baseUrl, headers } = req;
 
   commonEngine

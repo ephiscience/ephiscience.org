@@ -1,4 +1,4 @@
-import { Component, computed, inject, input, Input, OnChanges } from '@angular/core';
+import { Component, computed, inject, input, Input, OnChanges, ChangeDetectionStrategy } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 
 
@@ -26,6 +26,7 @@ export interface SocialParts {
 			</div>
 		}  `,
 	styles: [``],
+	changeDetection: ChangeDetectionStrategy.Eager,
 	imports: []
 })
 export class YtVideoComponent {

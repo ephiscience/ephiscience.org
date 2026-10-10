@@ -1,4 +1,4 @@
-import { Component, input, Input } from '@angular/core';
+import { Component, input, Input, ChangeDetectionStrategy } from '@angular/core';
 import { JumbotronComponent } from '../jumbotron/jumbotron.component';
 
 @Component({
@@ -9,6 +9,7 @@ import { JumbotronComponent } from '../jumbotron/jumbotron.component';
 		<ng-content select="eph-section-content"></ng-content>
 	`,
 	styleUrls: ['section.component.scss'],
+	changeDetection: ChangeDetectionStrategy.Eager,
 	imports: [JumbotronComponent]
 })
 export class SectionComponent {

@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
 	selector: 'eph-card-content',
 	template: ` <div class="text-middle card-text"><ng-content></ng-content></div> `,
+	changeDetection: ChangeDetectionStrategy.Eager,
 	styles: [
 		`
 			::ng-deep p {

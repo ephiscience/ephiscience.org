@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 
 @Component({
@@ -45,6 +45,7 @@ import { Component, Input } from '@angular/core';
 			}
 		`
 	],
+	changeDetection: ChangeDetectionStrategy.Eager,
 	imports: []
 })
 export class SocialColumnComponent {
