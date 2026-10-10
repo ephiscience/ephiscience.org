@@ -39,7 +39,10 @@
             ],
             "scripts": [],
             "server": "src/main.server.ts",
-            "prerender": true,
+            "outputMode": "server",
+            "security": {
+              "allowedHosts": ["ephiscience.org", "*.ephiscience.org", "localhost"]
+            },
             "ssr": {
               "entry": "src/server.ts"
             }
