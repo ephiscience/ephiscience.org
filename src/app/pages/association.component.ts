@@ -57,7 +57,7 @@ import { ImgComponent } from '../img/img.component';
                                 href="https://www.helloasso.com/associations/ephiscience/formulaires/1"
                                 target="_blank"
                                 rel="noreferrer"
-                                class="btn btn-lg btn-primary text-white font-weight-bold px-4 py-3"
+                                class="btn btn-lg btn-primary text-white fw-bold px-4 py-3"
                                 style="border-radius: 5px"
                             >
                                 Faire un don
@@ -134,7 +134,7 @@ import { ImgComponent } from '../img/img.component';
                         <div style="display:block; text-align:center; padding-bottom:20px;">
                             <a
                                 routerLink="/contribuer"
-                                class="btn btn-lg btn-primary text-white font-weight-bold px-4 py-3"
+                                class="btn btn-lg btn-primary text-white fw-bold px-4 py-3"
                                 style="border-radius: 5px"
 
                             >

@@ -22,3 +22,7 @@ $white: #fff;
 $font-family-sans-serif: Cabin, sans-serif;
 $headings-font-family: Arvo, serif;
 $headings-margin-bottom: 0.3rem;
+
+// Keep Bootstrap 4 link styling (Bootstrap 5 underlines links by default)
+$link-decoration: none;
+$link-hover-decoration: underline;

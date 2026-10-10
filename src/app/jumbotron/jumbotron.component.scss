@@ -1,5 +1,15 @@
 @import 'defines';
 
+// Bootstrap 5 dropped .jumbotron; keep its Bootstrap 4 spacing
+.jumbotron {
+	padding: 2rem 1rem;
+	margin-bottom: 2rem;
+
+	@include media-breakpoint-up(sm) {
+		padding: 4rem 2rem;
+	}
+}
+
 .jumbotron-top {
 	background-color: transparent;
 	@include background-image-set('/assets/images/jumbotron/jumbo_top.png');

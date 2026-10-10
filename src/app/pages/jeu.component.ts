@@ -61,7 +61,7 @@ import { YtVideoComponent } from '../yt-video/yt-video.component';
                                 href="https://game.ephiscience.org"
                                 target="_blank"
                                 rel="noreferrer"
-                                class="btn btn-lg btn-secondary text-white font-weight-bold px-4 py-3"
+                                class="btn btn-lg btn-secondary text-white fw-bold px-4 py-3"
                                 style="border-radius: 5px"
                             >Version numérique</a>
                         </div>
@@ -70,7 +70,7 @@ import { YtVideoComponent } from '../yt-video/yt-video.component';
                                 href="https://www.helloasso.com/associations/ephiscience/formulaires/2"
                                 target="_blank"
                                 rel="noreferrer"
-                                class="btn btn-lg btn-primary text-white font-weight-bold px-4 py-3"
+                                class="btn btn-lg btn-primary text-white fw-bold px-4 py-3"
                                 style="border-radius: 5px"
 
                             >
@@ -81,7 +81,7 @@ import { YtVideoComponent } from '../yt-video/yt-video.component';
                             <a
                                 href="assets/documents/2020_06_06_jeu_complet.pdf"
                                 target="_blank"
-                                class="btn btn-lg btn-secondary text-white font-weight-bold px-4 py-3"
+                                class="btn btn-lg btn-secondary text-white fw-bold px-4 py-3"
                                 style="border-radius: 5px"
                                 download
                             >Téléchargement<br />GRATUIT</a>
