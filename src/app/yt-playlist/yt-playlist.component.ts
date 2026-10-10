@@ -1,4 +1,4 @@
-import { Component, computed, inject, input, Input, OnChanges } from '@angular/core';
+import { Component, computed, inject, input, Input, OnChanges, ChangeDetectionStrategy } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 
 
@@ -75,6 +75,7 @@ import { SocialParts } from '../yt-video/yt-video.component';
     }
     `,
 	styles: [],
+	changeDetection: ChangeDetectionStrategy.Eager,
 	imports: [ImgComponent]
 })
 export class YtPlaylistComponent {

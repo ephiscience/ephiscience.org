@@ -15,6 +15,7 @@ describe('YtPlaylistComponent', () => {
 	beforeEach(() => {
 		fixture = TestBed.createComponent(YtPlaylistComponent);
 		component = fixture.componentInstance;
+		fixture.componentRef.setInput('playlist', 'PL0000000000');
 		fixture.detectChanges();
 	});
 

@@ -1,6 +1,6 @@
-import { Component, DestroyRef, inject, OnDestroy, OnInit, signal } from '@angular/core';
+import { Component, DestroyRef, inject, OnDestroy, OnInit, signal, ChangeDetectionStrategy } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { RouterActivateEventService } from '../app.component';
+import { RouterActivateEventService } from '../router-activate-event.service';
 import { ImgComponent } from '../img/img.component';
 import { RouterLinkActive, RouterLink } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
@@ -52,6 +52,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 		</nav>
 	`,
 	styleUrls: ['navbar.component.scss'],
+	changeDetection: ChangeDetectionStrategy.Eager,
 	imports: [ImgComponent, RouterLinkActive, RouterLink]
 })
 export class NavbarComponent implements OnInit {

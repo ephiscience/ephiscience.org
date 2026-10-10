@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
 	selector: 'eph-contact-form',
@@ -32,6 +32,7 @@ import { Component } from '@angular/core';
 			<button class="btn btn-success center-block">Envoyer</button>
 		</form>
 	`,
+	changeDetection: ChangeDetectionStrategy.Eager,
 	styles: []
 })
 export class ContactFormComponent {}

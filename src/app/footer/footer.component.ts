@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { LogoWhiteComponent } from '../logo-white/logo-white.component';
 import { FbLikeComponent } from '../fb-like/fb-like.component';
 import { RouterLink } from '@angular/router';
@@ -40,6 +40,7 @@ import { RouterLink } from '@angular/router';
 		</div>
 	`,
 	styleUrls: ['footer.component.scss'],
+	changeDetection: ChangeDetectionStrategy.Eager,
 	imports: [LogoWhiteComponent, FbLikeComponent, RouterLink]
 })
 export class FooterComponent {}

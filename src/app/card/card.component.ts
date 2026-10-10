@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
 	selector: 'eph-card',
@@ -12,6 +12,7 @@ import { Component, Input } from '@angular/core';
 			</div>
 		</div>
 	`,
+	changeDetection: ChangeDetectionStrategy.Eager,
 	styleUrls: ['card.component.scss']
 })
 export class CardComponent {

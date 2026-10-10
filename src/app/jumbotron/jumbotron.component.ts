@@ -1,4 +1,4 @@
-import { Component, computed, input, Input } from '@angular/core';
+import { Component, computed, input, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
 	selector: 'eph-jumbotron',
@@ -11,6 +11,7 @@ import { Component, computed, input, Input } from '@angular/core';
 			</div>
 		</div>
 	`,
+	changeDetection: ChangeDetectionStrategy.Eager,
 	styleUrls: ['jumbotron.component.scss']
 })
 export class JumbotronComponent {

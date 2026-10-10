@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
 	selector: 'eph-cc-by',
@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 			<img [width]="width" src="assets/images/logo/by-nc-sa.svg" alt="Copyright" />
 		</a>
 	`,
+	changeDetection: ChangeDetectionStrategy.Eager,
 	styles: []
 })
 export class CcByComponent {

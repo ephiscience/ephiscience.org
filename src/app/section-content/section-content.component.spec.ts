@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SectionContentComponent } from './section-content.component';
 
@@ -6,11 +6,11 @@ describe('SectionContentComponent', () => {
 	let component: SectionContentComponent;
 	let fixture: ComponentFixture<SectionContentComponent>;
 
-	beforeEach(waitForAsync(() => {
-		TestBed.configureTestingModule({
+	beforeEach(async () => {
+		await TestBed.configureTestingModule({
 			imports: [SectionContentComponent]
 		}).compileComponents();
-	}));
+	});
 
 	beforeEach(() => {
 		fixture = TestBed.createComponent(SectionContentComponent);

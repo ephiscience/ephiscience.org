@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { SectionComponent } from '../section/section.component';
 import { SectionTitleComponent } from '../section-title/section-title.component';
 import { SectionContentComponent } from '../section-content/section-content.component';
@@ -78,6 +78,7 @@ import { ButtonComponent } from '../button/button.component';
         </eph-section>
     `,
 	styles: [],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         SectionComponent,
         SectionTitleComponent,

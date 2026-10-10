@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { JumbotronComponent } from '../jumbotron/jumbotron.component';
 import { LogoWhiteComponent } from '../logo-white/logo-white.component';
 import { SectionComponent } from '../section/section.component';
@@ -137,6 +137,7 @@ export const SOCIAL_EDUKEY = {
         </eph-section>
     `,
 	styles: [],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         JumbotronComponent,
         LogoWhiteComponent,

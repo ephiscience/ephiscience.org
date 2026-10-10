@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
 	selector: 'eph-card-title',
 	template: ` <div class="d-flex center-block justify-content-center"><ng-content></ng-content></div> `,
+	changeDetection: ChangeDetectionStrategy.Eager,
 	styles: [
 		`
 			::ng-deep h2 {

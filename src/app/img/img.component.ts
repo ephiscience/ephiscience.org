@@ -1,4 +1,4 @@
-import { Component, computed, input, Input, OnChanges } from '@angular/core';
+import { Component, computed, input, Input, OnChanges, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
 	selector: 'eph-img',
@@ -8,6 +8,7 @@ import { Component, computed, input, Input, OnChanges } from '@angular/core';
 			<img [src]="src()" [alt]="alt()" class="{{ display() }}" [style.height]="imgHeight()" />
 		</picture>
 	`,
+	changeDetection: ChangeDetectionStrategy.Eager,
 	styles: [
 		`
 			.fill {
